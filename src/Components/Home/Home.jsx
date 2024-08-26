@@ -17,7 +17,7 @@ function Home() {
   return (
     <div className="" ref={ref}>
       <div
-        className="w-full grid place-items-center  lg:h-[80vh] sm:h-[40vh] h-[30vh]"
+        className="w-full  grid  place-content-center items-center  place-items-center  lg:h-[80vh] sm:h-[40vh] h-[30vh]"
         style={{
           backgroundImage: `url(${BgImg})`,
           backgroundSize: "cover",
@@ -25,7 +25,7 @@ function Home() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="space-y-5  md:px-6 xl:px-10 3xl:px-16 p-1">
+        <div className="space-y-5 grid items-center w-ful h-full">
           <Fade fade delay={200} when={visible}>
             <h1 className="sm:w-[500px] w-[225px]  leading-2">
               Your Accessibility Partner
