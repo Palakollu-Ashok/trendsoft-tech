@@ -1,26 +1,104 @@
 {
-  "title": "Api  Security",
+  "title": "API Security",
+
+  "img": "/Assets/CyberSecurity/WebApp.svg",
+
+  "desc": "Trendsoft technologies provide continual safety of all APIs using deep discovery and classification of sensitive data to detect all public, private, and shadow APIs to authorize security teams to execute a positive security model.",
   "list": [
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "OAccessible PDF / UA",
-      "link": "",
-      "decscription": "WAI’s recent work explores in detail the relationship between designing for people with disabilities and designing for other “non-disabled” user populations who benefit from accessibility, such as:"
+      "title": "Continual APIs endpoint security",
+      "list1": [
+        {
+          "desc": "Complete OWASP API coverage"
+        },
+        {
+          "desc": "Our API Security Thinking out-of-the-box machine learning methods that detect every change in your APIs we safeguard public and private APIs and how they are being used."
+        }
+      ]
     },
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "Accessible PDF Form",
-      "link": "#",
-      "decscription": "As many national governments update their accessibility policies and standards (including the U.S. Section 508 and 255), adopting WCAG 2.0 and WAI’s other accessibility standards provides international harmony."
+      "title": "Five ways bad bots target APIs",
+      "list1": [
+        {
+          "desc": "APIs are everywhere supporting rapid development and deployment for organizations, but as per a recent survey, they also increase attacks on the surface of the organization, here is how these bad bots target APIs."
+        }
+      ]
     },
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "Accessible Word",
-      "link": "#",
-      "decscription": "In 1999 the Web Accessibility Initiative, a project by the World Wide Web Consortium (W3C), published the Web Content Accessibility Guidelines WCAG 1.0."
+      "title": "Scraping",
+      "list1": [
+        {
+          "desc": "Bad bots can be used to scrape the data i.e. sensitive like user data, product information, pricing details, and more that can be used for malicious purposes."
+        }
+      ]
+    },
+    {
+      "title": "Account Takeover",
+      "list1": [
+        {
+          "desc": "This can be especially dangerous if the API provides access to sensitive data or functionality and can lead to identifying threats or fraud. Account takeover is taking over user accounts by using various techniques, including brute force credential stuffing, Session hacking, and more."
+        }
+      ]
+    },
+    {
+      "title": "Distributed- Denial-of-service (DDOS)",
+      "list1": [
+        {
+          "desc": "Bad bots can be used to crush APIs with requests and cause them to be unresponsive or even crash disrupting legitimate users’ ability to access the API."
+        }
+      ]
+    },
+    {
+      "title": "API probing",
+      "list1": [
+        {
+          "desc": "This is not a direct attack, but rather a bad bot that can be used to survey the vulnerabilities that aid attackers in identifying potential vulnerabilities that later can be exploited."
+        }
+      ]
+    },
+    {
+      "title": "Data Exfiltration",
+      "list1": [
+        {
+          "desc": "Bad bots can be used to exfiltrate the data by calling APIs that return an excessive amount of data more than what is required for the functioning of API."
+        }
+      ]
+    },
+    {
+      "title": "SIEM Integration",
+      "list1": [
+        {
+          "desc": "SIEM integration is an Enlighted cybersecurity solution that smoothly merges with your existing security infrastructure. This powerful tool allows real-time event reporting, in-depth event information, and customizable rules for security event correlation, providing you with a comprehensive view of your security landscape. Whether you're using Graylog, Splunk, or Microsoft Sentinel, SIEM integration is designed to magnify your security posture and ensure compliance with security standards."
+        }
+      ]
+    },
+    {
+      "title": "OUR Complete API protection",
+      "list1": [
+        {
+          "desc": "All API formats – REST, GraphQL, SOAP, and more"
+        },
+        {
+          "desc": "All API types – external, internal, partner"
+        },
+        {
+          "desc": "All API environments – microservices, prem , cloud"
+        },
+        {
+          "desc": "We discover, remediate, and provide Threat protection"
+        },
+        {
+          "desc": "API full life cycle."
+        }
+      ]
+    },
+    {
+      "title": "OUR Complete API protection",
+      "list1": [
+        {
+          "desc": "We stop more attacks than anyone else, we see more than anyone else, You acquire: Finer discovery – with smart integration of APIs vs. a long list of duplicate endpoints Finer Threat protection – with perception bridge months of API usage patterns to identify and stop more attack attempts. Finer API hardening – with detailed remediation guidelines based on the attacker’s minor progressive exploits."
+        }
+      ]
     }
   ]
 }

@@ -51,7 +51,7 @@ export default function DocumentAccessibilityPage() {
           <h2 className=" py-3 md:px-5 px-2">{data.title}</h2>
           <div className="grid lg:grid-cols-3 sm:pb-5 pb-2 md:px-5 px-2   sm:grid-cols-2  grid-cols-1 w-full gap-8 h-full ">
             {data1.list.map((d, i) => (
-              <CommonCard 
+              <CommonCard
                 key={i}
                 img={d.img}
                 heading={d.heading}

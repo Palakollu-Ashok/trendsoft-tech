@@ -1,26 +1,117 @@
 {
   "title": "Thick Client Security",
+
+  "img": "/Assets/CyberSecurity/Thickclient.svg",
+
+  "list3": [
+    {
+      "desc": "Trendsoft begins its Thick client security by understanding each applicant's complexities and functionality. These are installed locally on a user’s desktop/ Laptop that can run independently not connected to the internet, unlike web applications, which need an internet connection. Examples of Thick client applications include computer games, web browsers, Music players, and video and chat tools like Zoom, Slack, etc."
+    },
+    {
+      "desc": "Here we introduce the pen-testing methodology which involves reverse engineering to identify hard-coded secrets and ensure comprehensive coverage. This specific approach to testing the applications is followed after understanding the application in terms of the technologies used, functionality, behavior, entry points for user inputs, core security mechanism used by the application, frameworks, and languages."
+    }
+  ],
+
+  "desc": "Trendsoft begins its Thick client security by understanding each applicant's complexities and functionality. These are installed locally on a user’s desktop/ Laptop that can run independently not connected to the internet, unlike web applications, which need an internet connection. Examples of Thick client applications include computer games, web browsers, Music players, and video and chat tools like Zoom, Slack, etc.",
   "list": [
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "OAccessible PDF / UA",
-      "link": "",
-      "decscription": "WAI’s recent work explores in detail the relationship between designing for people with disabilities and designing for other “non-disabled” user populations who benefit from accessibility, such as:"
+      "title": "Top 10 vulnerability standards we follow under OWASP during Thick client penetration testing",
+      "list1": [
+        {
+          "desc": "Hardcoded sensitive data and authentication tokens (private keys, passwords, etc..)"
+        },
+        {
+          "desc": "Application workflow analysis between GUI elements"
+        },
+        {
+          "desc": "Assembly accumulation of security flags"
+        },
+        {
+          "desc": "Use of insecure and carving algorithms"
+        },
+        {
+          "desc": "Programmed encryption materials (Keys, IVS, etc.…)"
+        },
+        {
+          "desc": "WMI subscription, Application service, provider, and other permissions."
+        },
+        {
+          "desc": "Application file, folder, and listing permissions, changes including creation, modification, and deletion of keys and values."
+        },
+        {
+          "desc": "Database connections, user roles, and permissions, Authentication, and authorization controls."
+        },
+        {
+          "desc": "Network protocols used by an application (SMB, FTP, TFTP, etc.)"
+        },
+        {
+          "desc": "Service account roles and permissions (database server, application server, client)"
+        }
+      ],
+
+      "list2": [
+        {
+          "desc": "Our Thick Client Security Assessment services will focus on identifying the security flaws in our client’s thick client applications. Our assessments start with two approaches like"
+        },
+        {
+          "desc": "Risk-based analysis on both thick client software and the server-side APIs."
+        },
+        {
+          "desc": "Business flow-based analysis to identify potential business logic vulnerabilities."
+        },
+        {
+          "desc": "Our approach involves an automated scan of the thick client application, configuration analysis, network traffic analysis, client and server-side validation check, and Binary analysis"
+        }
+      ]
     },
+
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "Accessible PDF Form",
-      "link": "#",
-      "decscription": "As many national governments update their accessibility policies and standards (including the U.S. Section 508 and 255), adopting WCAG 2.0 and WAI’s other accessibility standards provides international harmony."
+      "title": "Thick Client Testing Process",
+      "list1": [
+        {
+          "desc": "Identify application architecture"
+        },
+        {
+          "desc": "Catalogue the platform"
+        },
+        {
+          "desc": "Identify language and programs"
+        },
+        {
+          "desc": "Network traffic analysis"
+        },
+        {
+          "desc": "Local files/ registry analysis"
+        },
+
+        {
+          "desc": "Reverse engineering / GUI tampering"
+        }
+      ]
     },
+
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "Accessible Word",
-      "link": "#",
-      "decscription": "In 1999 the Web Accessibility Initiative, a project by the World Wide Web Consortium (W3C), published the Web Content Accessibility Guidelines WCAG 1.0."
+      "title": "Why US?",
+      "list1": [
+        {
+          "desc": "In-depth- Reverse engineering"
+        },
+        {
+          "desc": "Sensitive information discovery"
+        },
+        {
+          "desc": "Extensive binary extortion checklist"
+        },
+        {
+          "desc": "Customized approach"
+        },
+        {
+          "desc": "Actionable remediations"
+        },
+        {
+          "desc": "Expert Support"
+        }
+      ]
     }
   ]
 }

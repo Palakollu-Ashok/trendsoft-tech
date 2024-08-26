@@ -1,26 +1,96 @@
 {
   "title": "Secure Code Review",
+
+  "img": "/Assets/CyberSecurity/Securecode.svg",
+
+  "list3": [
+    {
+      "desc": "Security code review (SCR) is a structured and security examination of the application source code and its software. We examine the loopholes and bugs that may have been overlooked or rooted during application and software development."
+    },
+    {
+      "desc": "A few situations may also result in attackers extracting lively information that leads to loss of intellectual property while applications and software contain vulnerabilities, a review of source code helps to verify the key security controls, and design flaws, and discover hidden vulnerabilities and software."
+    },
+    {
+      "desc": "We fit out application developers with a conclusion-to-end outline enabling the idea of the issue and vulnerability cause so that applications are passed through a rigorous review process to detect the vulnerabilities present in them."
+    }
+  ],
   "list": [
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "OAccessible PDF / UA",
-      "link": "",
-      "decscription": "WAI’s recent work explores in detail the relationship between designing for people with disabilities and designing for other “non-disabled” user populations who benefit from accessibility, such as:"
+      "title": "Our Approach to Source Code Review",
+      "list1": [
+        {
+          "desc": "Initially, we start with a review of the software and coding process which includes multiple discussions related to the software, where the developers are required to answer an extensive list of questions on the table for the identification of security design issues."
+        },
+        {
+          "desc": "Secondly, we built a code review plan"
+        },
+        {
+          "desc": "Thirdly, we identify the composed data placed within a code, bad coding techniques that make an easy way for attackers to gain access, and verification of existing flaws. Remedial steps are introduced for every possible security issue to improve the development process that software goes through."
+        },
+        {
+          "desc": "The full-scale process of finding bugs which exposes root of the issue through source code review helps to detect the vulnerable line of code. After completion of the code review, we’ll provide the client with complete details of cyber security vulnerabilities as well as suggestions to improve the whole development process."
+        }
+      ]
     },
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "Accessible PDF Form",
-      "link": "#",
-      "decscription": "As many national governments update their accessibility policies and standards (including the U.S. Section 508 and 255), adopting WCAG 2.0 and WAI’s other accessibility standards provides international harmony."
+      "title": "Source Code Review Process",
+      "list2": [
+        {
+          "desc": "Construction and compilation of the code"
+        },
+        {
+          "desc": "Discovery and bridge the files"
+        },
+        {
+          "desc": "Source code vulnerability scanning"
+        },
+        {
+          "desc": "Verification and analysis"
+        },
+        {
+          "desc": "Final presentation with an extensive report"
+        }
+      ]
     },
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "Accessible Word",
-      "link": "#",
-      "decscription": "In 1999 the Web Accessibility Initiative, a project by the World Wide Web Consortium (W3C), published the Web Content Accessibility Guidelines WCAG 1.0."
+      "title": "Why Us?",
+      "list1": [
+        {
+          "desc": "We follow best practices from the lightweight development code review process."
+        }
+      ]
+    },
+    {
+      "title": "Over-the-shoulder",
+      "list1": [
+        {
+          "desc": "The developer stands over the author’s shoulder while the author later walks through the code."
+        }
+      ]
+    },
+    {
+      "title": "Email pass-around",
+      "list1": [
+        {
+          "desc": "We automatically check the check-in of system email code from source code management to reviewers."
+        }
+      ]
+    },
+    {
+      "title": "Pair-Programming",
+      "list1": [
+        {
+          "desc": "In extreme programming, the common practice is Trendsoft team and client team members develop code together at the same workstations."
+        }
+      ]
+    },
+    {
+      "title": "Tool-assisted code review",
+      "list1": [
+        {
+          "desc": "The team uses extensive tools designed for core code review depending on project needs and customer-specific needs."
+        }
+      ]
     }
   ]
 }

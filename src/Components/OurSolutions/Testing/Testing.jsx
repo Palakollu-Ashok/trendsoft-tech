@@ -8,7 +8,7 @@ export default function Testing() {
 
       Route: "/TrendSoft/oursolutions/Testing/FunctionalTesting",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ullam veritatis magnam soluta! Neque itaque quas vero laudantium similique,",
+        "Automated Functional testing for upgrade quality and speedy go-to-market. In success or failure, Customer experience plays a vital role, we focus on performing end-to-end functional and non-functional testing for your mobile, web, and e-commerce, applications or for enterprise solutions such as CRM, ERP, and more.",
       link1: "learn more",
       link2: "Get A Quote",
     },
@@ -18,7 +18,7 @@ export default function Testing() {
       Route: "/TrendSoft/oursolutions/Testing/PerformanceTesting",
 
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ullam veritatis magnam soluta! Neque ",
+        "A comprehensive suite of accessibility services that empower organizations to achieve digital inclusivity and compliance through auditing, governance, litigation support, managed services, pre-launch assessments, product evaluation, and training.",
       link1: "learn more",
       link2: "Get A Quote",
     },
@@ -27,7 +27,7 @@ export default function Testing() {
       label: "Usability Testing",
       Route: "/TrendSoft/oursolutions/Testing/UsabilityTesting",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ullam veritatis magnam soluta! Neque itaque quas vero laudantium similique, rerum quaerat fugiat quasi laboriosam nihil ipsa alias esse perferendis atque!",
+        "Moderated testing is to guide the users physically or virtually to participate in answering questions may have ask-follow up questions and record observations during the test. Unmoderated test is the use of usability tools to record their actions and responses. These two different approaches help your business for better reach to a real-end audience and their preferences in using your product.",
 
       link1: "learn more",
       link2: "Get A Quote",

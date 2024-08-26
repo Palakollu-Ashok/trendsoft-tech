@@ -1,26 +1,71 @@
 {
-  "title": "Secure Code Review",
+  "title": "Mobile App Security",
+
+  "img": "/Assets/CyberSecurity/MobileApp.svg",
+
+  "desc": "Trendsoft services analyze and identify vulnerabilities in applications used with mobile platforms (iOS, Android, and Windows 10 Mobile) during or post-development. Many dissimilarities and impressions of techniques exist.",
   "list": [
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "OAccessible PDF / UA",
-      "link": "",
-      "decscription": "WAI’s recent work explores in detail the relationship between designing for people with disabilities and designing for other “non-disabled” user populations who benefit from accessibility, such as:"
+      "title": "Three Fundamental tests under mobile AST",
+      "list2": [
+        {
+          "desc": "SAST: This statically analyzes the source, binary, or bytecode of an application to identify vulnerabilities."
+        },
+        {
+          "desc": "Behavioral testing: This uses behavioral analysis to observe the behavior of the app during runtime and identify actions that could be exploited by an attacker."
+        },
+        {
+          "desc": "DAST: This also uses dynamic analysis to test the app in its runtime state. DAST simulates attacks against an application and analyzes the application's reactions, reporting whether it is vulnerable."
+        }
+      ]
     },
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "Accessible PDF Form",
-      "link": "#",
-      "decscription": "As many national governments update their accessibility policies and standards (including the U.S. Section 508 and 255), adopting WCAG 2.0 and WAI’s other accessibility standards provides international harmony."
+      "title": "Mobile Application Security Assessment and Audit",
+      "list1": [
+        {
+          "desc": "With increasing demand in business and service, mobile has crossed the stage of just a communication tool across the world. This has given rise to security threats for sensitive information in mobile apps, that continuously evolve and cannot be opposed with a single method, hence multi-layered mobile app security is needed."
+        },
+        {
+          "desc": "We help you comply with regulations and allow you to expand to other types of application security testing within the same environment."
+        }
+      ]
     },
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "Accessible Word",
-      "link": "#",
-      "decscription": "In 1999 the Web Accessibility Initiative, a project by the World Wide Web Consortium (W3C), published the Web Content Accessibility Guidelines WCAG 1.0."
+      "title": "Reasons for Mobile App Security Assessment",
+      "list2": [
+        {
+          "desc": "Data storage of sensitive, important or not storing at all"
+        },
+        {
+          "desc": "Appropriate usage of encryption tools"
+        },
+        {
+          "desc": "Authentic validation of Third-party tools"
+        },
+        {
+          "desc": "Running security tests and scanning security code using security tools and more"
+        }
+      ]
+    },
+    {
+      "title": "Why Choose Us?",
+      "list2": [
+        {
+          "desc": "Our well-grounded support in API encryption and using algorithms will ensure to safeguarding of your application’s code."
+        },
+        {
+          "desc": "We secure Database encryption processes and back-end network connections with the use of containerization."
+        },
+        {
+          "desc": "To secure your application we identify, authenticate, and provide authorization measures."
+        },
+        {
+          "desc": "We enable mobile encryption policy and provide security to consumer data."
+        },
+        {
+          "desc": "Maintain consistency of your app software."
+        }
+      ]
     }
   ]
 }

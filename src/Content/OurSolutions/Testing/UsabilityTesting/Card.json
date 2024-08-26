@@ -14,55 +14,47 @@
       "title": "Moderated or Unmoderated",
       "list1": [
         {
-          "desc": ""
+          "desc": "Moderated testing is to guide the users physically or virtually to participate in answering questions may have ask-follow up questions and record observations during the test. Unmoderated test is the use of usability tools to record their actions and responses. These two different approaches help your business for better reach to a real-end audience and their preferences in using your product."
         }
       ]
     },
     {
-      "title": "Component testing :",
+      "title": "Remote or In-person",
       "list1": [
         {
-          "desc": ""
+          "desc": "To test entirely at different locations we use remote usability test with the help of tools or software that allows users to share the screen and record their responses. At a physical location, we perform an In-person usability test usually at a usability lab or any other research space. This is mostly used for products that require safety considerations, Supervision during use or physical testing. So far we are experts in Remote testing maximizing user research minimizing cost-effective solutions and allocating dedicated teams to record the responses and actions in order to provide custom solutions as per the customer's satisfaction and needs."
         }
       ]
     },
     {
-      "title": "System testing :",
+      "title": "What do we do for you?",
       "list1": [
         {
-          "desc": ""
-        }
-      ]
-    },
-    {
-      "title": "Integration testing :",
-      "list1": [
+          "desc": "In Trendsoft Tech We study the product or website you want to test, pick the study’s task, set a standard of path approach, delegate roles, find your participants, and analyze your data. It involves direct/ remote observation and interaction during testing sessions and all actions are recorded and actually performed in real life. Our coverage in usability testing"
+        },
         {
-          "desc": ""
-        }
-      ]
-    },
-    {
-      "title": "User Acceptance testing :",
-      "list1": [
+          "desc": "Assign Facilitator and researchers"
+        },
         {
-          "desc": ""
-        }
-      ]
-    },
-    {
-      "title": "Regression Testing :",
-      "list1": [
+          "desc": "Remove blinders"
+        },
         {
-          "desc": ""
-        }
-      ]
-    },
-    {
-      "title": "Smoke Testing :",
-      "list1": [
+          "desc": "Direct users to perform tasks"
+        },
         {
-          "desc": ""
+          "desc": "Compile data and suggest changes"
+        },
+        {
+          "desc": "Measures engagement and validates the data"
+        },
+        {
+          "desc": "Provide user insights"
+        },
+        {
+          "desc": "Discovers user’s behaviour and preferences"
+        },
+        {
+          "desc": "Enhance quality and opportunities to improve the design"
         }
       ]
     }

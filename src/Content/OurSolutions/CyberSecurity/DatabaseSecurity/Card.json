@@ -1,26 +1,133 @@
 {
-  "title": "Database Security",
+  "title": "Functional Testing",
+  "img": "/Assets/CyberSecurity/Database.svg",
+
+  "desc": "A data security solution is not idle in the background, with refreshing impact, that meets threats head-on and picks up when conventional security leaves off, hence an enlightened and broad-reaching cyber security is needed for today's organizations in a proactive approach of identifying risks and defending data sooner.",
   "list": [
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "OAccessible PDF / UA",
-      "link": "",
-      "decscription": "WAI’s recent work explores in detail the relationship between designing for people with disabilities and designing for other “non-disabled” user populations who benefit from accessibility, such as:"
+      "title": "Database security framework includes",
+      "list2": [
+        {
+          "desc": "Data constancy"
+        },
+        {
+          "desc": "Automated detection and responses"
+        },
+        {
+          "desc": "Data control measures and prevention"
+        },
+        {
+          "desc": "Adaptive ransomware defense"
+        },
+        {
+          "desc": "Continuos automated data security and protection"
+        },
+        {
+          "desc": "Business progression"
+        }
+      ]
     },
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "Accessible PDF Form",
-      "link": "#",
-      "decscription": "As many national governments update their accessibility policies and standards (including the U.S. Section 508 and 255), adopting WCAG 2.0 and WAI’s other accessibility standards provides international harmony."
+      "title": "Data Masking",
+      "list1": [
+        {
+          "desc": "Ensuring compliance, modern technologies, and Reliable protection data masking can be Static or dynamic determining role-base and location-aware sensitive data."
+        }
+      ]
     },
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "Accessible Word",
-      "link": "#",
-      "decscription": "In 1999 the Web Accessibility Initiative, a project by the World Wide Web Consortium (W3C), published the Web Content Accessibility Guidelines WCAG 1.0."
+      "title": "Dynamic Data Masking",
+      "list1": [
+        {
+          "desc": "Protection of sensitive information authorizing you to give access to the database to third-party holders keeping its content unexposed. This helps users gain live access to your information data without access to sensitive data like in application development and testing, statistics and analysis, outsourcing, or off-shore projects."
+        }
+      ]
+    },
+    {
+      "title": "Static Data Masking",
+      "list1": [
+        {
+          "desc": "Restriction of access to unauthorized users and permanent data jumble. We classify your sensitive, PHI, and PII data and delete it with predefined masking algorithms or custom functions, both on-prem and cloud. This helps in data privacy, eliminates reverse engineering to mask data, high-speed of database cloning and masking, reduces the risk of data leak and breach, and allows multiple masking algorithms and extensive policies."
+        }
+      ]
+    },
+    {
+      "title": "Sensitive Data Recovery",
+      "list1": [
+        {
+          "desc": "We accurately detect and protect sensitive data with data discovery, data search, classification, and management."
+        }
+      ],
+      "list2": [
+        {},
+        {
+          "desc": "Discover wisely through automatic detection of relationships between tables that contain sensitive PII or PHI data using Database Activity. Monitoring, existing foreign keys, constraints in the table’s definition, and statistics from the database."
+        },
+        {
+          "desc": "Ensure Compliance with industry regulations including HIPAA, PCI DSS, SOX, GLBA, and more. We apply security rules for detected columns with high-risk data across all platforms."
+        },
+        {
+          "desc": "Reduce risk for database objects that contain sensitive data to quickly create security, audit, and masking rules. We Classify and categorize sensitive data and determine required content protection."
+        }
+      ]
+    },
+    {
+      "title": "Vulnerability Assessment",
+      "list1": [
+        {
+          "desc": "We keep your database secure with vulnerability assessment solutions"
+        }
+      ],
+      "list2": [
+        {
+          "desc": "Secure your sensitive data and find suspicious actions using SQL injections, SQL queries, and data comply with CIS and DISA. If we detect prohibited queries or bad code, it blocks database access attempts and informs you via email, SNMP, or instant messengers."
+        },
+        {
+          "desc": "Put-front any potential data vulnerability that enables real-time tracking of all user actions and all changes made to the database with timely reporting. Continuous database monitoring helps to detect data breach preparations, and a set of security rules is used to control this process."
+        },
+        {
+          "desc": "Meet regulatory requirements including HIPPA, PCI DSS, SOX, GLBA, and more. Manage sensitive data with high risk providing full compliance with database vulnerability assessment reports."
+        }
+      ]
+    },
+    {
+      "title": "Database Monitoring and audit",
+      "list1": [
+        {
+          "desc": "User activity in your databases on-prem and in the cloud, increase the visibility of user actions and ensure compliance. Advanced granular reporting, SIEM integration."
+        }
+      ]
+    },
+    {
+      "title": "Database firewall",
+      "list1": [
+        {
+          "desc": "A homespun control overactive security of databases, detection of suspicious database user behavior, and prevention of external and internal attacks on-prem and in the cloud with Trendsoft security proxy."
+        }
+      ]
+    },
+    {
+      "title": "Why Us ?",
+      "list2": [
+        {
+          "desc": "We control data breaches that do not affect your business reputation and your brand."
+        },
+        {
+          "desc": "Regular database security audits"
+        },
+        {
+          "desc": "Continual software update"
+        },
+        {
+          "desc": "We use strong and unique passwords"
+        },
+        {
+          "desc": "Dig up hidden flaws in code"
+        },
+        {
+          "desc": "Extensive determined report on why and what with implemented Database security."
+        }
+      ]
     }
   ]
 }
