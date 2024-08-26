@@ -24,10 +24,13 @@ export default function Footer() {
         </div>
 
         <div className="space-y-2 w-full">
-          <h2 className="md:text-[20px] text-[14px] font-normal">
+          <h2
+            className="md:text-[20px] text-[14px] font-normal"
+            id="QuickLinks"
+          >
             Quick Links
           </h2>
-          <ul className="space-y-1">
+          <ul className="space-y-1" aria-labelledby="QuickLinks">
             <li className="">
               <a
                 href="/TrendSoft/WhoWeServe"
@@ -66,10 +69,13 @@ export default function Footer() {
         </div>
 
         <div className="space-y-2 w-full">
-          <h2 className="md:text-[20px] text-[14px] font-normal">
+          <h2
+            className="md:text-[20px] text-[14px] font-normal"
+            id="ContactInfo"
+          >
             Contact Info
           </h2>
-          <ul className="space-y-1">
+          <ul className="space-y-1" aria-labelledby="ContactInfo">
             <li className="">
               <a
                 href="mailto:info@trendsofttech.com"

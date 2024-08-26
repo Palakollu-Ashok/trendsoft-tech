@@ -1,4 +1,3 @@
-import React from "react";
 import data from "../../Content/Home/OurStrengths.json";
 export default function OurStrengths() {
   return (

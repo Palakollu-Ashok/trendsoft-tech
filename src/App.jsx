@@ -25,9 +25,11 @@ import PrivacyPolicy from "./Components/GetStarted/PrivacyPolicy";
 import Career from "./Components/Career/Career";
 import WhoWeServePage from "./Components/Pages/WhoWeServePage";
 import CareerPage from "./Components/Pages/CareerPage";
+import SkipToMainContent from "./Components/Common/SkipToMainContent";
 function App() {
   return (
     <>
+      <SkipToMainContent />
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
