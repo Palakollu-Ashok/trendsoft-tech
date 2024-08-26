@@ -1,26 +1,85 @@
 {
-  "title": "Document Accessibility",
+  "title": "Functional Testing",
+  "desc": "Automated Functional testing for upgrade quality and speedy go-to-market. In success or failure, Customer experience plays a vital role, we focus on performing end-to-end functional and non-functional testing for your mobile, web, and e-commerce, applications or for enterprise solutions such as CRM, ERP, and more.",
   "list": [
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "OAccessible PDF / UA",
-      "link": "",
-      "decscription": "WAI’s recent work explores in detail the relationship between designing for people with disabilities and designing for other “non-disabled” user populations who benefit from accessibility, such as:"
+      "title": "FUNCTIONAL TESTING ",
+      "list1": [
+        {
+          "desc": "Trendsoft Tech functional testing methodology includes inputs connected to the probability or chance of business risk, technical risk, and project risk to ensure the most optimal testing that saves cost and time."
+        },
+        {
+          "desc": "A Requirements assessment framework (RAF) lucidity defects in the software life cycle requirement phase."
+        },
+        {
+          "desc": "A Test Requirements Traceability Matrix (TRTM) to ensure bi-directional traceability."
+        },
+        {
+          "desc": "Comprehensive Test Metrics that ensure transparency & visibility with unit testing, defect trends, testing productivity, process quality, and testing progress."
+        },
+        {
+          "desc": "Every day, weekly, and monthly status reports with in-depth analysis of test execution rank and deficiency, leveraging a variety of models and techniques to publish actionable dashboards and reports."
+        },
+        {
+          "desc": "All testing services are customized to fit the client’s lifecycle model and environment to offer seamless integration and conduct optimized testing while ensuring functional coverage."
+        }
+      ]
     },
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "Accessible PDF Form",
-      "link": "#",
-      "decscription": "As many national governments update their accessibility policies and standards (including the U.S. Section 508 and 255), adopting WCAG 2.0 and WAI’s other accessibility standards provides international harmony."
+      "title": "Unit Testing :",
+      "list1": [
+        {
+          "desc": "Executing at the early stages of development, unit testing helps in the reduction of remarkable costs in defect fixing. Techniques used in testing include boundary value analysis, all-edge coverage, decision coverage, and statement coverage."
+        }
+      ]
     },
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "Accessible Word",
-      "link": "#",
-      "decscription": "In 1999 the Web Accessibility Initiative, a project by the World Wide Web Consortium (W3C), published the Web Content Accessibility Guidelines WCAG 1.0."
+      "title": "Component testing :",
+      "list1": [
+        {
+          "desc": "Component testing involves testing various software modules in isolation to identify the tests whether the components work together as expected after integrating with other components or not."
+        }
+      ]
+    },
+    {
+      "title": "System testing :",
+      "list1": [
+        {
+          "desc": "This end-to-end testing involves determining that all the functional and business requirements are fulfilled. This also identifies any performance, functionality, or compatibility issues, decreasing the overall delivery time of the software."
+        }
+      ]
+    },
+    {
+      "title": "Integration testing :",
+      "list1": [
+        {
+          "desc": "Integration testing validates that every component communicates and works together in a group to complete the software to ensure it functions appropriately."
+        }
+      ]
+    },
+    {
+      "title": "User Acceptance testing :",
+      "list1": [
+        {
+          "desc": "Understanding the acceptance rate of your software by the end user. Performed after system testing, this black-box testing technique aims to ensure that client software requirements and needs are specified by the end users. This testing ensures that your application is accepted rapidly by the users, increasing your overall growth rate."
+        }
+      ]
+    },
+    {
+      "title": "Regression Testing :",
+      "list1": [
+        {
+          "desc": "Regression testing ensures that any code modification does not introduce new issues to the software. It also fixes the implementation of new features that can bypass existing functionality."
+        }
+      ]
+    },
+    {
+      "title": "Smoke Testing :",
+      "list1": [
+        {
+          "desc": "As the practice of testing electronic equipment, smoke testing is performed to understand whether the new code is stable enough to be tested further or not."
+        }
+      ]
     }
   ]
 }

@@ -1,26 +1,110 @@
 {
-  "title": "In Design Accessibility",
+  "title": "InDesign Accessibility",
+  "desc": "Trendsoft supports accessible cross-media platforms, allowing to export of InDesign documents to PDF, HTML, XHTML, and XML. We also allow you to add tags and alternative text attributes to InDesign documents that support the accessible production foregoing exported formats. We provide correctly tagged and optimized screen readers and other assistive technology. With the help of InDesign Accessibility, we deliver the defining structure and enable you to export files quicker when you need to generate a revised version of your PDFs.",
   "list": [
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "Logical heading & structure:",
-      "link": "",
-      "decscription": "WAI’s recent work explores in detail the relationship between designing for people with disabilities and designing for other “non-disabled” user populations who benefit from accessibility, such as:"
+      "title": "Why Accessibility Matters:",
+      "list1": [
+        {
+          "desc": "Accessibility isn't just a legal requirement; it's a commitment to inclusivity and equal access for all. In an increasingly digital world, making your content accessible ensures that everyone, regardless of their abilities, can engage with and benefit from your materials. By prioritizing accessibility, you enhance your brand's reputation, expand your audience, and contribute to a more inclusive society."
+        }
+      ]
     },
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "Color Contrast",
-      "link": "#",
-      "decscription": "As many national governments update their accessibility policies and standards (including the U.S. Section 508 and 255), adopting WCAG 2.0 and WAI’s other accessibility standards provides international harmony."
+      "title": "Logical heading & structure:",
+      "list1": [
+        {
+          "desc": "We ensure to use headings and structure your text in a logical way making it easier for people with disabilities using screen readers to navigate your document."
+        }
+      ]
     },
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "Alternative text for images:",
-      "link": "#",
-      "decscription": "In 1999 the Web Accessibility Initiative, a project by the World Wide Web Consortium (W3C), published the Web Content Accessibility Guidelines WCAG 1.0."
+      "title": "Color Contrast",
+      "list1": [
+        {
+          "desc": "We make sure that relevant contrast exists between the text and the background."
+        }
+      ]
+    },
+    {
+      "title": "Alternative text for images:",
+      "list1": [
+        {
+          "desc": "We allow to use of alternative text for all images, charts, and graphs. We ensure that a clear description or alt text is provided for the objects/ images in your document."
+        }
+      ]
+    },
+    {
+      "title": "Anchor to images:",
+      "list1": [
+        {
+          "desc": "Anchors are used to add some elegance to your InDesign images. It gives a more waxed look but also allows screen readers to read images in the flow of text."
+        }
+      ]
+    },
+    {
+      "title": "Adding Bookmarks:",
+      "list1": [
+        {
+          "desc": "Bookmarks are a great way to add navigation to your InDesign documents. We allow you to link to specific pages or sections of your document, making it easy for your readers."
+        }
+      ]
+    },
+    {
+      "title": "Adding Metadata:",
+      "list1": [
+        {
+          "desc": "To keep track of your work and ensure your files are properly organized into InDesign files. Metadata is simply data about your content, and it allows you to track things that created a file, when it was created, and what software was used to create it."
+        }
+      ]
+    },
+    {
+      "title": "Semantic Formatting:",
+      "list1": [
+        {
+          "desc": "Our experts use appropriate styles and tags in InDesign to ensure the logical reading order and proper structuring of your content, creating a seamless experience for assistive technology users."
+        }
+      ]
+    },
+    {
+      "title": "Accessible Hyperlinks:",
+      "list1": [
+        {
+          "desc": "Hyperlinks are made meaningful by using descriptive text, making navigation more intuitive for all users."
+        }
+      ]
+    },
+    {
+      "title": "PDF Accessibility:",
+      "list1": [
+        {
+          "desc": "If your InDesign documents are exported as PDFs, we ensure that the PDFs retain their accessibility features, making them usable across platforms."
+        }
+      ]
+    },
+    {
+      "title": "Testing and Validation:",
+      "list1": [
+        {
+          "desc": "Using Adobe Acrobat Pro's Accessibility Checker to review and fix accessibility issues. Testing the PDF with screen readers to ensure proper reading order and compatibility."
+        }
+      ]
+    },
+    {
+      "title": "Structured Document Creation:",
+      "list1": [
+        {
+          "desc": "The World Wide Web Consortium (W3C) develops international standards for the Web: HTML, CSS, and many more."
+        }
+      ]
+    },
+    {
+      "title": "WAI:",
+      "list1": [
+        {
+          "desc": "We start by organizing your content with proper headings, lists, and consistent formatting. This enhances navigation and comprehension for screen reader users."
+        }
+      ]
     }
   ]
 }

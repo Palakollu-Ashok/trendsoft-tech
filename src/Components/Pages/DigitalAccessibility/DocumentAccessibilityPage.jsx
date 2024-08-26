@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../../../Content/OurSolutions/DigitalAccessibility/DocumentAccess/Card.json";
+import data1 from "../../../Content/OurSolutions/DigitalAccessibility/DocumentAccess/Card.json";
 import CommonCard from "../../Common/CommonCard";
 import BgImg from "../../../assets/Home/Home1.jpg";
 import Img from "../../../assets/1.webp";
@@ -50,8 +50,8 @@ export default function DocumentAccessibilityPage() {
         <div className="">
           <h2 className=" py-3 md:px-5 px-2">{data.title}</h2>
           <div className="grid lg:grid-cols-3 sm:pb-5 pb-2 md:px-5 px-2   sm:grid-cols-2  grid-cols-1 w-full gap-8 h-full ">
-            {data.list.map((d, i) => (
-              <CommonCard
+            {data1.list.map((d, i) => (
+              <CommonCard 
                 key={i}
                 img={d.img}
                 heading={d.heading}

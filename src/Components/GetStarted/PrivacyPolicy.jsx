@@ -12,7 +12,6 @@ export default function PrivacyPolicy() {
           <li className="pb-3 space-y-2" key={i}>
             <h2 className="text-[rgb(12,35,70)] md:text-[20px] sm:text-[16px] text-[12px]  font-semibold font-Nunito">
               {d.i}
-              {". "}
               {d.title}
             </h2>
             {d.list1.map((d2, i1) => (

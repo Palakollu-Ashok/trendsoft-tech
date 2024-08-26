@@ -1,26 +1,30 @@
 {
   "title": "Web Accessibility",
+  "desc": "With web accessibility service Trendsoft ensures that your web content is accessible for every user. Our practice of making websites usable for all users including those with disabilities, impairments, and limitations. We make sure that people who experience difficulties or limitations have the same or similar experience as those who do not. We deliver your website – and its content – more user-friendly and easier to understand for all visitors.",
   "list": [
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "OVERLAP WITH OLDER USERS, MOBILE USERS, AND OTHER USER GROUPS",
-      "link": "",
-      "decscription": "WAI’s recent work explores in detail the relationship between designing for people with disabilities and designing for other “non-disabled” user populations who benefit from accessibility, such as:"
-    },
-    {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "COMPREHENSIVE INTERNATIONAL STANDARDS",
-      "link": "#",
-      "decscription": "As many national governments update their accessibility policies and standards (including the U.S. Section 508 and 255), adopting WCAG 2.0 and WAI’s other accessibility standards provides international harmony."
-    },
-    {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "Standards we follow under WCAG",
-      "link": "#",
-      "decscription": "In 1999 the Web Accessibility Initiative, a project by the World Wide Web Consortium (W3C), published the Web Content Accessibility Guidelines WCAG 1.0."
+      "i": 1,
+      "title": "SECTION 508 TESTING SOLUTIONS",
+      "list1": [
+        {
+          "desc": "Expert guidance to make your website or product Section 508 compliant and create detailed Voluntary Product Accessibility Templates (VPAT)."
+        },
+        {
+          "desc": "Section 508 standard of the Rehabilitation Act 1973 requires all electronic and information technology developed, procured, maintained, or used by the federal government to be accessible to people with disabilities. The Section 508 Standards apply to electronic and information technology procured by the federal government, including computer hardware and software, websites, multimedia such as video, phone systems, and copiers."
+        },
+        {
+          "desc": "Section 508 compliance does not apply to federal agencies alone but also to private companies, financial industries, healthcare, legal, or any other organization that does business with a federal agency."
+        },
+        {
+          "desc": "TRENDSOFT TECHNOLOGIES PVT LTD. Section 508 Testing solutions, assist your organization to ensure that your websites, products, and services are fully Section 508 compliant. With a proper evaluation of your accessibility needs, our team works with you closely to chart a path to make your website or product Section 508 compliant."
+        },
+        {
+          "desc": "We go beyond automated Section 508 testing and ensure a thorough manual check of your website and other digital products. We provide you with an in-depth report of accessibility vulnerabilities to ensure that your website or product meets Section 508 compliance."
+        },
+        {
+          "desc": "In addition, our testing team also helps you with a detailed VPAT creation. Based on your needs, we perform an audit to identify the accessibility issues and prioritize them. We help you improve the overall Section 508 compliance of your website or product and create a VPAT that discloses the state of accessibility."
+        }
+      ]
     }
   ]
 }

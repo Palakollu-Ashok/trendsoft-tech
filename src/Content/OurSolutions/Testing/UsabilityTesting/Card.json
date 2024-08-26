@@ -1,26 +1,70 @@
 {
-  "title": "Document Accessibility",
+  "title": "Usability Testing",
+  "desc": "Trendsoft Tech builds real comprehension from Real world environment. We evaluate user experience when interacting with a Website or Mobile application for better user experience and expose your product to real people. This identifies problems that you may have missed asking real users rather than the resources of developers or testers. The results, success rate, and outlay taken to complete the tasks are then analyzed to identify the extensive issues and areas of improvement. We aim to create a product with a positive experience that meets customer objectives.",
   "list": [
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "OAccessible PDF / UA",
-      "link": "",
-      "decscription": "WAI’s recent work explores in detail the relationship between designing for people with disabilities and designing for other “non-disabled” user populations who benefit from accessibility, such as:"
+      "title": "Quantitative or Qualitative",
+      "list1": [
+        {
+          "desc": "Understanding user experiences, feeling and thoughts while using a product we think-aloud study where users verbalize their thoughts. We gather qualitative data through observations and surveys whereas Quantitative data is gathered from testing focusing on collecting analytical and numerical data like success rate, task completion times and error rates. Through qualitative and quantitative data we identify patterns, make predictions and generalize any findings that meet the customer satisfaction in using your product."
+        }
+      ]
     },
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "Accessible PDF Form",
-      "link": "#",
-      "decscription": "As many national governments update their accessibility policies and standards (including the U.S. Section 508 and 255), adopting WCAG 2.0 and WAI’s other accessibility standards provides international harmony."
+      "title": "Moderated or Unmoderated",
+      "list1": [
+        {
+          "desc": ""
+        }
+      ]
     },
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "Accessible Word",
-      "link": "#",
-      "decscription": "In 1999 the Web Accessibility Initiative, a project by the World Wide Web Consortium (W3C), published the Web Content Accessibility Guidelines WCAG 1.0."
+      "title": "Component testing :",
+      "list1": [
+        {
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "title": "System testing :",
+      "list1": [
+        {
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "title": "Integration testing :",
+      "list1": [
+        {
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "title": "User Acceptance testing :",
+      "list1": [
+        {
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "title": "Regression Testing :",
+      "list1": [
+        {
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "title": "Smoke Testing :",
+      "list1": [
+        {
+          "desc": ""
+        }
+      ]
     }
   ]
 }

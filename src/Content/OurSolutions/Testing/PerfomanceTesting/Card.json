@@ -1,26 +1,81 @@
 {
-  "title": "Document Accessibility",
+  "title": "Performance Testing",
+  "desc": "Trendsoft with performance testing ensures that your software can handle real-world usage, no matter the number of users accessing it or how complex the task is performing. We are experts in providing cutting-edge solutions to global clients.",
   "list": [
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "OAccessible PDF / UA",
-      "link": "",
-      "decscription": "WAI’s recent work explores in detail the relationship between designing for people with disabilities and designing for other “non-disabled” user populations who benefit from accessibility, such as:"
+      "title": "Our key website/mobile app testing differentiators include:",
+      "list1": [
+        {
+          "desc": "Comprehensive analysis and guidance for performance improvements."
+        },
+        {
+          "desc": "Cost optimization model evaluation maximum ROI"
+        },
+        {
+          "desc": "Partnerships and leagues that enable advice for the right tools, tailored solutions, and R&D resourcefulness."
+        },
+        {
+          "desc": "We focus on in-depth analysis at the element level, dynamic profiling, and sustainability evaluation to help isolate bottlenecks and reach client heights."
+        },
+        {
+          "desc": "We provide performance analyzer tools to assemble initial interfaces on both the client and server side."
+        },
+        {
+          "desc": "We offer flexible team availability to meet the performance and load testing needs on the client side."
+        }
+      ]
     },
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "Accessible PDF Form",
-      "link": "#",
-      "decscription": "As many national governments update their accessibility policies and standards (including the U.S. Section 508 and 255), adopting WCAG 2.0 and WAI’s other accessibility standards provides international harmony."
+      "title": "Mobile performance testing",
+      "list1": [
+        {
+          "desc": "We skillfully conduct performance testing for mobile/web applications with a dedicated pool of resources focusing on the software’s stability and operation in various environment platforms."
+        }
+      ]
     },
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
-      "text": "View More",
-      "heading": "Accessible Word",
-      "link": "#",
-      "decscription": "In 1999 the Web Accessibility Initiative, a project by the World Wide Web Consortium (W3C), published the Web Content Accessibility Guidelines WCAG 1.0."
+      "title": "Website performance testing",
+      "list1": [
+        {
+          "desc": "With a team of testers, we perform web performance testing to regulate the system’s overall performance and responsiveness under typical fill-up."
+        }
+      ]
+    },
+    {
+      "title": "API Performance testing",
+      "list1": [
+        {
+          "desc": "To handle an expected outcome, we efficiently assess an API’s ability to reduce the performance risk and detect bottlenecks early."
+        }
+      ]
+    },
+    {
+      "title": "Web-server performance testing",
+      "list1": [
+        {
+          "desc": "We measure the web server’s response time and availability using different key performance indicators (KPIs)"
+        }
+      ]
+    },
+    {
+      "title": "Our Capabilities",
+      "list1": [
+        {
+          "desc": "Load and scalability testing"
+        },
+        {
+          "desc": "Performance measurement"
+        },
+        {
+          "desc": "Use case creation"
+        },
+        {
+          "desc": "Web log analysis"
+        },
+        {
+          "desc": "Results analysis and recommendations"
+        }
+      ]
     }
   ]
 }
