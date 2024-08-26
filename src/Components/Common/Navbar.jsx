@@ -4,12 +4,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { RxCross2 } from "react-icons/rx";
 import logo from "../../assets/logoB.avif";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import OurSolutions from "./OurSolutions";
-import { Popover } from "@headlessui/react";
+import { Disclosure, Popover } from "@headlessui/react";
 
 const Navbar = () => {
   const [opened, setOpened] = useState(false);
   const menuRef = useRef(null);
+  const lastFocusableRef = useRef(null);
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
@@ -25,96 +25,129 @@ const Navbar = () => {
     };
   }, []);
 
+  useEffect(() => {
+    if (opened && lastFocusableRef.current) {
+      lastFocusableRef.current.focus();
+    }
+  }, [opened]);
+
   const handleNav = () => {
     setOpened(!opened);
   };
 
+  const handleLastItemKeyDown = (e, close, nextSelector) => {
+    if (e.key === "Tab" && !e.shiftKey) {
+      e.preventDefault();
+      close();
+      setOpened(false);
+      const nextElement = document.querySelector(nextSelector);
+      if (nextElement) {
+        nextElement.focus();
+      }
+    }
+  };
+
   return (
-    <div className="sticky top-0 z-40 bg-light  bg-yellow-50   w-full  duration-500">
-      <div className="flex gap-5 justify-between items-center md:py-10 md:p-2 h-[12vh]  md:px-6 xl:px-10 3xl:px-16 px-3 ">
+    <div className="sticky top-0 z-40 bg-light bg-yellow-50 w-full duration-500">
+      <div className="flex gap-5 justify-between items-center md:py-10 md:p-2 h-[12vh] md:px-6 xl:px-10 3xl:px-16 px-3">
         <div>
-          <a href="/" className="flex gap-0.5 justify-center items-center  ">
+          <a href="/" className="flex gap-0.5 justify-center items-center">
             <img
               src={logo}
               alt="Template logo"
-              className="md:h-14 h-10 w-full "
+              className="md:h-14 h-10 w-full"
             />
           </a>
         </div>
 
-        <div className="flex justify-end items-center    w-full   ">
+        <div className="flex justify-end items-center w-full">
           <div className="md:hidden md:ml-4">
             <button
               onClick={handleNav}
+              aria-label={opened ? "Close menu" : "Open menu"}
               className="text-light flex bg-[rgb(12,28,56)]"
             >
               {opened ? (
-                <RxCross2 className=" md:h-14 h-10 w-8 p-1 " />
+                <RxCross2 className="md:h-14 h-10 w-8 p-1" />
               ) : (
-                <TbMenu2 size={32} className="md:h-14 h-10 p-1 w-8 " />
+                <TbMenu2 size={32} className="md:h-14 h-10 p-1 w-8" />
               )}
             </button>
           </div>
 
-          <div className=" md:block hidden  w-full">
-            <ul className="flex  justify-end  gap-4 ">
+          <div className="md:block hidden w-full">
+            <ul className="flex justify-end gap-4">
               <li className="flex items-center">
                 <Popover className="relative">
-                  <Popover.Button className="inline-flex items-center text-sm/6  text-white shadow-inner shadow-white/10 focus:outline-none   data-[focus]:outline-1 data-[focus]:outline-white">
-                    <li className="flex items-center">
-                      <span className="sr-only">menu </span>
-                      <a
-                        href="/"
-                        className=" flex items-center  md:text-[12px] text-[14px] lg:text-[16px] py-1"
+                  {({ open, close }) => (
+                    <>
+                      <Popover.Button
+                        className="inline-flex items-center focus:border-2 focus:rounded-md focus:border-dark text-sm/6 text-dark shadow-inner shadow-white/10 focus:outline-none"
+                        aria-expanded={open}
                       >
-                        Our Solutions
-                        <MdKeyboardArrowDown className="text-3xl group-hover:rotate-180" />
-                      </a>
-                    </li>
-                  </Popover.Button>
+                        <span className="sr-only">menu</span>
+                        <p className="flex items-center md:text-[12px] text-[14px] lg:text-[16px] py-1">
+                          Our Solutions
+                          <MdKeyboardArrowDown
+                            className={`text-2xl ${open ? "rotate-180" : ""}`}
+                          />
+                        </p>
+                      </Popover.Button>
 
-                  <ul className="list-none w-full">
-                    <Popover.Panel
-                      transition
-                      anchor="bottom end"
-                      className=" md:z-50 z-50 bg-white text-dark  origin-top-right rounded-xl border border-white/5  p-1 text-sm/6  transition duration-100 ease-out [--anchor-gap:var(--spacing-1)] focus:outline-none data-[closed]:scale-95 data-[closed]:opacity-0 absolute"
-                    >
-                      <li className="list-none">
-                        <a
-                          href="/DigitalAccessibility"
-                          className="group flex w-full md:text-[14px] hover:bg-dark/5 items-center gap-2 rounded-lg py-1.5 px-3 "
-                        >
-                          Digital Accessibility Services
-                        </a>
-                      </li>
-                      <li className="list-none">
-                        <a
-                          href="/TrendSoft/oursolutions/Testing"
-                          className="group flex w-full md:text-[14px] hover:bg-dark/5 items-center gap-2 rounded-lg py-1.5 px-3 "
-                        >
-                          Testing Services
-                        </a>
-                      </li>
-                      <li className="list-none">
-                        <a
-                          href="/TrendSoft/oursolutions/CyberSecurity"
-                          className="group flex w-full md:text-[14px] hover:bg-dark/5 items-center gap-2 rounded-lg py-1.5 px-3 "
-                        >
-                          Cyber Security
-                        </a>
-                      </li>
-                    </Popover.Panel>
-                  </ul>
+                      <Popover.Panel
+                        transition
+                        anchor="bottom end"
+                        className="md:z-50 z-50 bg-white text-dark origin-top-right rounded-xl border border-white/5 p-1 text-sm/6 transition duration-100 ease-out absolute"
+                      >
+                        <ul className="list-none w-full">
+                          <li>
+                            <a
+                              href="/DigitalAccessibility"
+                              tabIndex={0}
+                              className="group flex w-full md:text-[14px] hover:bg-dark/5 items-center gap-2 rounded-lg py-1.5 px-3"
+                            >
+                              Digital Accessibility Services
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="/TrendSoft/oursolutions/Testing"
+                              tabIndex={0}
+                              className="group flex w-full md:text-[14px] hover:bg-dark/5 items-center gap-2 rounded-lg py-1.5 px-3"
+                            >
+                              Testing Services
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="/TrendSoft/oursolutions/CyberSecurity"
+                              tabIndex={0}
+                              className="group flex w-full md:text-[14px] hover:bg-dark/5 items-center gap-2 rounded-lg py-1.5 px-3"
+                              onKeyDown={(e) =>
+                                handleLastItemKeyDown(
+                                  e,
+                                  close,
+                                  '[href="/TrendSoft/WhoWeServe"]'
+                                )
+                              }
+                            >
+                              Cyber Security
+                            </a>
+                          </li>
+                        </ul>
+                      </Popover.Panel>
+                    </>
+                  )}
                 </Popover>
               </li>
 
               <li className="flex items-center">
                 <a
                   href="/TrendSoft/WhoWeServe"
-                  className=" flex items-center  text-[12px] lg:text-[16px]"
+                  className="flex items-center text-[12px] lg:text-[16px]"
+                  ref={lastFocusableRef}
                 >
                   Who we Serve
-                  <MdKeyboardArrowDown className="text-3xl group-hover:rotate-180" />
                 </a>
               </li>
               <li className="flex items-center">
@@ -129,13 +162,12 @@ const Navbar = () => {
               <li className="flex items-center">
                 <a
                   href="/TrendSoft/AboutPage"
-                  className="text-[12px] lg:text-[16px]  flex items-center   "
+                  className="text-[12px] lg:text-[16px] flex items-center"
                 >
                   About
-                  <MdKeyboardArrowDown className="text-3xl group-hover:rotate-180" />
                 </a>
               </li>
-              <li className="flex items-center border-2 p-1 border-red ">
+              <li className="flex items-center border-2 p-1 border-red">
                 <a
                   href="/TrendSoft/ContactUs"
                   className="text-[12px] lg:text-[16px]"
@@ -155,36 +187,83 @@ const Navbar = () => {
             animate={{ x: 0 }}
             exit={{ x: "-100%" }}
             transition={{ stiffness: 200, damping: 20 }}
-            className="fixed top-0 z-50 left-0 w-2/3 h-screen md:hidden block  bg-[rgb(12,28,56)] text-lg  space-y-6"
+            className="fixed top-0 z-50 left-0 w-2/3 h-screen md:hidden block bg-[rgb(12,28,56)] text-lg space-y-6"
           >
-            <div className="flex flex-col text-light  px-2  space-y-4 font-Nunito">
+            <div className="flex flex-col text-light px-2 space-y-4 font-Nunito">
               <ul className="[&_li]:text-light">
                 <li>
-                  <a href="/TrendSoft/WhoWeServe">
-                    <span className="  text-[14px]">Who we Serve</span>
+                  <a href="/TrendSoft/WhoWeServe" ref={lastFocusableRef}>
+                    <span className="text-[14px]">Who we Serve</span>
                   </a>
                 </li>
 
                 <li>
-                  <a href="/TrendSoft/Career" className="">
-                    <span className=" text-[14px]">Careers</span>
+                  <a href="/TrendSoft/Career">
+                    <span className="text-[14px]">Careers</span>
                   </a>
                 </li>
 
                 <li>
                   <a href="/TrendSoft/AboutPage">
-                    <span className="  text-[14px]">About</span>
+                    <span className="text-[14px]">About</span>
                   </a>
                 </li>
 
                 <li>
-                  <a href="/TrendSoft/ContactUs" className="">
-                    <span className=" text-[14px]">Get Started</span>
+                  <a href="/TrendSoft/ContactUs">
+                    <span className="text-[14px]">Get Started</span>
                   </a>
                 </li>
 
-                <li className="flex items-center w-full">
-                  <OurSolutions />
+                <li className="w-full">
+                  <Disclosure>
+                    {({ close }) => (
+                      <>
+                        <Disclosure.Button className="flex w-fit">
+                          <li className="flex items-center">
+                            <span className="sr-only">menu </span>
+                            <a className=" flex items-center  md:text-[12px] text-[14px] lg:text-[16px] py-1">
+                              Our Solutions
+                              <MdKeyboardArrowDown className="text-3xl group-hover:rotate-180" />
+                            </a>
+                          </li>
+                        </Disclosure.Button>
+                        <Disclosure.Panel className="px-4 text-white space-y-1">
+                          <li className="list-none">
+                            <a
+                              href="/DigitalAccessibility"
+                              className="group flex w-full md:text-[14px] hover:bg-dark/5 items-center gap-2 rounded-lg py-1.5 px-3"
+                            >
+                              Digital Accessibility Services
+                            </a>
+                          </li>
+                          <li className="list-none">
+                            <a
+                              href="/TrendSoft/oursolutions/Testing"
+                              className="group flex w-full md:text-[14px] hover:bg-dark/5 items-center gap-2 rounded-lg py-1.5 px-3"
+                            >
+                              Testing Services
+                            </a>
+                          </li>
+                          <li className="list-none">
+                            <a
+                              href="/TrendSoft/oursolutions/CyberSecurity"
+                              className="group flex w-full md:text-[14px] hover:bg-dark/5 items-center gap-2 rounded-lg py-1.5 px-3"
+                              onKeyDown={(e) =>
+                                handleLastItemKeyDown(
+                                  e,
+                                  close,
+                                  '[href="/TrendSoft/WhoWeServe"]'
+                                )
+                              }
+                            >
+                              Cyber Security
+                            </a>
+                          </li>
+                        </Disclosure.Panel>
+                      </>
+                    )}
+                  </Disclosure>
                 </li>
               </ul>
             </div>

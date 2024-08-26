@@ -5,7 +5,7 @@ function CommonCard(props) {
 
   return (
     <li className="w-full   font-Nunito my-2 hover:shadow-md duration-300  bg-light h-full">
-      <img src={img} className="sm:h-[250px] h-[200px] w-full " />
+      <img src={img} className="sm:h-[250px] h-[200px] w-full object-cover" />
 
       <div className="md:p-5 p-2">
         <div className=" font-Nunito space-y-4 ">
