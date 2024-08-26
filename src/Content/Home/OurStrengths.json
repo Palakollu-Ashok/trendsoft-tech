@@ -1,0 +1,26 @@
+{
+  "heading": "Our Strength",
+  "list": [
+    {
+      "img": "/Assets/Home/OurStrenth/accessibility1.svg",
+      "title": "24/7 Flexible Resources"
+    },
+    {
+      "img": "/Assets/Home/OurStrenth/s-clock.svg",
+
+      "title": "23+ Years of Experience"
+    },
+    {
+      "img": "/Assets/Home/OurStrenth/savings.png",
+      "title": "40% Cost Savings"
+    },
+    {
+      "img": "/Assets/Home/OurStrenth/users.png",
+      "title": "20+ Clients"
+    },
+    {
+      "img": "/Assets/Home/OurStrenth/staff.png",
+      "title": "60+ Highly Skilled Staff"
+    }
+  ]
+}

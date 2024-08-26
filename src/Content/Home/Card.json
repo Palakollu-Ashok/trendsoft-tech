@@ -1,0 +1,27 @@
+{
+  "title": "Our partner services",
+  "list": [
+    {
+      "img": "/Assets/Home/Card/content-enablement.jpg",
+      "text": "Read More...",
+      "heading": "Digital Accessibility Auditing & Remediations",
+      "link": "/DigitalAccessibility",
+      "decscription": "Digital accessibility is a line of work and legal issue that you can’t spare to ignore. Expanding legal responsibility and digital accessibility compliance for any organization through examining your current digital properties we’re uniquely qualified to ensure your position today and lead improvements into the future."
+    },
+
+    {
+      "img": "/Assets/Home/Card/compliance-and-accessibility.jpg",
+      "heading": "Testing",
+      "text": "Read More...",
+      "link": "/TrendSoft/oursolutions/Testing",
+      "decscription": "We ensure the verification and validation of applications for global enterprises. Meeting the end-user acceptance, our software testing team focuses on testing applications against defined specifications for seamless and robust functionality."
+    },
+    {
+      "img": "/Assets/Home/Card/content-production.png",
+      "heading": "Cyber Security",
+      "text": "Read More...",
+      "link": "/TrendSoft/oursolutions/CyberSecurity",
+      "decscription": "Don’t await the next attack, Make a plan, and discover how to better secure and shelter your data with critical capabilities like secure-by-design architecture, AI-powered threat detection, mastermind recoverability, and more"
+    }
+  ]
+}

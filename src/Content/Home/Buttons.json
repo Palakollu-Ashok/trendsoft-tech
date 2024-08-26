@@ -1,0 +1,19 @@
+{
+  "list": [
+    {
+      "button": "Certificate Of Quality Management System",
+      "img": "/Assets/Home/Download.svg",
+      "link": "/Assets/Files/qmsmanagement.pdf"
+    },
+    {
+      "button": "Certificate Of Udyam Registration",
+      "img": "/Assets/Home/Download.svg",
+      "link": "/Assets/Files/udyamregistration.pdf"
+    },
+    {
+      "button": "Certificate Of Startup India",
+      "img": "/Assets/Home/Download.svg",
+      "link": "/Assets/Files/startup.pdf"
+    }
+  ]
+}

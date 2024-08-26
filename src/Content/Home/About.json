@@ -1,0 +1,26 @@
+{
+  "img": "/Assets/Home/About.jpg",
+  "Title": "About Trendsoft Technologies",
+  "list": [
+    {
+      "description": "We take our captaincy role seriously – Our Audits, Our Remediations, Our software tools, Our Security, and our commitment to helping advance a digital safe world."
+    },
+    {
+      "description": "Trendsoft has helped hundreds of companies from tech startups, retailers, industries, and hotel chains to technology leaders. We are humbled by their trust and appraisal."
+    },
+    {
+      "description": "Let us help your development teams make your website and mobile apps accessible and secure. We can get it done the first time even if they have never done it before. We help in driving global accessibility standards forward. Our team of experts shares a passion for providing equal access to the web regardless of ability. We have helped develop international accessibility guidelines in W3C working groups, Our clients are our showcase of the subject."
+    }
+  ],
+  "list2": [
+    {
+      "learn": "Learn",
+
+      "link": ""
+    },
+    {
+      "learn": "View Brochure",
+      "link": "/Assets/Files/booklet.pdf"
+    }
+  ]
+}

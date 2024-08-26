@@ -1,0 +1,24 @@
+{
+  "list": [
+    {
+      "Name": "Our Solutins",
+      "link": "/"
+    },
+    {
+      "Name": "Who We serve",
+      "link": "/About"
+    },
+    {
+      "Name": "Careers",
+      "link": "/Solutions"
+    },
+    {
+      "Name": "About",
+      "link": "/Blog"
+    },
+    {
+      "Name": "About",
+      "link": "/Blog"
+    }
+  ]
+}
