@@ -1,8 +1,6 @@
 {
   "title": "Thick Client Security",
-
   "img": "/Assets/CyberSecurity/Thickclient.svg",
-
   "list3": [
     {
       "desc": "Trendsoft begins its Thick client security by understanding each applicant's complexities and functionality. These are installed locally on a user’s desktop/ Laptop that can run independently not connected to the internet, unlike web applications, which need an internet connection. Examples of Thick client applications include computer games, web browsers, Music players, and video and chat tools like Zoom, Slack, etc."
@@ -12,7 +10,6 @@
     }
   ],
 
-  "desc": "Trendsoft begins its Thick client security by understanding each applicant's complexities and functionality. These are installed locally on a user’s desktop/ Laptop that can run independently not connected to the internet, unlike web applications, which need an internet connection. Examples of Thick client applications include computer games, web browsers, Music players, and video and chat tools like Zoom, Slack, etc.",
   "list": [
     {
       "title": "Top 10 vulnerability standards we follow under OWASP during Thick client penetration testing",
@@ -48,7 +45,6 @@
           "desc": "Service account roles and permissions (database server, application server, client)"
         }
       ],
-
       "list2": [
         {
           "desc": "Our Thick Client Security Assessment services will focus on identifying the security flaws in our client’s thick client applications. Our assessments start with two approaches like"
@@ -83,7 +79,6 @@
         {
           "desc": "Local files/ registry analysis"
         },
-
         {
           "desc": "Reverse engineering / GUI tampering"
         }

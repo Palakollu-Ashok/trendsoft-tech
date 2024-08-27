@@ -69,20 +69,50 @@ export default function DocumentAccessibilityPage() {
           </h1>
           <p>{data1.desc}</p>
         </div>
-        <ul className="">
-          {data1.list.map((d, i) => (
-            <li className="pb-3 space-y-3" key={i}>
-              <h2 className="text-[rgb(12,35,70)] md:text-[18px] sm:text-[16px] text-[12px]  font-semibold font-Nunito">
-                {d.title}
-              </h2>
-              {d?.list1?.map((d2, i1) => (
+
+        <div>
+          <img src={data1.img} alt="" />
+        </div>
+        <div className="">
+          <div className="md:space-y-5 space-y-3">
+            {data1.list.map((d, i) => (
+              <div className="pb-3 md:space-y-3 space-y-3" key={i}>
+                <h2 className="text-[rgb(12,35,70)] md:text-[18px] sm:text-[16px] text-[12px]  font-semibold font-Nunito">
+                  {d.title}
+                </h2>
+                {d?.list1 && (
+                  <ul className="space-y-1.5">
+                    {d?.list1?.map((d2, i1) => (
+                      <>
+                        <li
+                          key={i1}
+                          className="md:text-[15px] text-[10px] text-paragraph-color tracking-wide  font-Nunito"
+                        >
+                          {d2?.desc}
+                        </li>
+                      </>
+                    ))}
+                  </ul>
+                )}
                 <div>
-                  <p key={i1}>{d2.desc}</p>
+                  <img src="" alt="" />
                 </div>
-              ))}
-            </li>
-          ))}
-        </ul>
+                <div className="space-y-1.5 pb-2">
+                  {d?.list2?.map((d2, i1) => (
+                    <>
+                      <p
+                        key={i1}
+                        className="md:text-[15px] text-[10px] text-paragraph-color tracking-wide  font-Nunito"
+                      >
+                        {d2?.desc}
+                      </p>
+                    </>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </>
   );

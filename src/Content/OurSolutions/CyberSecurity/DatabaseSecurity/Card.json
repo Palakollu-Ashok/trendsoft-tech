@@ -59,7 +59,6 @@
         }
       ],
       "list2": [
-        {},
         {
           "desc": "Discover wisely through automatic detection of relationships between tables that contain sensitive PII or PHI data using Database Activity. Monitoring, existing foreign keys, constraints in the table’s definition, and statistics from the database."
         },

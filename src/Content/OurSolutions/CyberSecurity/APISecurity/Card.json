@@ -1,13 +1,13 @@
 {
   "title": "API Security",
 
-  "img": "/Assets/CyberSecurity/WebApp.svg",
+  "img": "/Assets/CyberSecurity/ApiSecurity.svg",
 
   "desc": "Trendsoft technologies provide continual safety of all APIs using deep discovery and classification of sensitive data to detect all public, private, and shadow APIs to authorize security teams to execute a positive security model.",
   "list": [
     {
       "title": "Continual APIs endpoint security",
-      "list1": [
+      "list2": [
         {
           "desc": "Complete OWASP API coverage"
         },
@@ -18,7 +18,7 @@
     },
     {
       "title": "Five ways bad bots target APIs",
-      "list1": [
+      "list2": [
         {
           "desc": "APIs are everywhere supporting rapid development and deployment for organizations, but as per a recent survey, they also increase attacks on the surface of the organization, here is how these bad bots target APIs."
         }
@@ -26,7 +26,7 @@
     },
     {
       "title": "Scraping",
-      "list1": [
+      "list2": [
         {
           "desc": "Bad bots can be used to scrape the data i.e. sensitive like user data, product information, pricing details, and more that can be used for malicious purposes."
         }
@@ -34,7 +34,7 @@
     },
     {
       "title": "Account Takeover",
-      "list1": [
+      "list2": [
         {
           "desc": "This can be especially dangerous if the API provides access to sensitive data or functionality and can lead to identifying threats or fraud. Account takeover is taking over user accounts by using various techniques, including brute force credential stuffing, Session hacking, and more."
         }
@@ -42,7 +42,7 @@
     },
     {
       "title": "Distributed- Denial-of-service (DDOS)",
-      "list1": [
+      "list2": [
         {
           "desc": "Bad bots can be used to crush APIs with requests and cause them to be unresponsive or even crash disrupting legitimate users’ ability to access the API."
         }
@@ -50,7 +50,7 @@
     },
     {
       "title": "API probing",
-      "list1": [
+      "list2": [
         {
           "desc": "This is not a direct attack, but rather a bad bot that can be used to survey the vulnerabilities that aid attackers in identifying potential vulnerabilities that later can be exploited."
         }
@@ -58,7 +58,7 @@
     },
     {
       "title": "Data Exfiltration",
-      "list1": [
+      "list2": [
         {
           "desc": "Bad bots can be used to exfiltrate the data by calling APIs that return an excessive amount of data more than what is required for the functioning of API."
         }
@@ -66,7 +66,7 @@
     },
     {
       "title": "SIEM Integration",
-      "list1": [
+      "list2": [
         {
           "desc": "SIEM integration is an Enlighted cybersecurity solution that smoothly merges with your existing security infrastructure. This powerful tool allows real-time event reporting, in-depth event information, and customizable rules for security event correlation, providing you with a comprehensive view of your security landscape. Whether you're using Graylog, Splunk, or Microsoft Sentinel, SIEM integration is designed to magnify your security posture and ensure compliance with security standards."
         }
@@ -94,7 +94,7 @@
     },
     {
       "title": "OUR Complete API protection",
-      "list1": [
+      "list2": [
         {
           "desc": "We stop more attacks than anyone else, we see more than anyone else, You acquire: Finer discovery – with smart integration of APIs vs. a long list of duplicate endpoints Finer Threat protection – with perception bridge months of API usage patterns to identify and stop more attack attempts. Finer API hardening – with detailed remediation guidelines based on the attacker’s minor progressive exploits."
         }

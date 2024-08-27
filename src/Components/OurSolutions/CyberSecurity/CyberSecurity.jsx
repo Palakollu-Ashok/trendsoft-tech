@@ -6,7 +6,8 @@ export default function CyberSecurity() {
       id: "1",
       label: "Web App Security",
       content:
-        "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, fugit corporis tempora culpa vitae velit quo, dolores quos laborum ea aut? Ipsa, quaerat? Dicta quaerat porro cum eligendi debitis provident.",
+        "Trendsoft Technologies web application security is all about keeping businesses up and running time keeping your number of potential risks as low as possible. Taking a multi-layered approach to application security, we blend your apps to stay secure while offering utmost user-friendly experiences.",
+
       link1: "learn more",
       link2: "Get A Quote",
       Route: "/TrendSoft/oursolutions/CyberSecurity/WebAccess",
@@ -15,8 +16,7 @@ export default function CyberSecurity() {
     {
       id: "2",
       label: "Mobile App Security",
-      content:
-        "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, fugit corporis tempora culpa vitae velit quo, dolores quos laborum ea aut? Ipsa, quaerat? Dicta quaerat porro cum eligendi debitis provident.",
+      content: "Trendsoft services analyze and identify vulnerabilities in applications used with mobile platforms (iOS, Android, and Windows 10 Mobile) during or post-development. Many dissimilarities and impressions of techniques exist.",
       link1: "learn more",
       link2: "Get A Quote",
       Route: "/TrendSoft/oursolutions/CyberSecurity/MobileAccess",
@@ -24,8 +24,7 @@ export default function CyberSecurity() {
     {
       id: "3",
       label: "API Security",
-      content:
-        "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, fugit corporis tempora culpa vitae velit quo, dolores quos laborum ea aut? Ipsa, quaerat? Dicta quaerat porro cum eligendi debitis provident.",
+      content: "Trendsoft technologies provide continual safety of all APIs using deep discovery and classification of sensitive data to detect all public, private, and shadow APIs to authorize security teams to execute a positive security model.",
       link1: "learn more",
       link2: "Get A Quote",
       Route: "/TrendSoft/oursolutions/CyberSecurity/DocumentAccess",
@@ -33,8 +32,7 @@ export default function CyberSecurity() {
     {
       id: "4",
       label: "Thick Client Security",
-      content:
-        "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, fugit corporis tempora culpa vitae velit quo, dolores quos laborum ea aut? Ipsa, quaerat? Dicta quaerat porro cum eligendi debitis provident.",
+      content: "Our Thick Client Security Assessment services will focus on identifying the security flaws in our client’s thick client applications. Our assessments start with two approaches like",
       link1: "learn more",
       link2: "Get A Quote",
       Route: "/TrendSoft/oursolutions/CyberSecurity/ThickClientPage",
@@ -42,8 +40,7 @@ export default function CyberSecurity() {
     {
       id: "5",
       label: "Secure code review",
-      content:
-        "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, fugit corporis tempora culpa vitae velit quo, dolores quos laborum ea aut? Ipsa, quaerat? Dicta quaerat porro cum eligendi debitis provident.",
+      content: "Security code review (SCR) is a structured and security examination of the application source code and its software. We examine the loopholes and bugs that may have been overlooked or rooted during application and software development.",
       link1: "learn more",
       link2: "Get A Quote",
       Route: "/TrendSoft/oursolutions/CyberSecurity/SecureCodePage",
@@ -51,8 +48,7 @@ export default function CyberSecurity() {
     {
       id: "6",
       label: "Database Security",
-      content:
-        "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, fugit corporis tempora culpa vitae velit quo, dolores quos laborum ea aut? Ipsa, quaerat? Dicta quaerat porro cum eligendi debitis provident.",
+      content: "Ensuring compliance, modern technologies, and Reliable protection data masking can be Static or dynamic determining role-base and location-aware sensitive data.",
       link1: "learn more",
       link2: "Get A Quote",
       Route: "/TrendSoft/oursolutions/CyberSecurity/DataBaseSecurityPage",

@@ -28,10 +28,7 @@
     },
     {
       "title": "What do we do for you?",
-      "list1": [
-        {
-          "desc": "In Trendsoft Tech We study the product or website you want to test, pick the study’s task, set a standard of path approach, delegate roles, find your participants, and analyze your data. It involves direct/ remote observation and interaction during testing sessions and all actions are recorded and actually performed in real life. Our coverage in usability testing"
-        },
+      "list2": [
         {
           "desc": "Assign Facilitator and researchers"
         },
@@ -55,6 +52,12 @@
         },
         {
           "desc": "Enhance quality and opportunities to improve the design"
+        }
+      ],
+
+      "list1": [
+        {
+          "desc": "In Trendsoft Tech We study the product or website you want to test, pick the study’s task, set a standard of path approach, delegate roles, find your participants, and analyze your data. It involves direct/ remote observation and interaction during testing sessions and all actions are recorded and actually performed in real life. Our coverage in usability testing"
         }
       ]
     }

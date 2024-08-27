@@ -82,13 +82,13 @@ export default function ThickClientPage() {
         </div>
         <div className="md:space-y-5 space-y-3">
           {data1.list.map((d, i) => (
-            <div className="pb-3 md:space-y-7 space-y-3" key={i}>
+            <div className="pb-3 md:space-y-3 space-y-3" key={i}>
               <h2 className="text-[rgb(12,35,70)] md:text-[18px] sm:text-[16px] text-[12px]  font-semibold font-Nunito">
                 {d.title}
               </h2>
-              {d?.list2 && (
+              {d?.list1 && (
                 <ul className="space-y-1.5">
-                  {d?.list2?.map((d2, i1) => (
+                  {d?.list1?.map((d2, i1) => (
                     <>
                       <li
                         key={i1}
@@ -100,8 +100,10 @@ export default function ThickClientPage() {
                   ))}
                 </ul>
               )}
-
-              <div className="space-y-1.5">
+              <div>
+                <img src="" alt="" />
+              </div>
+              <div className="space-y-1.5 pb-2">
                 {d?.list2?.map((d2, i1) => (
                   <>
                     <p

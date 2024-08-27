@@ -1,13 +1,20 @@
 {
   "title": "Functional Testing",
-  "desc": "Automated Functional testing for upgrade quality and speedy go-to-market. In success or failure, Customer experience plays a vital role, we focus on performing end-to-end functional and non-functional testing for your mobile, web, and e-commerce, applications or for enterprise solutions such as CRM, ERP, and more.",
+  "list3": [
+    {
+      "desc": "Automated Functional testing for upgrade quality and speedy go-to-market. In success or failure, Customer experience plays a vital role, we focus on performing end-to-end functional and non-functional testing for your mobile, web, and e-commerce, applications or for enterprise solutions such as CRM, ERP, and more."
+    },
+    {
+      "desc": "We ensure the verification and validation of applications for global enterprises. Meeting the end-user acceptance, our software testing team focuses on testing applications against defined specifications for seamless and robust functionality."
+    },
+    {
+      "desc": "With bottomless experience in both open source and commercial automation tools such as selenium, we take the functional testing approach that holds proven industry-standard testing techniques, tools, methodologies, and pre-requisites-built test accelerators. With no impact on the existing quality of applications, we have driven a regression testing approach that made clients understand the new feature enhancements have no effect on the current position of the Application. We help industries to achieve reduced test cycle time and improve end-user satisfaction through Functional testing."
+    }
+  ],
   "list": [
     {
       "title": "FUNCTIONAL TESTING ",
-      "list1": [
-        {
-          "desc": "Trendsoft Tech functional testing methodology includes inputs connected to the probability or chance of business risk, technical risk, and project risk to ensure the most optimal testing that saves cost and time."
-        },
+      "list2": [
         {
           "desc": "A Requirements assessment framework (RAF) lucidity defects in the software life cycle requirement phase."
         },
@@ -22,6 +29,12 @@
         },
         {
           "desc": "All testing services are customized to fit the client’s lifecycle model and environment to offer seamless integration and conduct optimized testing while ensuring functional coverage."
+        }
+      ],
+
+      "list1": [
+        {
+          "desc": "Trendsoft Tech functional testing methodology includes inputs connected to the probability or chance of business risk, technical risk, and project risk to ensure the most optimal testing that saves cost and time."
         }
       ]
     },

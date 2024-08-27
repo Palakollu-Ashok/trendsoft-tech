@@ -49,7 +49,7 @@ export default function DocumentAccessibilityPage() {
       <div className=" bg-gray-100 sm:py-4 py-2 md:px-6 xl:px-10 3xl:px-16  px-3 h-full">
         <div className="">
           <h2 className=" py-3 md:px-5 px-2">{data.title}</h2>
-          <div className="grid lg:grid-cols-3 sm:pb-5 pb-2 md:px-5 px-2   sm:grid-cols-2  grid-cols-1 w-full gap-8 h-full ">
+          <ul className="grid lg:grid-cols-3 sm:pb-5 pb-2 md:px-5 px-2   sm:grid-cols-2  grid-cols-1 w-full gap-8 h-full ">
             {data1.list.map((d, i) => (
               <CommonCard
                 key={i}
@@ -60,7 +60,7 @@ export default function DocumentAccessibilityPage() {
                 link={d.link}
               />
             ))}
-          </div>
+          </ul>
         </div>
       </div>
     </>

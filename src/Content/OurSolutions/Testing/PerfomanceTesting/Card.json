@@ -4,7 +4,7 @@
   "list": [
     {
       "title": "Our key website/mobile app testing differentiators include:",
-      "list1": [
+      "list2": [
         {
           "desc": "Comprehensive analysis and guidance for performance improvements."
         },
@@ -59,7 +59,7 @@
     },
     {
       "title": "Our Capabilities",
-      "list1": [
+      "list2": [
         {
           "desc": "Load and scalability testing"
         },

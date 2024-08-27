@@ -6,7 +6,8 @@ export default function DigitalAccessibility() {
     {
       id: "1",
       label: "Web Access",
-      content: "With web accessibility service Trendsoft ensures that your web content is accessible for every user. Our practice of making websites usable for all users including those with disabilities, impairments, and limitations. We make sure that people who experience difficulties or limitations have the same or similar experience as those who do not. We deliver your website – and its content – more user-friendly and easier to understand for all visitors.",
+      content:
+        "With web accessibility service Trendsoft ensures that your web content is accessible for every user. Our practice of making websites usable for all users including those with disabilities, impairments, and limitations. We make sure that people who experience difficulties or limitations have the same or similar experience as those who do not. We deliver your website – and its content – more user-friendly and easier to understand for all visitors.",
       Route: "/TrendSoft/oursolutions/WebAccess-DigitalAccessibility",
       link1: "learn more",
       link2: "Get A Quote",
@@ -14,7 +15,8 @@ export default function DigitalAccessibility() {
     {
       id: "2",
       label: "Mobile Access",
-      content: "A comprehensive suite of accessibility services that empower organizations to achieve digital inclusivity and compliance through auditing, governance, litigation support, managed services, pre-launch assessments, product evaluation, and training.",
+      content:
+        "A comprehensive suite of accessibility services that empower organizations to achieve digital inclusivity and compliance through auditing, governance, litigation support, managed services, pre-launch assessments, product evaluation, and training.",
       Route: "/TrendSoft/oursolutions/Mobile-Acessibility",
       link1: "learn more",
       link2: "Get A Quote",
@@ -23,19 +25,21 @@ export default function DigitalAccessibility() {
       id: "3",
       label: "Document Access",
 
-      content: "",
+      content:
+        "yes PDFs also need to be accessible so that people with disabilities using screen reader, speech to text technology or braille displayer get equal access.",
       Route: "/TrendSoft/oursolutions/DocumentAccessibilityPage",
       link1: "learn more",
       link2: "Get A Quote",
     },
-    {
-      id: "4",
-      label: "In Design Access",
-      content: "",
-      Route: "/TrendSoft/oursolutions/IndesignAccessibilitypage",
-      link1: "learn more",
-      link2: "Get A Quote",
-    },
+    // },
+    // {
+    //   id: "4",
+    //   label: "In Design Access",
+    //   content: "",
+    //   Route: "/TrendSoft/oursolutions/IndesignAccessibilitypage",
+    //   link1: "learn more",
+    //   link2: "Get A Quote",
+    // },
   ];
 
   const [activeTab, setActiveTab] = useState(tabs[0].id);
