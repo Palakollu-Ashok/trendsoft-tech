@@ -21,25 +21,25 @@ export default function DigitalAccessibility() {
       link1: "learn more",
       link2: "Get A Quote",
     },
-    {
-      id: "3",
-      label: "Document Access",
-
-      content:
-        "yes PDFs also need to be accessible so that people with disabilities using screen reader, speech to text technology or braille displayer get equal access.",
-      Route: "/TrendSoft/oursolutions/DocumentAccessibilityPage",
-      link1: "learn more",
-      link2: "Get A Quote",
-    },
-    // },
     // {
-    //   id: "4",
-    //   label: "In Design Access",
-    //   content: "",
-    //   Route: "/TrendSoft/oursolutions/IndesignAccessibilitypage",
+    //   id: "3",
+    //   label: "Document Access",
+
+    //   content:
+    //     "yes PDFs also need to be accessible so that people with disabilities using screen reader, speech to text technology or braille displayer get equal access.",
+    //   Route: "/TrendSoft/oursolutions/DocumentAccessibilityPage",
     //   link1: "learn more",
     //   link2: "Get A Quote",
     // },
+
+    {
+      id: "4",
+      label: "In Design Access",
+      content: "",
+      Route: "/TrendSoft/oursolutions/IndesignAccessibilitypage",
+      link1: "learn more",
+      link2: "Get A Quote",
+    },
   ];
 
   const [activeTab, setActiveTab] = useState(tabs[0].id);

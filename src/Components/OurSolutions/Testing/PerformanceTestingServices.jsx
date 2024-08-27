@@ -3,7 +3,7 @@ import data1 from "../../../Content/OurSolutions/Testing/PerfomanceTesting/Card.
 
 export default function PerformanceTestingServices() {
   return (
-    <div className="md:px-6  xl:px-10 3xl:px-16 px-3">
+    <div className="md:px-6 xl:px-10 3xl:px-16 px-3">
       <div className="space-y-5 py-10">
         <h1 className="md:text-4xl text-center sm:text-2xl text-lg text-[rgb(12,35,70)]">
           {data1.title}

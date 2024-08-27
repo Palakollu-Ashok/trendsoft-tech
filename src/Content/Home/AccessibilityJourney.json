@@ -1,0 +1,19 @@
+{
+  "title": "Your Digital Accessibility Journey Starts with TrendSoft Tech",
+
+  "desc": "Whether you are responding to a demand letter or launching an accessibility program, TrendSoft Tech accessibility experts are ready to support your needs.",
+  "list": [
+    {
+      "img": "/Assets/Home/1.svg",
+      "headline": "Start with an Audit"
+    },
+    {
+        "img": "/Assets/Home/2.svg",
+        "headline": "Develop a Strategy"
+    },
+    {
+        "img": "/Assets/Home/3.svg",
+        "headline": "Create Inclusive Experiences"
+    }
+  ]
+}
