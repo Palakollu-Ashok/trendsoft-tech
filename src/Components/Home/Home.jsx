@@ -26,7 +26,7 @@ function Home() {
         }}
       >
         <div className="space-y-5  md:w-1/2 grid justify-start place-content-center h-full md:px-6  xl:px-10 3xl:px-16 px-3">
-          <h1 className="leading-2">Your Accessibility Partner</h1>
+          <h1 className="leading-2 xl:w-1/2">Your Accessibility Partner</h1>
 
           <p className="font-medium">
             Trust - clear way to Accessibility and Cyber Security Trendsoft
