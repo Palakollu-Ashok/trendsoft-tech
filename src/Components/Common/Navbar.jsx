@@ -179,7 +179,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
       <AnimatePresence>
         {opened && (
           <motion.div
@@ -188,85 +187,106 @@ const Navbar = () => {
             animate={{ x: 0 }}
             exit={{ x: "-100%" }}
             transition={{ stiffness: 200, damping: 20 }}
-            className="fixed top-0 z-50 left-0 w-2/3 h-screen md:hidden block bg-[rgb(12,28,56)] text-lg space-y-6"
+            className="fixed top-0 z-50 left-0 w-full pt-5 p-2 h-screen md:hidden block bg-[rgb(12,28,56)] text-lg space-y-6"
           >
-            <div className="flex flex-col text-light px-2 space-y-4 font-Nunito">
-              <ul className="[&_li]:text-light">
-                <li>
-                  <a href="/TrendSoft/WhoWeServe" ref={lastFocusableRef}>
-                    <span className="text-[14px]">Who we Serve</span>
+            <div className="flex justify-between  text-light px-2  font-Nunito">
+              <div>
+                <div className="mb-5">
+                  <a href="/" className="gap-0.5">
+                    <img src={logo} alt="Template logo" className="h-14" />
                   </a>
-                </li>
+                </div>
+                <ul className="[&_li]:text-light space-y-4">
+                  <li>
+                    <a href="/TrendSoft/WhoWeServe" ref={lastFocusableRef}>
+                      <span className="text-[14px]">Who we Serve</span>
+                    </a>
+                  </li>
 
-                <li>
-                  <a href="/TrendSoft/Career">
-                    <span className="text-[14px]">Careers</span>
-                  </a>
-                </li>
+                  <li>
+                    <a href="/TrendSoft/Career">
+                      <span className="text-[14px]">Careers</span>
+                    </a>
+                  </li>
 
-                <li>
-                  <a href="/TrendSoft/AboutPage">
-                    <span className="text-[14px]">About</span>
-                  </a>
-                </li>
+                  <li>
+                    <a href="/TrendSoft/AboutPage">
+                      <span className="text-[14px]">About</span>
+                    </a>
+                  </li>
 
-                <li>
-                  <a href="/TrendSoft/ContactUs">
-                    <span className="text-[14px]">Get Started</span>
-                  </a>
-                </li>
+                  <li>
+                    <a href="/TrendSoft/ContactUs">
+                      <span className="text-[14px]">Get Started</span>
+                    </a>
+                  </li>
 
-                <li className="w-full">
-                  <Disclosure>
-                    {({ close }) => (
-                      <>
-                        <Disclosure.Button className="flex w-fit">
-                          <li className="flex items-center">
-                            <span className="sr-only">menu </span>
-                            <a className=" flex items-center  md:text-[12px] text-[14px] lg:text-[16px] py-1">
-                              Our Solutions
-                              <MdKeyboardArrowDown className="text-3xl group-hover:rotate-180" />
-                            </a>
-                          </li>
-                        </Disclosure.Button>
-                        <Disclosure.Panel className="px-4 text-white space-y-1">
-                          <li className="list-none">
-                            <a
-                              href="/DigitalAccessibility"
-                              className="group flex w-full md:text-[14px] hover:bg-dark/5 items-center gap-2 rounded-lg py-1.5 px-3"
-                            >
-                              Digital Accessibility Services
-                            </a>
-                          </li>
-                          <li className="list-none">
-                            <a
-                              href="/TrendSoft/oursolutions/Testing"
-                              className="group flex w-full md:text-[14px] hover:bg-dark/5 items-center gap-2 rounded-lg py-1.5 px-3"
-                            >
-                              Testing Services
-                            </a>
-                          </li>
-                          <li className="list-none">
-                            <a
-                              href="/TrendSoft/oursolutions/CyberSecurity"
-                              className="group flex w-full md:text-[14px] hover:bg-dark/5 items-center gap-2 rounded-lg py-1.5 px-3"
-                              onKeyDown={(e) =>
-                                handleLastItemKeyDown(
-                                  e,
-                                  close,
-                                  '[href="/TrendSoft/WhoWeServe"]'
-                                )
-                              }
-                            >
-                              Cyber Security
-                            </a>
-                          </li>
-                        </Disclosure.Panel>
-                      </>
-                    )}
-                  </Disclosure>
-                </li>
-              </ul>
+                  <li className="w-full">
+                    <Disclosure>
+                      {({ close }) => (
+                        <>
+                          <Disclosure.Button className="flex w-fit">
+                            <li className="flex items-center">
+                              <span className="sr-only">menu </span>
+                              <a className=" flex items-center  md:text-[12px] text-[14px] lg:text-[16px] py-1">
+                                Our Solutions
+                                <MdKeyboardArrowDown className="text-3xl group-hover:rotate-180" />
+                              </a>
+                            </li>
+                          </Disclosure.Button>
+                          <Disclosure.Panel className="px-4 text-white space-y-1">
+                            <li className="list-none">
+                              <a
+                                href="/DigitalAccessibility"
+                                className="group flex w-full md:text-[14px] hover:bg-dark/5 items-center gap-2 rounded-lg py-1.5 px-3"
+                              >
+                                Digital Accessibility Services
+                              </a>
+                            </li>
+                            <li className="list-none">
+                              <a
+                                href="/TrendSoft/oursolutions/Testing"
+                                className="group flex w-full md:text-[14px] hover:bg-dark/5 items-center gap-2 rounded-lg py-1.5 px-3"
+                              >
+                                Testing Services
+                              </a>
+                            </li>
+                            <li className="list-none">
+                              <a
+                                href="/TrendSoft/oursolutions/CyberSecurity"
+                                className="group flex w-full md:text-[14px] hover:bg-dark/5 items-center gap-2 rounded-lg py-1.5 px-3"
+                                onKeyDown={(e) =>
+                                  handleLastItemKeyDown(
+                                    e,
+                                    close,
+                                    '[href="/TrendSoft/WhoWeServe"]'
+                                  )
+                                }
+                              >
+                                Cyber Security
+                              </a>
+                            </li>
+                          </Disclosure.Panel>
+                        </>
+                      )}
+                    </Disclosure>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="md:hidden md:ml-4">
+                <button
+                  onClick={handleNav}
+                  aria-label={opened ? "Close menu" : "Open menu"}
+                  className="text-light flex border-2 border-light focus:border focus:border-red bg-[rgb(12,28,56)]"
+                >
+                  {opened ? (
+                    <RxCross2 className="md:h-14 h-10 w-8 p-1" />
+                  ) : (
+                    <TbMenu2 size={32} className="md:h-14 h-10 p-1 w-8" />
+                  )}
+                </button>
+              </div>
             </div>
           </motion.div>
         )}
