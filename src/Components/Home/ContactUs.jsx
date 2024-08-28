@@ -1,6 +1,89 @@
-import React from "react";
+import { useForm } from "react-hook-form";
+import { useEffect, useState } from "react";
+import { contactForm, googleSheetContactForm } from "../../services/api";
+import Select from "react-select";
 
 export default function ContactUs() {
+  const {
+    register,
+    handleSubmit,
+    reset,
+    trigger,
+    formState: { errors, isSubmitting },
+  } = useForm();
+
+  const InquriesData = [
+    {
+      id: 1,
+      name: "Web Accessibility",
+    },
+    {
+      id: 2,
+      name: "Document Accessibility",
+    },
+    {
+      id: 3,
+      name: "InDesign Accessibility",
+    },
+    {
+      id: 4,
+      name: "Testing",
+    },
+    {
+      id: 5,
+      name: "Cyber Security",
+    },
+  ];
+
+  const [fileUploaded, setFileUploaded] = useState(false);
+  const [selectedCountryCode, setSelectedCountryCode] = useState("");
+  const [countryCodeError, setCountryCodeError] = useState("");
+
+  const countryCodes = [
+    { label: "+91 - India", value: "+91" },
+    { label: "+1 - United States", value: "+1" },
+    { label: "+44 - United Kingdom", value: "+44" },
+    { label: "+1 - Canada", value: "+1" },
+    { label: "+61 - Australia", value: "+61" },
+  ];
+
+  const validateCountryCode = (code) => {
+    if (!code) {
+      setCountryCodeError("Country Code is required");
+    } else {
+      setCountryCodeError("");
+    }
+  };
+
+  useEffect(() => {
+    if (fileUploaded) {
+      const timeout = setTimeout(() => {
+        setFileUploaded(false);
+      }, 50000);
+      return () => clearTimeout(timeout);
+    }
+  }, [fileUploaded]);
+
+  const onSubmit = (data) => {
+    data.phoneNumber = selectedCountryCode + " " + data.phoneNumber;
+
+    googleSheetContactForm(data, setFileUploaded(true))
+      .then((res) => {
+        if (res.status === 200) {
+          setFileUploaded(false);
+          alert("Form Submitted Successfully");
+          reset();
+          contactForm(data).then((res) => {
+            console.log("contact form res ", res);
+          });
+        }
+      })
+      .catch((err) => {
+        alert("Form submission Failed!");
+        console.log(err);
+      });
+  };
+
   return (
     <div className="md:px-6 xl:px-10 3xl:px-16 px-3 pt-32 h-full">
       <h2 className="py-3 text-center md:pb-10 pb-5">Get In Touch</h2>
@@ -27,93 +110,212 @@ export default function ContactUs() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>
 
         <div className="w-full lg:w-1/2  lg:px-5 bg-gray-100 rounded-2xl xl:py-10 sm:py-5 py-7 ">
-          <form action="" className="px-2">
+          <form action="" className="px-2" onSubmit={handleSubmit(onSubmit)}>
             <div className="sm:grid grid-cols-2 md:gap-8 gap-3 sm:space-y-0 space-y-4 lg:py-0 py-3">
               <div className="grid space-y-2">
-                <label htmlFor="" className="px-1">
+                <label htmlFor="Name" className="px-1">
                   Name <span className="text-red">*</span>
                 </label>
                 <input
+                  placeholder="Name"
+                  id="Name"
+                  name="Name"
                   type="text"
-                  className="border py-2  border-gray-400  px-1 focus:outline-none focus:ring-1 focus:ring-red"
+                  aria-describedby="Name_error"
+                  {...register("name", {
+                    required: "Name is required",
+                    pattern: {
+                      value: /^[a-zA-Z ]+$/,
+                      message: "Please enter valid name",
+                    },
+                  })}
+                  onKeyUp={() => {
+                    trigger("name");
+                  }}
+                  className={`border py-[5px]  border-[#d2d2d2] px-1 rounded-[3px] focus:outline-none focus:ring-1 focus:ring-red ${
+                    errors.name ? "border-[#EB1414]" : ""
+                  }`}
                 />
-              </div>
-              <div className="grid space-y-2">
-                <label htmlFor="" className="px-1">
-                  Phone Number <span className="text-red">*</span>
-                </label>
-                <input
-                  type="number"
-                  className="border py-2  px-1 border-gray-400  focus:outline-none focus:ring-1 focus:ring-red"
-                />
+                {errors.name && (
+                  <small className="text-[#EB1414]" id="Name_error">
+                    {errors.name.message}
+                  </small>
+                )}
               </div>
 
-              <div className="grid col-span-2 space-y-2">
-                <label htmlFor="" className="px-1">
+              <div className="grid  space-y-2">
+                <label htmlFor="Email" className="px-1">
                   Email <span className="text-red">*</span>
                 </label>
                 <input
-                  type="email"
-                  className="border py-2  px-1 border-gray-400 focus:outline-none focus:ring-1 focus:ring-red"
+                  type="text"
+                  aria-describedby="Email_error"
+                  id="Email"
+                  name="Email"
+                  placeholder="Email"
+                  {...register("email", {
+                    required: "Email is required",
+                    pattern: {
+                      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                      message: "Please enter valid email address",
+                    },
+                  })}
+                  onKeyUp={() => {
+                    trigger("email");
+                  }}
+                  className={`border py-[5px]  border-[#d2d2d2] px-1 rounded-[3px] focus:outline-none focus:ring-1 focus:ring-red ${
+                    errors.email ? "border-[#EB1414]" : ""
+                  }`}
                 />
+                {errors.email && (
+                  <small className="text-[#EB1414]" id="Email_error">
+                    {errors.email.message}
+                  </small>
+                )}
               </div>
 
               <div className="grid space-y-2">
-                <label htmlFor="" className="px-1">
+                <label htmlFor="countryCode" className="px-1">
+                  Country Code <span className="text-[#EB1414]">*</span>
+                </label>
+                <Select
+                  inputId="countryCode"
+                  name="countryCode"
+                  aria-describedby="CountryCode_error"
+                  className={`focus:outline-none focus:ring-1 focus:ring-red  ${
+                    countryCodeError ? "border-[#EB1414]" : ""
+                  }`}
+                  options={countryCodes}
+                  value={countryCodes.find(
+                    (code) => code.label === selectedCountryCode
+                  )}
+                  onChange={(selectedOption) =>
+                    setSelectedCountryCode(selectedOption.label)
+                  }
+                  onBlur={() => validateCountryCode(selectedCountryCode)}
+                  isSearchable
+                  placeholder="select country code"
+                />
+                {countryCodeError && (
+                  <small className="text-[#EB1414]" id="CountryCode_error">
+                    {countryCodeError}
+                  </small>
+                )}
+              </div>
+
+              <div className="grid space-y-2">
+                <label htmlFor="Phone_Number" className="px-1">
+                  Phone Number <span className="text-red">*</span>
+                </label>
+                <input
+                  placeholder="Phone Number"
+                  name="Phone_Number"
+                  type="text"
+                  id="Phone_Number"
+                  aria-describedby="Phone_Number_error"
+                  className={`border py-[5px]  border-[#d2d2d2] px-1 rounded-[3px] focus:outline-none focus:ring-1 focus:ring-red ${
+                    errors.phoneNumber ? "border-[#EB1414]" : ""
+                  }`}
+                  {...register("phoneNumber", {
+                    required: "Phone Number is required",
+                    pattern: {
+                      value: /^\d*(?:\.\d{1,2})?$/,
+                      message: "Please enter valid Phone Number",
+                    },
+                    maxLength: {
+                      value: 10,
+                      message: "Please enter 10 Digit Phone Number",
+                    },
+                    minLength: {
+                      value: 10,
+
+                      message: "Please enter  10 Digit Phone Number",
+                    },
+                  })}
+                  onKeyUp={() => {
+                    trigger("phoneNumber");
+                  }}
+                />
+                {errors.phoneNumber && (
+                  <small className="text-[#EB1414]" id="Phone_Number_error">
+                    {errors.phoneNumber.message}
+                  </small>
+                )}
+              </div>
+
+              <div className="grid space-y-2 col-span-2">
+                <label htmlFor="Company_Name" className="px-1">
                   Company Name
                 </label>
                 <input
                   type="text"
-                  className="border py-2  px-1 border-gray-400  focus:outline-none focus:ring-1 focus:ring-red"
+                  aria-describedby="Company_Name_error"
+                  id="Company_Name"
+                  name="Company_Name"
+                  placeholder="Enter your Company name"
+                  className={`border py-[5px]  border-[#d2d2d2] px-1 rounded-[3px] focus:outline-none focus:ring-1 focus:ring-red ${
+                    errors.companyName ? "border-[#EB1414]" : ""
+                  }`}
+                  {...register("companyName", {
+                    required: "Company Name is required",
+                  })}
+                  onKeyUp={() => {
+                    trigger("companyName");
+                  }}
                 />
-              </div>
-
-              <div className="grid space-y-2">
-                <label htmlFor="" className="px-1">
-                  Site Url
-                </label>
-                <input
-                  type="text"
-                  className="border py-2  px-1 border-gray-400  focus:outline-none focus:ring-1 focus:ring-red"
-                />
+                {errors.companyName && (
+                  <small className="text-[#EB1414]" id="Company_Name_error">
+                    {errors.companyName.message}
+                  </small>
+                )}
               </div>
 
               <div className="grid col-span-2 space-y-2">
-                <label htmlFor="" className="px-1">
+                <label htmlFor="Enquiries" className="px-1">
                   Select Purpose Of Contact<span className="text-red">*</span>
                 </label>
                 <select
-                  name=""
-                  id=""
-                  className="border border-gray-400  py-2  px-1 focus:outline-none focus:ring-1 focus:ring-red"
+                  aria-describedby="Enquiries_error"
+                  id="Enquiries"
+                  name="Enquiries"
+                  className={`border py-[5px]  border-[#d2d2d2] px-1 rounded-[3px] focus:outline-none focus:ring-1 focus:ring-red ${
+                    errors.enquiries ? "border-[#EB1414]" : ""
+                  }`}
+                  {...register("enquiries", {
+                    required: "Select Enquiries is required",
+                  })}
+                  onKeyUp={() => {
+                    trigger("enquiries");
+                  }}
                 >
-                  <option value="Jobs" className="" disabled>
-                    Select
-                  </option>
-                  <option value="Jobs" className="">
-                    Jobs
-                  </option>
-                  <option value="Project Requriement" className="">
-                    Project Requriement
-                  </option>
+                  <option value="">Select Enquiries</option>
+                  {InquriesData.map((c, idx) => (
+                    <option value={c.InquriesData} key={c.id}>
+                      {c.name}
+                    </option>
+                  ))}
                 </select>
-              </div>
 
-              <div className="grid w-full col-span-2 space-y-2 ">
-                <label htmlFor="" className="px-1">
-                  Message:
-                </label>
-                <textarea className="border border-gray-400 no-scrollbar py-2  px-1 h-24 focus:outline-none focus:ring-1 focus:ring-red" />
+                {errors.enquiries && (
+                  <small className="text-[#EB1414]" id="Enquiries_error">
+                    {errors.enquiries.message}
+                  </small>
+                )}
               </div>
             </div>
-            <button className="bg-blue py-3 rounded-full px-10 mt-5 text-white font-semibold tracking-wide uppercase hover:text-dark hover:bg-white hover:border-dark border duration-300">
-              Send
+            <button
+              type="submit"
+              disabled={isSubmitting || fileUploaded}
+              aria-live="polite"
+              aria-atomic="true"
+              className="bg-blue py-3 rounded-full px-10 mt-5 text-white font-semibold tracking-wide uppercase hover:text-dark hover:bg-white hover:border-dark border duration-300"
+            >
+              {isSubmitting || fileUploaded ? "Please wait..." : "Submit"}
             </button>
           </form>
         </div>

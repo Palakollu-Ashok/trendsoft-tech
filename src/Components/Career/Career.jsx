@@ -1,7 +1,66 @@
-import React from "react";
+import { useEffect, useState } from "react";
+import { useForm } from "react-hook-form";
+import axios from "axios";
 import Img from "../../assets/Career.webp";
 export default function Career() {
-  const data = {};
+  const [fileUploaded, setFileUploaded] = useState(false);
+
+  const position = [
+    {
+      id: 1,
+      position: "Fresher",
+    },
+    {
+      id: 2,
+      position: "Epub Accessibility Developer",
+    },
+    // {
+    //   id: 3,
+    //   position: "Business Development",
+    // },
+  ];
+
+  const {
+    register,
+    handleSubmit,
+    trigger,
+    formState: { errors, isSubmitting },
+  } = useForm();
+
+  useEffect(() => {
+    if (fileUploaded) {
+      const timeout = setTimeout(() => {
+        setFileUploaded(false);
+      }, 50000);
+      return () => clearTimeout(timeout);
+    }
+  }, [fileUploaded]);
+
+  const onSubmit = async (data) => {
+    setFileUploaded(true);
+    const formData = new FormData();
+    formData.append("name", data.name);
+    formData.append("email", data.email);
+    formData.append("phoneNumber", data.phoneNumber);
+    formData.append("position", data.position);
+    formData.append("file", data.file[0]);
+    try {
+      const response = await axios.post(
+        "https://trendsofttech-forms.onrender.com/careers-form",
+        formData
+      );
+      if (response.status === 200) {
+        setFileUploaded(false);
+        alert("Application submitted successfully");
+        window.location.reload();
+      } else {
+        console.log("Failed to send application");
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <div className="md:px-6 xl:px-10 3xl:px-16 px-3">
       <div className="  h-full">
@@ -15,83 +74,177 @@ export default function Career() {
           </div>
 
           <div className="w-full lg:w-1/2  lg:px-5">
-            <form action="" className="px-2">
+            <form onSubmit={handleSubmit(onSubmit)} className="px-2">
               <div className="sm:grid grid-cols-2 md:gap-8 gap-3 sm:space-y-0 space-y-4 lg:py-0 py-3">
                 <div className="grid space-y-2">
-                  <label htmlFor="" className="px-1">
+                  <label htmlFor="Name" className="px-1">
                     Name <span className="text-red">*</span>
                   </label>
                   <input
-                    type="text"
                     placeholder="Name"
-                    className="border py-2  border-gray-400  px-1 focus:outline-none focus:ring-1 focus:ring-red"
+                    id="Name"
+                    name="Name"
+                    type="text"
+                    aria-describedby="Name_error"
+                    className={`border py-2  border-gray-400  px-1 focus:outline-none focus:ring-1 focus:ring-red ${
+                      errors.name ? "border-[#EB1414]" : ""
+                    }`}
+                    {...register("name", {
+                      required: "Name is required",
+                      pattern: {
+                        value: /^[a-zA-Z ]+$/,
+                        message: "Please enter valid name",
+                      },
+                    })}
+                    onKeyUp={() => {
+                      trigger("name");
+                    }}
                   />
+
+                  {errors.name && (
+                    <small className="text-[#EB1414]" id="Name_error">
+                      {errors.name.message}
+                    </small>
+                  )}
                 </div>
                 <div className="grid space-y-2">
-                  <label htmlFor="" className="px-1">
+                  <label htmlFor="Phone_Number" className="px-1">
                     Phone Number <span className="text-red">*</span>
                   </label>
                   <input
-                    type="number"
+                    type="text"
+                    name="Phone_Number"
+                    id="Phone_Number"
                     placeholder="Phone Number"
-                    className="border py-2  px-1 border-gray-400  focus:outline-none focus:ring-1 focus:ring-red"
+                    aria-describedby="Phone_Number_error"
+                    minLength={10}
+                    className={`border py-2  px-1 border-gray-400  focus:outline-none focus:ring-1 focus:ring-red ${
+                      errors.phoneNumber ? "border-[#EB1414]" : ""
+                    }`}
+                    {...register("phoneNumber", {
+                      required: "Phone Number is required",
+                      pattern: {
+                        value: /^\d*(?:\.\d{1,2})?$/,
+                        message: "Please enter valid Phone Number",
+                      },
+                      maxLength: {
+                        value: 10,
+                        message: "Please enter 10 Digit Phone Number",
+                      },
+                      minLength: {
+                        value: 10,
+                        message: "Please enter  10 Digit Phone Number",
+                      },
+                    })}
+                    onKeyUp={() => {
+                      trigger("phoneNumber");
+                    }}
                   />
+                  {errors.phoneNumber && (
+                    <small className="text-[#EB1414]" id="Phone_Number_error">
+                      {errors.phoneNumber.message}
+                    </small>
+                  )}
                 </div>
 
                 <div className="grid space-y-2">
-                  <label htmlFor="" className="px-1">
+                  <label htmlFor="Email" className="px-1">
                     Email <span className="text-red">*</span>
                   </label>
                   <input
-                    type="email"
-                    className="border py-2  px-1 border-gray-400 focus:outline-none focus:ring-1 focus:ring-red"
+                    type="text"
+                    id="Email"
+                    name="Email"
+                    placeholder="Email"
+                    aria-describedby="Email_career_error"
+                    className={`border py-2  px-1 border-gray-400 focus:outline-none focus:ring-1 focus:ring-red ${
+                      errors.email ? "border-[#EB1414]" : ""
+                    }`}
+                    {...register("email", {
+                      pattern: {
+                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                        message: "invalid email address",
+                      },
+                      required: "Email is required",
+                    })}
+                    onKeyUp={() => {
+                      trigger("email");
+                    }}
                   />
+                  <span id="Email_career" className="d-none con-error"></span>
+                  {errors.email && (
+                    <small className="text-[#EB1414]" id="Email_career_error">
+                      {errors.email.message}
+                    </small>
+                  )}
                 </div>
 
                 <div className="grid  space-y-2">
-                  <label htmlFor="" className="px-1">
+                  <label htmlFor="Select_position" className="px-1">
                     Experince/Fresher<span className="text-red">*</span>
                   </label>
                   <select
-                    name=""
-                    placeholder="Select"
-                    id=""
+                    name="Select_position"
+                    id="Select_position"
+                    aria-describedby="Select_position_error"
                     className="border border-gray-400  py-2  px-1 focus:outline-none focus:ring-1 focus:ring-red"
+                    {...register("position", {
+                      required: "Position is required",
+                    })}
+                    onKeyUp={() => {
+                      trigger("position");
+                    }}
                   >
-                    <option value="Jobs" className="" disabled>
-                      Select
-                    </option>
-                    <option value="Jobs" className="">
-                      Fresher
-                    </option>
-                    <option value="Project Requriement" className="">
-                      Experince
-                    </option>
+                    <option value="">Select position</option>
+                    {position.map((c, idx) => (
+                      <option value={c.position} key={c.id}>
+                        {c.position}
+                      </option>
+                    ))}
                   </select>
+                  {errors.position && (
+                    <small
+                      className="text-[#EB1414]"
+                      id="Select_position_error"
+                    >
+                      {errors.position.message}
+                    </small>
+                  )}
                 </div>
 
                 <div className="grid w-full col-span-2 space-y-2">
-                  <label htmlFor="" className="px-1">
+                  <label htmlFor="file-upload" className="px-1">
                     Upload Resume
                   </label>
                   <input
                     type="file"
-                    className="border py-2 w- px-1 border-gray-400  focus:outline-none focus:ring-1 focus:ring-red"
+                    name="file"
+                    id="file"
+                    accept=".xlsx,.xls,image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf"
+                    aria-describedby="file-upload_error"
+                    className="border border-gray-400  py-2  px-1 focus:outline-none focus:ring-1 focus:ring-red"
+                    {...register("file", {
+                      required: "File Upload is required",
+                    })}
+                    onKeyUp={() => {
+                      trigger("file");
+                    }}
                   />
-                </div>
-
-                <div className="grid w-full col-span-2 space-y-2 ">
-                  <label htmlFor="" className="px-1">
-                    Message:
-                  </label>
-                  <textarea
-                    placeholder="Enter Your Message Here"
-                    className="border border-gray-400 no-scrollbar py-2  px-1 h-24 focus:outline-none focus:ring-1 focus:ring-red"
-                  />
+                  {errors.file && (
+                    <small className="text-[#EB1414]" id="file-upload_error">
+                      {errors.file.message}
+                    </small>
+                  )}
                 </div>
               </div>
-              <button className="bg-blue py-3 rounded-full px-10 mt-5 text-white font-semibold tracking-wide uppercase hover:text-dark hover:bg-white hover:border-dark border duration-300">
-                Send
+              <button
+                disabled={isSubmitting || fileUploaded}
+                type="submit"
+                aria-live="polite"
+                aria-atomic="true"
+                className="bg-blue py-3 rounded-full px-10 mt-5 text-white font-semibold tracking-wide uppercase hover:text-dark hover:bg-white hover:border-dark border duration-300"
+              >
+                {isSubmitting || fileUploaded ? "Please wait..." : "Submit"}
               </button>
             </form>
           </div>

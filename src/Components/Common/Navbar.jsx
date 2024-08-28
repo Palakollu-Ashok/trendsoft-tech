@@ -61,20 +61,6 @@ const Navbar = () => {
         </div>
 
         <div className="flex justify-end items-center w-full">
-          <div className="md:hidden md:ml-4">
-            <button
-              onClick={handleNav}
-              aria-label={opened ? "Close menu" : "Open menu"}
-              className="text-light flex bg-[rgb(12,28,56)]"
-            >
-              {opened ? (
-                <RxCross2 className="md:h-14 h-10 w-8 p-1" />
-              ) : (
-                <TbMenu2 size={32} className="md:h-14 h-10 p-1 w-8" />
-              )}
-            </button>
-          </div>
-
           <div className="md:block hidden w-full">
             <ul className="flex justify-end gap-4">
               <li className="flex items-center">
@@ -177,8 +163,23 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
+
+          <div className="md:hidden md:ml-4">
+            <button
+              onClick={handleNav}
+              aria-label={opened ? "Close menu" : "Open menu"}
+              className="text-light flex bg-[rgb(12,28,56)]"
+            >
+              {opened ? (
+                <RxCross2 className="md:h-14 h-10 w-8 p-1" />
+              ) : (
+                <TbMenu2 size={32} className="md:h-14 h-10 p-1 w-8" />
+              )}
+            </button>
+          </div>
         </div>
       </div>
+
       <AnimatePresence>
         {opened && (
           <motion.div
