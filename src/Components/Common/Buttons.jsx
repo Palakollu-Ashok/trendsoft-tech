@@ -9,7 +9,7 @@ function Buttons(props) {
       <a
         href={link}
         target="_blank"
-        className="rounded-full   border   gap-1 sm:py-2 py-1  text-center w-fit bg-blue text-white px-5  hover:text-black hover:bg-light duration-300 "
+        className="rounded-full   border   gap-1 md:py-3 sm:py-2 py-1  text-center w-fit bg-blue text-white px-5  hover:text-black hover:bg-light duration-300  focus:text-dark focus:bg-light"
       >
         {button}
       </a>

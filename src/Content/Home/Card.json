@@ -1,5 +1,14 @@
 {
-  "title": "Our partner services",
+  "title": "Services",
+  "bg": "/Assets/Home/Card/background4.png",
+  "list1": [
+    {
+      "desc": "Start with one website."
+    },
+    {
+      "desc": "Scale to an accessibility-first way of working."
+    }
+  ],
   "list": [
     {
       "img": "/Assets/Home/Card/DigitalAccessibilityAuditing.png",

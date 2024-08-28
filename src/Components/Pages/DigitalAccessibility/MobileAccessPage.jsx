@@ -57,7 +57,6 @@ export default function MobileAccessPage() {
                 img={d.img}
                 heading={d.heading}
                 description={d.decscription}
-                text={d.text}
                 link={d.link}
               />
             ))}

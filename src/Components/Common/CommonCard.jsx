@@ -1,27 +1,29 @@
 import PropTypes from "prop-types";
 
 function CommonCard(props) {
-  const { heading, description, link, img, text } = props;
+  const { heading, description, link, img, text, color } = props;
 
   return (
-    <li className="w-full   font-Nunito my-2 hover:shadow-md duration-300  bg-light h-full">
+    <li className="w-full  grid place-items-center justify-center lg:p-5 sm:p-3 p-2 bg-light space-y-4 font-Nunito my-2 hover:shadow-md duration-300   h-full">
       <img src={img} className="sm:h-[250px] h-[200px] w-full object-cover" />
 
-      <div className="md:p-5 p-2">
-        <div className=" font-Nunito space-y-4 ">
-          <div className="h-full space-y-2">
-            <h3>{heading}</h3>
-            <p>{description}</p>
+      <div className="w-full grid h-full ">
+        <div className=" font-Nunito space-y-4 h-full">
+          <div className="h-full space-y-2 grid justify-center place-items-center">
+            <h3 className="text-dark text-center">{heading}</h3>
+            <p className="text-center text-dark">{description}</p>
           </div>
         </div>
-        <a
-          href={link}
-          className=" w-fit h-full self-end grid justify-end place-items-center"
-        >
-          <p className="pt-2 hover:text-red text-blue  w-fit hover:underline duration-300 font-normal">
+      </div>
+      <div className=" h-fit grid">
+        {link && text ? (
+          <a
+            href={link}
+            className="rounded-full w-full  p-3 lg:px-5 px-3  group flex items-center bg-blue    border border-blue  hover:text-blue text-light  hover:bg-light  duration-300 focus:bg-light focus:text-blue"
+          >
             {text}
-          </p>
-        </a>
+          </a>
+        ) : null}
       </div>
     </li>
   );

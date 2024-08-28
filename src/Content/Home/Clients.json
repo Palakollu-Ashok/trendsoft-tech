@@ -2,46 +2,45 @@
   "heading": "Our Clients",
   "list": [
     {
-      "img": "/Assets/Home/Happyclients/acade.jpg"
+      "img": "/Assets/Home/Happyclients/acade.png"
     },
 
     {
-      "img": "/Assets/Home/Happyclients/apex.jpg"
+      "img": "/Assets/Home/Happyclients/apex.png"
     },
     {
-      "img": "/Assets/Home/Happyclients/jio.jpg"
+      "img": "/Assets/Home/Happyclients/Jio.png"
     },
     {
-      "img": "/Assets/Home/Happyclients/hts.jpg"
+      "img": "/Assets/Home/Happyclients/Hts.png"
     },
     {
-      "img": "/Assets/Home/Happyclients/ssGroups.jpg"
+      "img": "/Assets/Home/Happyclients/SS.png"
     },
     {
-      "img": "/Assets/Home/Happyclients/nebula.jpg"
+      "img": "/Assets/Home/Happyclients/Nebulla.png"
     },
     {
-      "img": "/Assets/Home/Happyclients/ace.jpg"
+      "img": "/Assets/Home/Happyclients/Ace.png"
     },
     {
-      "img": "/Assets/Home/Happyclients/pure.jpg"
+      "img": "/Assets/Home/Happyclients/PureSoft.png"
     },
     {
-      "img": "/Assets/Home/Happyclients/amnet.jpg"
+      "img": "/Assets/Home/Happyclients/Amnet.png"
     },
     {
-      "img": "/Assets/Home/Happyclients/arinos.jpg"
+      "img": "/Assets/Home/Happyclients/Arinos.png"
     },
     {
-      "img": "/Assets/Home/Happyclients/codeMantra.jpg"
+      "img": "/Assets/Home/Happyclients/Codemantra.png"
     },
     {
-      "img": "/Assets/Home/Happyclients/jouve.jpg"
+      "img": "/Assets/Home/Happyclients/Jouve.png"
     },
-    
-    
+
     {
-      "img": "/Assets/Home/Happyclients/strive.jpg"
+      "img": "/Assets/Home/Happyclients/Straive.png"
     }
   ]
 }
