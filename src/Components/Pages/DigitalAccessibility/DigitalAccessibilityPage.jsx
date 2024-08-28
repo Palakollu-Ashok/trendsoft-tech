@@ -24,7 +24,7 @@ export default function OurSolutionsPage() {
     <>
       <SolutionsBanner
         title="Digital Accessibility"
-        desc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, beatae qui, tenetur quia possimus"
+        desc="Digital accessibility ensures that digital content and tools are usable by everyone, including people with disabilities."
       />
       <div className="flex  md:px-6  xl:px-10 3xl:px-16 px-3 ">
         {data.map((d, i) => (

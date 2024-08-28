@@ -5,7 +5,7 @@ export default function DigitalAccessibility() {
   const tabs = [
     {
       id: "1",
-      label: "Web Access",
+      label: "Web Accessibility",
       content:
         "With web accessibility service Trendsoft ensures that your web content is accessible for every user. Our practice of making websites usable for all users including those with disabilities, impairments, and limitations. We make sure that people who experience difficulties or limitations have the same or similar experience as those who do not. We deliver your website – and its content – more user-friendly and easier to understand for all visitors.",
       Route: "/TrendSoft/oursolutions/WebAccess-DigitalAccessibility",
@@ -14,7 +14,7 @@ export default function DigitalAccessibility() {
     },
     {
       id: "2",
-      label: "Mobile Access",
+      label: "Mobile Accessibility",
       content:
         "A comprehensive suite of accessibility services that empower organizations to achieve digital inclusivity and compliance through auditing, governance, litigation support, managed services, pre-launch assessments, product evaluation, and training.",
       Route: "/TrendSoft/oursolutions/Mobile-Acessibility",
@@ -34,7 +34,7 @@ export default function DigitalAccessibility() {
 
     {
       id: "4",
-      label: "In Design Access",
+      label: "In Design Accessibility",
       content: "",
       Route: "/TrendSoft/oursolutions/IndesignAccessibilitypage",
       link1: "learn more",

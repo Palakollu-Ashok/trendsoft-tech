@@ -24,7 +24,7 @@ export default function TestingPage() {
     <>
       <SolutionsBanner
         title="Testing"
-        desc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, beatae qui, tenetur quia possimus"
+        desc="Digital accessibility testing involves evaluating websites and applications to ensure they meet accessibility standards and guidelines, such as WCAG."
       />
       <div className="flex  md:px-6  xl:px-10 3xl:px-16 px-3">
         {data.map((d, i) => (

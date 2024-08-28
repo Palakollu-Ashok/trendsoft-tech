@@ -8,7 +8,7 @@ function Button(props) {
       <a
         href={link}
         target="_blank"
-        className="rounded-full w-full xl:text-[16px] sm:text-[12px] text-[10px]  border hover:border-blue  flex items-center justify-center gap-1  text-center  bg-blue/80 text-white px-5 md:py-3 py-1 hover:text-black hover:bg-light duration-300"
+        className="rounded-full w-full xl:text-[16px] sm:text-[12px] text-[10px]  border   flex items-center justify-center gap-1  text-center hover:text-light  bg-light text-black px-5 md:py-3 py-1 hover:bg-[#6989e7] duration-300 focus:bg-[#6989e7]  focus:text-light"
       >
         {button}
         <img src={Img} alt="" className="w-6 mb-1 " />

@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/logoB.avif";
+import logo from "../../assets/logoB.svg";
 
 import { MdOutlineAttachEmail, MdOutlineEmail } from "react-icons/md";
 import { FaFacebook } from "react-icons/fa";

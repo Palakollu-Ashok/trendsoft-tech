@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { TbMenu2 } from "react-icons/tb";
 import { motion, AnimatePresence } from "framer-motion";
 import { RxCross2 } from "react-icons/rx";
-import logo from "../../assets/logoB.avif";
+import logo from "../../assets/logoB.svg";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { Disclosure, Popover } from "@headlessui/react";
 
