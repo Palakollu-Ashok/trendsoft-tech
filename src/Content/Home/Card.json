@@ -19,14 +19,14 @@
     },
 
     {
-      "img": "/Assets/Home/Card/compliance-and-accessibility.jpg",
+      "img": "/Assets/Home/Card/HomeTesting.png",
       "heading": "Testing",
       "text": "Read More...",
       "link": "/TrendSoft/oursolutions/Testing",
       "decscription": "We ensure the verification and validation of applications for global enterprises. Meeting the end-user acceptance, our software testing team focuses on testing applications against defined specifications for seamless and robust functionality."
     },
     {
-      "img": "/Assets/Home/Card/content-production.png",
+      "img": "/Assets/Home/Card/HomeCyberSecurity.png",
       "heading": "Cyber Security",
       "text": "Read More...",
       "link": "/TrendSoft/oursolutions/CyberSecurity",

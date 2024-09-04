@@ -2,53 +2,53 @@
   "title": "Who We Serve",
   "list": [
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
+      "img": "/Assets/WhoWeServe/WhoWeEducation.png",
       "heading": "Education",
       "link": "",
       "decscription": "Schools, colleges, and universities need accessible digital platforms to ensure that students of all abilities can access educational content, resources, and services."
     },
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
+      "img": "/Assets/WhoWeServe/WhoWeHealthCare.png",
       "heading": "Healthcare",
       "decscription": "Hospitals, clinics, and healthcare providers must provide accessible websites and mobile apps to ensure that all patients, including those with disabilities, can access medical information and services."
     },
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
+      "img": "/Assets/WhoWeServe/WhoWeGoverment.png",
       "heading": "Government",
       "decscription": "Government agencies need to comply with legal accessibility standards to ensure that all citizens can access public services, information, and documents."
     },
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
+      "img": "/Assets/WhoWeServe/WhoWeFinance.png",
       "heading": "Finance & Banking",
       "decscription": "Banks, credit unions, and financial service providers must ensure their digital platforms are accessible so that all customers can manage their finances independently."
     },
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
+      "img": "/Assets/WhoWeServe/WhoWeFinance.png",
       "heading": "Retail & E-commerce",
       "decscription": "Online stores and marketplaces must provide accessible shopping experiences to cater to all customers, including those with disabilities."
     },
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
+      "img": "/Assets/WhoWeServe/WhoWeFinance.png",
       "heading": "Legal",
       "decscription": "Law firms and legal services need accessible documents and websites to ensure that all clients can access legal information and services."
     },
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
+      "img": "/Assets/WhoWeServe/WhoWeFinance.png",
       "heading": "Technology",
       "decscription": "Tech companies providing software, apps, and digital tools need to ensure that their products are accessible to users of all abilities."
     },
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
+      "img": "/Assets/WhoWeServe/WhoWeFinance.png",
       "heading": "Hospitality",
       "decscription": "Hotels, restaurants, and travel services must ensure their websites and mobile apps are accessible for all customers, including those with disabilities."
     },
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
+      "img": "/Assets/WhoWeServe/WhoWeFinance.png",
       "heading": "Non-Profit Organizations",
       "decscription": "NGOs and charitable organizations must make their websites and resources accessible to all, ensuring inclusivity in their outreach and services."
     },
     {
-      "img": "/Assets/Home/Card/content-enablement.jpg",
+      "img": "/Assets/WhoWeServe/WhoWeFinance.png",
       "heading": "Media & Entertainment",
       "decscription": "Broadcasting companies, streaming services, and publishers must ensure that their content and platforms are accessible to a wide audience, including those with disabilities."
     }

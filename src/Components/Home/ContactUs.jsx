@@ -117,30 +117,32 @@ export default function ContactUs() {
         <div className="w-full lg:w-1/2  lg:px-5 bg-gray-100 rounded-2xl xl:py-10 sm:py-5 py-7 ">
           <form action="" className="px-2" onSubmit={handleSubmit(onSubmit)}>
             <div className="sm:grid grid-cols-2 md:gap-8 gap-3 sm:space-y-0 space-y-4 lg:py-0 py-3">
-              <div className="grid space-y-2">
-                <label htmlFor="Name" className="px-1">
-                  Name <span className="text-red">*</span>
-                </label>
-                <input
-                  placeholder="Name"
-                  id="Name"
-                  name="Name"
-                  type="text"
-                  aria-describedby="Name_error"
-                  {...register("name", {
-                    required: "Name is required",
-                    pattern: {
-                      value: /^[a-zA-Z ]+$/,
-                      message: "Please enter valid name",
-                    },
-                  })}
-                  onKeyUp={() => {
-                    trigger("name");
-                  }}
-                  className={`border py-[5px]  border-[#d2d2d2] px-1 rounded-[3px] focus:outline-none focus:ring-1 focus:ring-red ${
-                    errors.name ? "border-[#EB1414]" : ""
-                  }`}
-                />
+              <div>
+                <div className="grid space-y-2">
+                  <label htmlFor="Name" className="px-1">
+                    Name <span className="text-red">*</span>
+                  </label>
+                  <input
+                    placeholder="Name"
+                    id="Name"
+                    name="Name"
+                    type="text"
+                    aria-describedby="Name_error"
+                    {...register("name", {
+                      required: "Name is required",
+                      pattern: {
+                        value: /^[a-zA-Z ]+$/,
+                        message: "Please enter valid name",
+                      },
+                    })}
+                    onKeyUp={() => {
+                      trigger("name");
+                    }}
+                    className={`border py-[5px]  border-[#d2d2d2] px-1 rounded-[3px] focus:outline-none focus:ring-1 focus:ring-red ${
+                      errors.name ? "border-[#EB1414]" : ""
+                    }`}
+                  />
+                </div>
                 {errors.name && (
                   <small className="text-[#EB1414]" id="Name_error">
                     {errors.name.message}
@@ -148,30 +150,32 @@ export default function ContactUs() {
                 )}
               </div>
 
-              <div className="grid  space-y-2">
-                <label htmlFor="Email" className="px-1">
-                  Email <span className="text-red">*</span>
-                </label>
-                <input
-                  type="text"
-                  aria-describedby="Email_error"
-                  id="Email"
-                  name="Email"
-                  placeholder="Email"
-                  {...register("email", {
-                    required: "Email is required",
-                    pattern: {
-                      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                      message: "Please enter valid email address",
-                    },
-                  })}
-                  onKeyUp={() => {
-                    trigger("email");
-                  }}
-                  className={`border py-[5px]  border-[#d2d2d2] px-1 rounded-[3px] focus:outline-none focus:ring-1 focus:ring-red ${
-                    errors.email ? "border-[#EB1414]" : ""
-                  }`}
-                />
+              <div>
+                <div className="grid  space-y-2">
+                  <label htmlFor="Email" className="px-1">
+                    Email <span className="text-red">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    aria-describedby="Email_error"
+                    id="Email"
+                    name="Email"
+                    placeholder="Email"
+                    {...register("email", {
+                      required: "Email is required",
+                      pattern: {
+                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                        message: "Please enter valid email address",
+                      },
+                    })}
+                    onKeyUp={() => {
+                      trigger("email");
+                    }}
+                    className={`border py-[5px]  border-[#d2d2d2] px-1 rounded-[3px] focus:outline-none focus:ring-1 focus:ring-red ${
+                      errors.email ? "border-[#EB1414]" : ""
+                    }`}
+                  />
+                </div>
                 {errors.email && (
                   <small className="text-[#EB1414]" id="Email_error">
                     {errors.email.message}
@@ -179,68 +183,73 @@ export default function ContactUs() {
                 )}
               </div>
 
-              <div className="grid space-y-2">
-                <label htmlFor="countryCode" className="px-1">
-                  Country Code <span className="text-[#EB1414]">*</span>
-                </label>
-                <Select
-                  inputId="countryCode"
-                  name="countryCode"
-                  aria-describedby="CountryCode_error"
-                  className={`focus:outline-none focus:ring-1 focus:ring-red  ${
-                    countryCodeError ? "border-[#EB1414]" : ""
-                  }`}
-                  options={countryCodes}
-                  value={countryCodes.find(
-                    (code) => code.label === selectedCountryCode
-                  )}
-                  onChange={(selectedOption) =>
-                    setSelectedCountryCode(selectedOption.label)
-                  }
-                  onBlur={() => validateCountryCode(selectedCountryCode)}
-                  isSearchable
-                  placeholder="select country code"
-                />
+              <div>
+                <div className="grid space-y-2">
+                  <label htmlFor="countryCode" className="px-1">
+                    Country Code <span className="text-[#EB1414]">*</span>
+                  </label>
+                  <Select
+                    inputId="countryCode"
+                    name="countryCode"
+                    aria-describedby="CountryCode_error"
+                    className={`focus:outline-none focus:ring-1 focus:ring-red  ${
+                      countryCodeError ? "border-[#EB1414]" : ""
+                    }`}
+                    options={countryCodes}
+                    value={countryCodes.find(
+                      (code) => code.label === selectedCountryCode
+                    )}
+                    onChange={(selectedOption) =>
+                      setSelectedCountryCode(selectedOption.label)
+                    }
+                    onBlur={() => validateCountryCode(selectedCountryCode)}
+                    isSearchable
+                    placeholder="select country code"
+                  />
+                </div>
+
                 {countryCodeError && (
                   <small className="text-[#EB1414]" id="CountryCode_error">
                     {countryCodeError}
                   </small>
                 )}
               </div>
+              <div>
+                <div className="grid space-y-2">
+                  <label htmlFor="Phone_Number" className="px-1">
+                    Phone Number <span className="text-red">*</span>
+                  </label>
+                  <input
+                    placeholder="Phone Number"
+                    name="Phone_Number"
+                    type="text"
+                    id="Phone_Number"
+                    aria-describedby="Phone_Number_error"
+                    className={`border py-[5px]  border-[#d2d2d2] px-1 rounded-[3px] focus:outline-none focus:ring-1 focus:ring-red ${
+                      errors.phoneNumber ? "border-[#EB1414]" : ""
+                    }`}
+                    {...register("phoneNumber", {
+                      required: "Phone Number is required",
+                      pattern: {
+                        value: /^\d*(?:\.\d{1,2})?$/,
+                        message: "Please enter valid Phone Number",
+                      },
+                      maxLength: {
+                        value: 10,
+                        message: "Please enter 10 Digit Phone Number",
+                      },
+                      minLength: {
+                        value: 10,
 
-              <div className="grid space-y-2">
-                <label htmlFor="Phone_Number" className="px-1">
-                  Phone Number <span className="text-red">*</span>
-                </label>
-                <input
-                  placeholder="Phone Number"
-                  name="Phone_Number"
-                  type="text"
-                  id="Phone_Number"
-                  aria-describedby="Phone_Number_error"
-                  className={`border py-[5px]  border-[#d2d2d2] px-1 rounded-[3px] focus:outline-none focus:ring-1 focus:ring-red ${
-                    errors.phoneNumber ? "border-[#EB1414]" : ""
-                  }`}
-                  {...register("phoneNumber", {
-                    required: "Phone Number is required",
-                    pattern: {
-                      value: /^\d*(?:\.\d{1,2})?$/,
-                      message: "Please enter valid Phone Number",
-                    },
-                    maxLength: {
-                      value: 10,
-                      message: "Please enter 10 Digit Phone Number",
-                    },
-                    minLength: {
-                      value: 10,
+                        message: "Please enter  10 Digit Phone Number",
+                      },
+                    })}
+                    onKeyUp={() => {
+                      trigger("phoneNumber");
+                    }}
+                  />
+                </div>
 
-                      message: "Please enter  10 Digit Phone Number",
-                    },
-                  })}
-                  onKeyUp={() => {
-                    trigger("phoneNumber");
-                  }}
-                />
                 {errors.phoneNumber && (
                   <small className="text-[#EB1414]" id="Phone_Number_error">
                     {errors.phoneNumber.message}
@@ -313,7 +322,7 @@ export default function ContactUs() {
               disabled={isSubmitting || fileUploaded}
               aria-live="polite"
               aria-atomic="true"
-              className="bg-blue py-3 rounded-full px-10 mt-5 text-white font-semibold tracking-wide uppercase hover:text-dark hover:bg-white hover:border-dark border duration-300"
+              className="bg-blue py-3 rounded-full px-10 mt-5 text-white font-semibold tracking-wide uppercase hover:text-dark hover:bg-white hover:border-dark border duration-300 focus:bg-light focus:text-dark"
             >
               {isSubmitting || fileUploaded ? "Please wait..." : "Submit"}
             </button>

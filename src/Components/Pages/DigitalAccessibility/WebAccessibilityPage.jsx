@@ -1,6 +1,6 @@
 import React from "react";
 import CoommonCard from "../../Common/CommonCard";
-import Img from "../../../assets/1.webp";
+import Img from "../../../assets/DigitalAccessibility/WebAccDigital.png";
 import BgImg from "../../../assets/Home/Home1.jpg";
 import Empower from "../../Common/Empower";
 import Banner from "../../Common/Banner";
@@ -39,12 +39,15 @@ export default function WebAccessibilityPage() {
           </>
         ))}
       </div>
-      <Empower
-        heading="Web Accessibility"
-        img={Img}
-        desc="Allyant is your trusted partner in achieving Web Content Accessibility Guidelines (WCAG) compliance, mandated by the Americans with Disabilities Act (ADA) and Section 508, to ensure your online presence and digital properties are inclusive to all users."
-        desc1="Discover our comprehensive range of services tailored to meet the specific needs of organizations aiming to foster a more accessible and inclusive digital environment. Explore our offerings below and unlock the potential to attain compliance and accessibility excellence."
-      />
+
+      <div className=""> 
+        <Empower
+          heading="Web Accessibility"
+          img={Img}
+          desc="Allyant is your trusted partner in achieving Web Content Accessibility Guidelines (WCAG) compliance, mandated by the Americans with Disabilities Act (ADA) and Section 508, to ensure your online presence and digital properties are inclusive to all users."
+          desc1="Discover our comprehensive range of services tailored to meet the specific needs of organizations aiming to foster a more accessible and inclusive digital environment. Explore our offerings below and unlock the potential to attain compliance and accessibility excellence."
+        />
+      </div>
       <WebAccessServices />
     </>
   );

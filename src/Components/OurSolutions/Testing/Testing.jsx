@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Button1 from "../../Common/Buttons";
 export default function Testing() {
   const tabs = [
     {
@@ -72,19 +72,8 @@ export default function Testing() {
                   <h3 className="text-blue pb-3">{tab.label}</h3>
                   <p>{tab.content}</p>
 
-                  <div className="flex justify-start sm:gap-3 gap-2   pt-5">
-                    <a
-                      href={tab.Route}
-                      className="rounded-full md:text-[14px] text-[8px] border w-fit flex items-center justify-center gap-1  md:text-center bg-blue text-white  p-2 hover:text-black hover:bg-light duration-300 "
-                    >
-                      {tab.link1}
-                    </a>
-                    <a
-                      href="#"
-                      className="rounded-full  md:text-[14px] text-[8px] border  w-fit flex items-center justify-center gap-1  text-center  hover:bg-blue hover:text-white px-5 p-2 text-black bg-light duration-300 "
-                    >
-                      {tab.link2}
-                    </a>
+                  <div className="w-fit h-fit">
+                    <Button1 link={tab.Route} button={tab.link1} />
                   </div>
                 </div>
               ) : null
@@ -96,19 +85,8 @@ export default function Testing() {
                 <h3 className="text-blue pb-3">{tab.label}</h3>
                 <p>{tab.content}</p>
 
-                <div className="flex justify-start sm:gap-3 gap-2   pt-5">
-                  <a
-                    href={tab.Route}
-                    className="rounded-full md:text-[14px] text-[8px] border w-fit flex items-center justify-center gap-1  md:text-center bg-blue text-white  p-2 hover:text-black hover:bg-light duration-300 "
-                  >
-                    {tab.link1}
-                  </a>
-                  <a
-                    href="#"
-                    className="rounded-full  md:text-[14px] text-[8px] border  w-fit flex items-center justify-center gap-1  text-center  hover:bg-blue hover:text-white px-5 p-2 text-black bg-light duration-300 "
-                  >
-                    {tab.link2}
-                  </a>
+                <div className="w-fit h-fit">
+                  <Button1 link={tab.Route} button={tab.link1} />
                 </div>
               </div>
             ))}

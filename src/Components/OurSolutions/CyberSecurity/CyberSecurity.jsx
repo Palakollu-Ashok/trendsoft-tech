@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Button1 from "../../Common/Buttons";
 
 export default function CyberSecurity() {
   const tabs = [
@@ -16,7 +17,8 @@ export default function CyberSecurity() {
     {
       id: "2",
       label: "Mobile App Security",
-      content: "Trendsoft services analyze and identify vulnerabilities in applications used with mobile platforms (iOS, Android, and Windows 10 Mobile) during or post-development. Many dissimilarities and impressions of techniques exist.",
+      content:
+        "Trendsoft services analyze and identify vulnerabilities in applications used with mobile platforms (iOS, Android, and Windows 10 Mobile) during or post-development. Many dissimilarities and impressions of techniques exist.",
       link1: "learn more",
       link2: "Get A Quote",
       Route: "/TrendSoft/oursolutions/CyberSecurity/MobileAccess",
@@ -24,7 +26,8 @@ export default function CyberSecurity() {
     {
       id: "3",
       label: "API Security",
-      content: "Trendsoft technologies provide continual safety of all APIs using deep discovery and classification of sensitive data to detect all public, private, and shadow APIs to authorize security teams to execute a positive security model.",
+      content:
+        "Trendsoft technologies provide continual safety of all APIs using deep discovery and classification of sensitive data to detect all public, private, and shadow APIs to authorize security teams to execute a positive security model.",
       link1: "learn more",
       link2: "Get A Quote",
       Route: "/TrendSoft/oursolutions/CyberSecurity/DocumentAccess",
@@ -32,7 +35,8 @@ export default function CyberSecurity() {
     {
       id: "4",
       label: "Thick Client Security",
-      content: "Our Thick Client Security Assessment services will focus on identifying the security flaws in our client’s thick client applications. Our assessments start with two approaches like",
+      content:
+        "Our Thick Client Security Assessment services will focus on identifying the security flaws in our client’s thick client applications. Our assessments start with two approaches like",
       link1: "learn more",
       link2: "Get A Quote",
       Route: "/TrendSoft/oursolutions/CyberSecurity/ThickClientPage",
@@ -40,7 +44,8 @@ export default function CyberSecurity() {
     {
       id: "5",
       label: "Secure code review",
-      content: "Security code review (SCR) is a structured and security examination of the application source code and its software. We examine the loopholes and bugs that may have been overlooked or rooted during application and software development.",
+      content:
+        "Security code review (SCR) is a structured and security examination of the application source code and its software. We examine the loopholes and bugs that may have been overlooked or rooted during application and software development.",
       link1: "learn more",
       link2: "Get A Quote",
       Route: "/TrendSoft/oursolutions/CyberSecurity/SecureCodePage",
@@ -48,7 +53,8 @@ export default function CyberSecurity() {
     {
       id: "6",
       label: "Database Security",
-      content: "Ensuring compliance, modern technologies, and Reliable protection data masking can be Static or dynamic determining role-base and location-aware sensitive data.",
+      content:
+        "Ensuring compliance, modern technologies, and Reliable protection data masking can be Static or dynamic determining role-base and location-aware sensitive data.",
       link1: "learn more",
       link2: "Get A Quote",
       Route: "/TrendSoft/oursolutions/CyberSecurity/DataBaseSecurityPage",
@@ -93,19 +99,8 @@ export default function CyberSecurity() {
                   <h3 className="text-blue pb-3">{tab.label}</h3>
                   <p>{tab.content}</p>
 
-                  <div className="flex justify-start sm:gap-3 gap-2   pt-5">
-                    <a
-                      href={tab.Route}
-                      className="rounded-full md:text-[14px] text-[8px] border w-fit flex items-center justify-center gap-1  md:text-center bg-blue text-white  p-2 hover:text-black hover:bg-light duration-300 "
-                    >
-                      {tab.link1}
-                    </a>
-                    <a
-                      href="#"
-                      className="rounded-full  md:text-[14px] text-[8px] border  w-fit flex items-center justify-center gap-1  text-center  hover:bg-blue hover:text-white px-5 p-2 text-black bg-light duration-300 "
-                    >
-                      {tab.link2}
-                    </a>
+                  <div className="w-fit h-fit">
+                    <Button1 link={tab.Route} button={tab.link1} />
                   </div>
                 </div>
               ) : null
@@ -117,19 +112,8 @@ export default function CyberSecurity() {
                 <h3 className="text-blue pb-3">{tab.label}</h3>
                 <p>{tab.content}</p>
 
-                <div className="flex justify-start sm:gap-3 gap-2   pt-5">
-                  <a
-                    href={tab.Route}
-                    className="rounded-full md:text-[14px] text-[8px] border w-fit flex items-center justify-center gap-1  md:text-center bg-blue text-white  p-2 hover:text-black hover:bg-light duration-300 "
-                  >
-                    {tab.link1}
-                  </a>
-                  <a
-                    href="#"
-                    className="rounded-full  md:text-[14px] text-[8px] border  w-fit flex items-center justify-center gap-1  text-center  hover:bg-blue hover:text-white px-5 p-2 text-black bg-light duration-300 "
-                  >
-                    {tab.link2}
-                  </a>
+                <div className="w-fit h-fit">
+                  <Button1 link={tab.Route} button={tab.link1} />
                 </div>
               </div>
             ))}

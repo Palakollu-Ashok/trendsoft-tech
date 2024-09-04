@@ -147,7 +147,7 @@ const Navbar = () => {
 
               <li className="flex items-center">
                 <a
-                  href="/TrendSoft/AboutPage"
+                  href="/TrendSoft/about-Us"
                   className="text-[12px] lg:text-[16px] flex items-center"
                 >
                   About
@@ -210,7 +210,7 @@ const Navbar = () => {
                   </li>
 
                   <li>
-                    <a href="/TrendSoft/AboutPage">
+                    <a href="/TrendSoft/about-Us">
                       <span className="text-[14px]">About</span>
                     </a>
                   </li>

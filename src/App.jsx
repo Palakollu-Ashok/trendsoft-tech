@@ -116,7 +116,7 @@ function App() {
 
         {/* About Us */}
 
-        <Route path="/TrendSoft/AboutPage" element={<AboutPage />} />
+        <Route path="/TrendSoft/about-Us" element={<AboutPage />} />
         {/* Career */}
         <Route path="/TrendSoft/Career" element={<CareerPage />} />
 

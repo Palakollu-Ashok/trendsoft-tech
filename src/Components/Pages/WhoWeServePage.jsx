@@ -12,7 +12,7 @@ export default function WhoWeServePage() {
 
       <Card />
 
-      <LetsTalk />
+      {/* <LetsTalk /> */}
 
       <Clients />
     </>

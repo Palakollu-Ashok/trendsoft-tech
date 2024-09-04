@@ -1,6 +1,7 @@
+import { Button } from "@headlessui/react";
 import React, { useState } from "react";
 import { Route } from "react-router-dom";
-
+import Button1 from "../../Common/Buttons";
 export default function DigitalAccessibility() {
   const tabs = [
     {
@@ -10,7 +11,6 @@ export default function DigitalAccessibility() {
         "With web accessibility service Trendsoft ensures that your web content is accessible for every user. Our practice of making websites usable for all users including those with disabilities, impairments, and limitations. We make sure that people who experience difficulties or limitations have the same or similar experience as those who do not. We deliver your website – and its content – more user-friendly and easier to understand for all visitors.",
       Route: "/TrendSoft/oursolutions/WebAccess-DigitalAccessibility",
       link1: "learn more",
-      link2: "Get A Quote",
     },
     {
       id: "2",
@@ -19,7 +19,6 @@ export default function DigitalAccessibility() {
         "A comprehensive suite of accessibility services that empower organizations to achieve digital inclusivity and compliance through auditing, governance, litigation support, managed services, pre-launch assessments, product evaluation, and training.",
       Route: "/TrendSoft/oursolutions/Mobile-Acessibility",
       link1: "learn more",
-      link2: "Get A Quote",
     },
     // {
     //   id: "3",
@@ -35,10 +34,10 @@ export default function DigitalAccessibility() {
     {
       id: "4",
       label: "In Design Accessibility",
-      content: "",
+      content:
+        "Trendsoft supports accessible cross-media platforms, allowing to export of InDesign documents to PDF, HTML, XHTML, and XML.We also allow you to add tags and alternative text attributes to InDesign documents that support the accessible production foregoing exported formats.",
       Route: "/TrendSoft/oursolutions/IndesignAccessibilitypage",
       link1: "learn more",
-      link2: "Get A Quote",
     },
   ];
 
@@ -79,20 +78,8 @@ export default function DigitalAccessibility() {
                 <div key={tab.id}>
                   <h3 className="text-blue pb-3">{tab.label}</h3>
                   <p>{tab.content}</p>
-
-                  <div className="flex justify-start sm:gap-3 gap-2   pt-5">
-                    <a
-                      href={tab.Route}
-                      className="rounded-full md:text-[14px] text-[8px] border w-fit flex items-center justify-center gap-1  md:text-center bg-blue text-white  p-2 hover:text-black hover:bg-light duration-300 "
-                    >
-                      {tab.link1}
-                    </a>
-                    <a
-                      href="#"
-                      className="rounded-full  md:text-[14px] text-[8px] border  w-fit flex items-center justify-center gap-1  text-center  hover:bg-blue hover:text-white px-5 p-2 text-black bg-light duration-300 "
-                    >
-                      {tab.link2}
-                    </a>
+                  <div className="w-fit h-fit">
+                    <Button1 link={tab.Route} button={tab.link1} />
                   </div>
                 </div>
               ) : null
@@ -104,19 +91,8 @@ export default function DigitalAccessibility() {
                 <h3 className="text-blue pb-3">{tab.label}</h3>
                 <p>{tab.content}</p>
 
-                <div className="flex justify-start sm:gap-3 gap-2   pt-5">
-                  <a
-                    href={tab.Route}
-                    className="rounded-full md:text-[14px] text-[8px] border w-fit flex items-center justify-center gap-1  md:text-center bg-blue text-white  p-2 hover:text-black hover:bg-light duration-300 "
-                  >
-                    {tab.link1}
-                  </a>
-                  <a
-                    href="#"
-                    className="rounded-full  md:text-[14px] text-[8px] border  w-fit flex items-center justify-center gap-1  text-center  hover:bg-blue hover:text-white px-5 p-2 text-black bg-light duration-300 "
-                  >
-                    {tab.link2}
-                  </a>
+                <div className="w-fit h-fit">
+                  <Button1 link={tab.Route} button={tab.link1} />
                 </div>
               </div>
             ))}
