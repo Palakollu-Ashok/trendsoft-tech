@@ -1,4 +1,3 @@
-import React from "react";
 import data from "../../Content/Career/AbouteCreer.json";
 export default function AboutCareer() {
   return (

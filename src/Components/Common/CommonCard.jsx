@@ -4,7 +4,7 @@ function CommonCard(props) {
   const { heading, description, link, img, text, color } = props;
 
   return (
-    <li className="w-full  grid place-items-center justify-center lg:p-5 sm:p-3 p-2 bg-light space-y-4 font-Nunito my-2 hover:shadow-md duration-300   h-full">
+    <li className="w-full grid place-items-center justify-center lg:p-5 sm:p-3 p-2 bg-light space-y-4 font-Nunito my-2 hover:shadow-md duration-300   h-full">
       <img src={img} className="sm:h-[250px] h-[200px] w-full object-cover" />
 
       <div className="w-full grid h-full ">

@@ -1,5 +1,5 @@
 import React from "react";
-import s1 from "../../assets/Home/Home1.jpg";
+import s1 from "../../assets/About/Aboutus.jpg";
 import About1 from "../../assets/About/OurMission.svg";
 import S2 from "../../assets/About/Choose1.png";
 import BgImg from "../../assets/About/Wave1.png";
@@ -55,7 +55,11 @@ function About() {
   return (
     <div className="">
       <div>
-        <img src={s1} alt="" className="h-[60vh] object-cover" />
+        <img
+          src={s1}
+          alt=""
+          className="h-[60vh] object-cover w-full object-bottom"
+        />
         <div className="h-full  xl:px-[100px] lg:px-[40px] sm:px-[18px]  px-5 xl:-translate-y-30 md:-translate-y-24 -translate-y-14">
           <div className="w-full   rounded-2xl  bg-[rgb(25,20,65)] text-light  xl:px-40 lg:px-5  xl:p-10 md:p-8 p-3 shadow-xl">
             <div className="space-y-2 py-5 ">
@@ -129,7 +133,9 @@ function About() {
       <div className="space-y-3  xl:px-10 md:px-6 px-3  3xl:px-16 lg:py-10 py-4">
         {data1.map((d1, i1) => (
           <div className="space-y-2">
-            <h2 className="md:text-[18px] sm:text-[15px] text-[12px]">{d1.title}</h2>
+            <h2 className="md:text-[18px] sm:text-[15px] text-[12px]">
+              {d1.title}
+            </h2>
             <div>
               {d1.list1.map((d2, i2) => (
                 <p>{d2.desc}</p>

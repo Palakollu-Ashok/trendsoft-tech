@@ -1,6 +1,4 @@
-import React from "react";
-import CoommonCard from "../../Common/CommonCard";
-import Img from "../../../assets/DigitalAccessibility/WebAccDigital.png";
+import Img from "../../../assets/DigitalAccessibility/WebAccess.png";
 import BgImg from "../../../assets/Home/Home1.jpg";
 import Empower from "../../Common/Empower";
 import Banner from "../../Common/Banner";
@@ -40,7 +38,7 @@ export default function WebAccessibilityPage() {
         ))}
       </div>
 
-      <div className=""> 
+      <div className="">
         <Empower
           heading="Web Accessibility"
           img={Img}

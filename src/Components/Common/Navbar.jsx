@@ -5,11 +5,94 @@ import { RxCross2 } from "react-icons/rx";
 import logo from "../../assets/logoB.svg";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { Disclosure, Popover } from "@headlessui/react";
-
+import image from "../../assets/DigitalAccessibility/MobAccess.png";
+import { HiOutlineArrowSmallRight } from "react-icons/hi2";
+import { IoArrowForwardCircleOutline } from "react-icons/io5";
 const Navbar = () => {
   const [opened, setOpened] = useState(false);
   const menuRef = useRef(null);
   const lastFocusableRef = useRef(null);
+
+  const [activeTab, setActiveTab] = useState("DigtalAccessibilityServices");
+
+  const content = {
+    DigtalAccessibilityServices: {
+      mainpath: "/DigitalAccessibility",
+      services: [
+        {
+          id: 1,
+          title: "Web Accessibility",
+          path: "/TrendSoft/oursolutions/WebAccess-DigitalAccessibility",
+        },
+        {
+          id: 2,
+          title: "Mobile Accessibility",
+          path: "/TrendSoft/oursolutions/Mobile-Acessibility",
+        },
+        {
+          id: 3,
+          title: "In Design Accessibility",
+          path: "/TrendSoft/oursolutions/IndesignAccessibilitypage",
+        },
+      ],
+    },
+    TestingServices: {
+      mainpath: "/TrendSoft/oursolutions/Testing",
+      services: [
+        {
+          id: 1,
+          title: "Functional Testing",
+          path: "/TrendSoft/oursolutions/WebAccess-DigitalAccessibility",
+        },
+        {
+          id: 2,
+          title: "Performance Testing",
+          path: "/TrendSoft/oursolutions/Mobile-Acessibility",
+        },
+        {
+          id: 3,
+          title: "Usability Accessibility",
+          path: "/TrendSoft/oursolutions/IndesignAccessibilitypage",
+        },
+      ],
+    },
+    CyberSecurity: {
+      mainpath: "/TrendSoft/oursolutions/CyberSecurity",
+
+      services: [
+        {
+          id: 1,
+          title: "Web App Security",
+          path: "/TrendSoft/oursolutions/WebAccess-DigitalAccessibility",
+        },
+        {
+          id: 2,
+          title: "Mobile App Security",
+          path: "/TrendSoft/oursolutions/Mobile-Acessibility",
+        },
+        {
+          id: 3,
+          title: "Api Security",
+          path: "/TrendSoft/oursolutions/IndesignAccessibilitypage",
+        },
+        {
+          id: 1,
+          title: "Thick Client Security",
+          path: "/TrendSoft/oursolutions/WebAccess-DigitalAccessibility",
+        },
+        {
+          id: 2,
+          title: "Secure Code Review",
+          path: "/TrendSoft/oursolutions/Mobile-Acessibility",
+        },
+        {
+          id: 3,
+          title: "Database Security",
+          path: "/TrendSoft/oursolutions/IndesignAccessibilitypage",
+        },
+      ],
+    },
+  };
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
@@ -83,44 +166,95 @@ const Navbar = () => {
                       <Popover.Panel
                         transition
                         anchor="bottom end"
-                        className="md:z-50 z-50 bg-white text-dark origin-top-right rounded-xl border border-white/5 p-1 text-sm/6 transition duration-100 ease-out absolute"
+                        className="absolute flex gap-5 top-full mt-6 left-0 w-full bg-gray-200 origin-top-right rounded-xl border border-white/5 p-5 text-sm/6 transition duration-100 ease-out z-50"
                       >
-                        <ul className="list-none w-full">
-                          <li>
+                        <div className="w-1/2">
+                          <h2 className="mb-5">Our Services</h2>
+                          <hr className="border-black" />
+                          <ul className="list-none w-full grid grid-cols-2 gap-10">
+                            <li>
+                              <a
+                                tabIndex={0}
+                                className="group relative flex items-center gap-2 rounded-lg py-1.5 cursor-pointer"
+                                onClick={() =>
+                                  setActiveTab("DigtalAccessibilityServices")
+                                }
+                              >
+                                <img
+                                  src={image}
+                                  alt="Images"
+                                  className="w-[250px] h-[150px] object-cover rounded-xl"
+                                />
+                                <p className="absolute bottom-5 flex items-center  text-white font-semibold">
+                                  Digital Accessibility Services
+                                  <IoArrowForwardCircleOutline />
+                                </p>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                tabIndex={0}
+                                className="group relative flex items-center gap-2 rounded-lg py-1.5 cursor-pointer"
+                                onClick={() => setActiveTab("TestingServices")}
+                              >
+                                <img
+                                  src={image}
+                                  alt="Images"
+                                  className="w-[250px] h-[150px] object-cover rounded-xl"
+                                />
+                                <p className="absolute bottom-5 flex items-center  text-white font-semibold">
+                                  Testing Services
+                                  <IoArrowForwardCircleOutline />
+                                </p>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                tabIndex={0}
+                                className="group relative flex items-center gap-2 rounded-lg py-1.5 cursor-pointer"
+                                onClick={() => setActiveTab("CyberSecurity")}
+                              >
+                                <img
+                                  src={image}
+                                  alt="Images"
+                                  className="w-[250px] h-[150px] object-cover rounded-xl"
+                                />
+                                <p className="absolute bottom-5 flex items-center text-white font-semibold">
+                                  Cyber Security
+                                  <IoArrowForwardCircleOutline />
+                                </p>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div className="w-1/2 ">
+                          <div className="flex justify-between items-center mb-5">
+                            <h2>We Offer</h2>
                             <a
-                              href="/DigitalAccessibility"
-                              tabIndex={0}
-                              className="group flex w-full md:text-[14px] hover:bg-dark/5 items-center gap-2 rounded-lg py-1.5 px-3"
+                              href={content[activeTab]?.mainpath}
+                              className="text-dark font-semibold flex items-center"
                             >
-                              Digital Accessibility Services
+                              All Services{" "}
+                              <span className="text-lg">
+                                <HiOutlineArrowSmallRight />
+                              </span>
                             </a>
-                          </li>
-                          <li>
-                            <a
-                              href="/TrendSoft/oursolutions/Testing"
-                              tabIndex={0}
-                              className="group flex w-full md:text-[14px] hover:bg-dark/5 items-center gap-2 rounded-lg py-1.5 px-3"
-                            >
-                              Testing Services
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="/TrendSoft/oursolutions/CyberSecurity"
-                              tabIndex={0}
-                              className="group flex w-full md:text-[14px] hover:bg-dark/5 items-center gap-2 rounded-lg py-1.5 px-3"
-                              onKeyDown={(e) =>
-                                handleLastItemKeyDown(
-                                  e,
-                                  close,
-                                  '[href="/TrendSoft/WhoWeServe"]'
+                          </div>
+                          <hr className="border-black" />
+                          <ul className="grid grid-cols-3 mt-5 ">
+                            {activeTab &&
+                              content[activeTab].services.map(
+                                ({ id, title, path }) => (
+                                  <li key={id} className="py-1 mt-5">
+                                    <a href={path} className="text-dark">
+                                      {title}
+                                    </a>
+                                  </li>
                                 )
-                              }
-                            >
-                              Cyber Security
-                            </a>
-                          </li>
-                        </ul>
+                              )}
+                          </ul>
+                        </div>
                       </Popover.Panel>
                     </>
                   )}

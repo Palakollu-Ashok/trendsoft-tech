@@ -1,5 +1,3 @@
-import React from "react";
-import CommonCard from "../../Common/CommonCard";
 import Img from "../../../assets/1.webp";
 import BgImg from "../../../assets/Home/Home1.jpg";
 

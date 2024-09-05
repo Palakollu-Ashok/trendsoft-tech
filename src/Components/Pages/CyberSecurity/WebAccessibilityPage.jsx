@@ -1,4 +1,3 @@
-import React from "react";
 import Img from "../../../assets/1.webp";
 import BgImg from "../../../assets/Home/Home1.jpg";
 

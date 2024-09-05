@@ -1,7 +1,6 @@
-import React from "react";
 import data1 from "../../../Content/OurSolutions/DigitalAccessibility/MobileAccessibility/Card.json";
 import CommonCard from "../../Common/CommonCard";
-import Img from "../../../assets/DigitalAccessibility/MobileAccDigital.png";
+import Img from "../../../assets/DigitalAccessibility/MobAccess.png";
 import BgImg from "../../../assets/Home/Home1.jpg";
 
 import Empower from "../../Common/Empower";
@@ -34,7 +33,7 @@ export default function MobileAccessPage() {
       />
 
       <div className="flex  md:px-6  xl:px-10 3xl:px-16 px-3">
-        {data.map((d, i) => (
+        {data.map((d) => (
           <>
             <BredCrumb text={d.text} link={d.link} divide={d.divide} />
           </>

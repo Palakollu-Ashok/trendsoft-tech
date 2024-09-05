@@ -1,8 +1,7 @@
-import React from "react";
 import BredCrumb from "../../Common/BredCrumb";
 import CyberSecurity from "../../OurSolutions/CyberSecurity/CyberSecurity";
 import SolutionsBanner from "../../Common/SolutionsBanner";
-
+import images from "../../../assets/DigitalAccessibility/BreadCrumb.png";
 export default function CyberSecurityPage() {
   const data = [
     {
@@ -23,6 +22,7 @@ export default function CyberSecurityPage() {
   return (
     <>
       <SolutionsBanner
+        BgImg={images}
         title="Cyber Security "
         desc="Cybersecurity involves protecting digital systems, networks, and data from attacks, breaches, and unauthorized access."
       />

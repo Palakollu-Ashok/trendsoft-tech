@@ -2,7 +2,7 @@ import React from "react";
 import BredCrumb from "../../Common/BredCrumb";
 import Testing from "../../OurSolutions/Testing/Testing";
 import SolutionsBanner from "../../Common/SolutionsBanner";
-
+import images from "../../../assets/DigitalAccessibility/BreadCrumb.png";
 export default function TestingPage() {
   const data = [
     {
@@ -23,6 +23,7 @@ export default function TestingPage() {
   return (
     <>
       <SolutionsBanner
+        BgImg={images}
         title="Testing"
         desc="Digital accessibility testing involves evaluating websites and applications to ensure they meet accessibility standards and guidelines, such as WCAG."
       />

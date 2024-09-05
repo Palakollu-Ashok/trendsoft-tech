@@ -1,17 +1,16 @@
-import React from "react";
 import Career from "../Career/Career";
 import AboutCareer from "../Career/AboutCareer";
-import Banner from "../Common/Banner";
-import img from "../../assets/Home/Home1.jpg";
-import SolutionsBanner from "../Common/SolutionsBanner";
+import CareersBanner from "../Career/CareersBanner";
+
 export default function CareerPage() {
   return (
     <>
-      <SolutionsBanner
+      {/* <SolutionsBanner
         title="Careers"
         desc="Looking for bright minds to join us"
         BgImg={img}
-      />
+      /> */}
+      <CareersBanner />
       <AboutCareer />
       <Career />
     </>

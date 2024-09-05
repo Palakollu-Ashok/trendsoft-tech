@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 
 import Select from "react-select";
 
-import s1 from "../../assets/Home/Home1.jpg";
+import s1 from "../../assets/Home/Contact.jpg";
 import { contactForm, googleSheetContactForm } from "../../services/api";
 export default function GetStart() {
   const {
@@ -83,17 +83,21 @@ export default function GetStart() {
         }
       })
       .catch((err) => {
-        alert("Form SUbmission Failed!");
+        alert("Form SUbmission Failed!", err);
       });
   };
 
   return (
     <div>
-      <img src={s1} alt="" className="md:h-[70vh] h-[40vh] object-cover" />
+      <img
+        src={s1}
+        alt=""
+        className="md:h-[80vh] h-[40vh] object-cover  w-full"
+      />
       <div className="h-full  xl:px-[330px] lg:px-[150px] sm:px-[28px] md:px-[50px] px-5 xl:-translate-y-30 md:-translate-y-24 -translate-y-14">
         <div className="w-full   rounded-2xl  bg-white md:p-10 sm:p-5 p-3 shadow-xl">
           <div className="space-y-2 py-5 pb-20">
-            <h2 className="text-center">Contact GrackleDocs</h2>
+            <h2 className="text-center">Contact Trendsoft</h2>
             <p className="text-center">We'd love to hear from you!</p>
           </div>
           <form action="" className="px-2" onSubmit={handleSubmit(onSubmit)}>
@@ -275,7 +279,7 @@ export default function GetStart() {
                   }}
                 >
                   <option value="">Select Enquiries</option>
-                  {InquriesData.map((c, idx) => (
+                  {InquriesData.map((c) => (
                     <option value={c.InquriesData} key={c.id}>
                       {c.name}
                     </option>
