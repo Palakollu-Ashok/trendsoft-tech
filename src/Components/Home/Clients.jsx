@@ -6,7 +6,7 @@ export default function Clients() {
       <ul className="grid lg:grid-cols-7 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 place-items-center  mx-auto md:gap-10 gap-5">
         {data.list.map((d, i) => (
           <li key={i}>
-            <img src={d.img} key={i} alt="" className="md:w-28 w-20    " />
+            <img src={d.img} key={i} alt={d.alt} className="md:w-28 w-20    " />
           </li>
         ))}
       </ul>

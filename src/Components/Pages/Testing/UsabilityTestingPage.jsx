@@ -1,7 +1,5 @@
-import React from "react";
-import CommonCard from "../../Common/CommonCard";
-import BgImg from "../../../assets/Home/Home1.jpg";
-import Img from "../../../assets/1.webp";
+import BgImg from "../../../assets/DigitalAccessibility/BreadCrumb.png";
+import Img from "../../../assets/Home/UsabilityTesting.jpg";
 import Banner from "../../Common/Banner";
 import Empower from "../../Common/Empower";
 import BredCrumb from "../../Common/BredCrumb";
@@ -32,14 +30,14 @@ export default function UsabilityTestingPage() {
         bname="Speak with an Expert"
       />
       <div className="flex  md:px-6  xl:px-10 3xl:px-16 px-3">
-        {data.map((d, i) => (
+        {data.map((d) => (
           <>
             <BredCrumb text={d.text} link={d.link} divide={d.divide} />
           </>
         ))}
       </div>
       <Empower
-        heading="Usability  Testing"
+        heading="Usability Testing"
         img={Img}
         desc="Allyant is your trusted partner in achieving Web Content Accessibility Guidelines (WCAG) compliance, mandated by the Americans with Disabilities Act (ADA) and Section 508, to ensure your online presence and digital properties are inclusive to all users."
         desc1="Discover our comprehensive range of services tailored to meet the specific needs of organizations aiming to foster a more accessible and inclusive digital environment. Explore our offerings below and unlock the potential to attain compliance and accessibility excellence."

@@ -10,10 +10,7 @@ import WebAccessibilityPage from "./Components/Pages/DigitalAccessibility/WebAcc
 import MobileAccessPage from "./Components/Pages/DigitalAccessibility/MobileAccessPage";
 import DocumentAccessibilityPage from "./Components/Pages/DigitalAccessibility/DocumentAccessibilityPage";
 import IndesignAccessibilitypage from "./Components/Pages/DigitalAccessibility/IndesignAccessibilitypage";
-import WebAccessibilityPage1 from "./Components/Pages/CyberSecurity/WebAccessibilityPage";
-import MobileAccessPage1 from "./Components/Pages/CyberSecurity/MobileAccessibilitypage";
-import AboutPage from "./Components/About/About";
-import DocumentAccessibilityPage1 from "./Components/Pages/CyberSecurity/ApiKeyPage";
+
 import ThickClientPage from "./Components/Pages/CyberSecurity/ThickClientPage";
 import SecureCodePage from "./Components/Pages/CyberSecurity/SecureCodePage";
 import DataBaseSecurityPage from "./Components/Pages/CyberSecurity/DataBaseSecurityPage";
@@ -22,10 +19,14 @@ import PerformanceTestingPage from "./Components/Pages/Testing/PerformanceTestin
 import UsabilityTestingPage from "./Components/Pages/Testing/UsabilityTestingPage";
 import GetStartPage from "./Components/Pages/GetStartPage";
 import PrivacyPolicy from "./Components/GetStarted/PrivacyPolicy";
-import Career from "./Components/Career/Career";
+
 import WhoWeServePage from "./Components/Pages/WhoWeServePage";
 import CareerPage from "./Components/Pages/CareerPage";
 import SkipToMainContent from "./Components/Common/SkipToMainContent";
+import ApiKeyPage from "./Components/Pages/CyberSecurity/ApiKeyPage";
+import MobileApiPage from "./Components/Pages/CyberSecurity/MobileAccessibilitypage";
+import WebApiPage from "./Components/Pages/CyberSecurity/WebApiPage";
+import AboutPage from "./Components/Pages/AboutPage";
 function App() {
   return (
     <>
@@ -62,16 +63,16 @@ function App() {
           element={<CyberSecurityPage />}
         />
         <Route
-          path="/TrendSoft/oursolutions/CyberSecurity/WebAccess"
-          element={<WebAccessibilityPage1 />}
+          path="/TrendSoft/oursolutions/CyberSecurity/WebApiSecurity"
+          element={<WebApiPage />}
         />
         <Route
-          path="/TrendSoft/oursolutions/CyberSecurity/DocumentAccess"
-          element={<DocumentAccessibilityPage1 />}
+          path="/TrendSoft/oursolutions/CyberSecurity/ApiKey"
+          element={<ApiKeyPage />}
         />
         <Route
-          path="/TrendSoft/oursolutions/CyberSecurity/MobileAccess"
-          element={<MobileAccessPage1 />}
+          path="/TrendSoft/oursolutions/CyberSecurity/MobApiSecurity"
+          element={<MobileApiPage />}
         />
 
         <Route

@@ -2,45 +2,58 @@
   "heading": "Our Clients",
   "list": [
     {
-      "img": "/Assets/Home/Happyclients/acade.png"
+      "img": "/Assets/Home/Happyclients/acade.png",
+      "alt": "acadecraft"
     },
 
     {
-      "img": "/Assets/Home/Happyclients/apex.png"
+      "img": "/Assets/Home/Happyclients/apex.png",
+      "alt": "apex"
     },
     {
-      "img": "/Assets/Home/Happyclients/Jio.png"
+      "img": "/Assets/Home/Happyclients/Jio.png",
+      "alt": "jio"
     },
     {
-      "img": "/Assets/Home/Happyclients/Hts.png"
+      "img": "/Assets/Home/Happyclients/Hts.png",
+      "alt": "hts biopharma"
     },
     {
-      "img": "/Assets/Home/Happyclients/SS.png"
+      "img": "/Assets/Home/Happyclients/SS.png",
+      "alt": "ss group"
     },
     {
-      "img": "/Assets/Home/Happyclients/Nebulla.png"
+      "img": "/Assets/Home/Happyclients/Nebulla.png",
+      "alt": "nebula group of companies"
     },
     {
-      "img": "/Assets/Home/Happyclients/Ace.png"
+      "img": "/Assets/Home/Happyclients/Ace.png",
+      "alt": "ace pro india llp"
     },
     {
-      "img": "/Assets/Home/Happyclients/PureSoft.png"
+      "img": "/Assets/Home/Happyclients/PureSoft.png",
+      "alt": "puresoftware"
     },
     {
-      "img": "/Assets/Home/Happyclients/Amnet.png"
+      "img": "/Assets/Home/Happyclients/Amnet.png",
+      "alt": "amnet"
     },
     {
-      "img": "/Assets/Home/Happyclients/Arinos.png"
+      "img": "/Assets/Home/Happyclients/Arinos.png",
+      "alt": "arinos"
     },
     {
-      "img": "/Assets/Home/Happyclients/Codemantra.png"
+      "img": "/Assets/Home/Happyclients/Codemantra.png",
+      "alt": "Codemantra"
     },
     {
-      "img": "/Assets/Home/Happyclients/Jouve.png"
+      "img": "/Assets/Home/Happyclients/Jouve.png",
+      "alt": "Jouve india"
     },
 
     {
-      "img": "/Assets/Home/Happyclients/Straive.png"
+      "img": "/Assets/Home/Happyclients/Straive.png",
+      "alt": "Straive"
     }
   ]
 }

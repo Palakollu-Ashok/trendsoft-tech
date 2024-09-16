@@ -1,11 +1,11 @@
 import { MetaTags } from "react-meta-tags";
-import GetStart from "../GetStarted/GetStart";
+import About from "../About/About";
 
-export default function GetStartPage() {
+export default function AboutPage() {
   return (
     <>
       <MetaTags>
-        <title>Trendsoft | ContactUs Page</title>
+        <title>Trendsoft | Aboutus Page</title>
         {/* <meta name="description" content="This is my page description." />
         <meta property="og:title" content="My Page Title" />
         <meta property="og:image" content="path/to/image.jpg" />
@@ -14,7 +14,7 @@ export default function GetStartPage() {
           content="This is the Open Graph description."
         /> */}
       </MetaTags>
-      <GetStart />
+      <About />
     </>
   );
 }

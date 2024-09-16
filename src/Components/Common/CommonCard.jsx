@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 function CommonCard(props) {
-  const { heading, description, link, img, text, color } = props;
+  const { heading, description, link, img, text, arialabel } = props;
 
   return (
     <li className="w-full grid place-items-center justify-center lg:p-5 sm:p-3 p-2 bg-light space-y-4 font-Nunito my-2 hover:shadow-md duration-300   h-full">
@@ -18,6 +18,7 @@ function CommonCard(props) {
       <div className=" h-fit grid">
         {link && text ? (
           <a
+            aria-label={arialabel}
             href={link}
             className="rounded-full w-full  p-3 lg:px-5 px-3  group flex items-center bg-blue    border border-blue  hover:text-blue text-light  hover:bg-light  duration-300 focus:bg-light focus:text-blue"
           >
@@ -35,5 +36,7 @@ CommonCard.propTypes = {
   heading: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+  arialabel: PropTypes.string.isRequired,
 };
 export default CommonCard;

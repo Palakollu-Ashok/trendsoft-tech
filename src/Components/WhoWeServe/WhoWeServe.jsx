@@ -1,5 +1,4 @@
-import React from "react";
-import Bg from "../../assets/Home/Home1.jpg";
+import Bg from "../../assets/Home/Whoweserve.jpg";
 export default function WhoWeServe() {
   return (
     <div>

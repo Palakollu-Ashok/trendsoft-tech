@@ -1,4 +1,3 @@
-import React from "react";
 import logo from "../../assets/logoB.svg";
 
 import { MdOutlineAttachEmail, MdOutlineEmail } from "react-icons/md";
@@ -7,13 +6,16 @@ import { RiInstagramLine } from "react-icons/ri";
 import { FaLinkedin } from "react-icons/fa";
 export default function Footer() {
   return (
-    <div className="bg-gray-50 font-Nunito md:px-6 xl:px-10 3xl:px-16 px-3">
+    <div
+      role="content info"
+      className="bg-gray-50 font-Nunito md:px-6 xl:px-10 3xl:px-16 px-3"
+    >
       <div className="md:flex gap-10  md:space-y-0 space-y-3 justify-between  md:pt-6 p-3">
         <div className="w-full space-y-4">
           <a href="/">
             <img
               src={logo}
-              alt="Template logo"
+              alt="Trendsoft technologies Logo"
               className="md:h-14 h-8 w-fit "
             />{" "}
           </a>
@@ -34,7 +36,7 @@ export default function Footer() {
             <li className="">
               <a
                 href="/TrendSoft/WhoWeServe"
-                className="hover:text-red duration-300 md:text-[14px]  text-[10px]"
+                className="hover:text-red focus:text-red duration-300 md:text-[14px]  text-[10px]"
               >
                 Who We Serve
               </a>
@@ -43,7 +45,7 @@ export default function Footer() {
             <li className="">
               <a
                 href="/TrendSoft/Career"
-                className="hover:text-red duration-300 md:text-[14px]  text-[10px]"
+                className="hover:text-red focus:text-red  duration-300 md:text-[14px]  text-[10px]"
               >
                 Careers
               </a>
@@ -52,7 +54,7 @@ export default function Footer() {
             <li className="">
               <a
                 href="/TrendSoft/AboutPage"
-                className="hover:text-red duration-300 md:text-[14px]  text-[10px]"
+                className="hover:text-red focus:text-red duration-300 md:text-[14px]  text-[10px]"
               >
                 About
               </a>
@@ -60,7 +62,7 @@ export default function Footer() {
             <li className="">
               <a
                 href="#"
-                className="hover:text-red duration-300 md:text-[14px]  text-[10px]"
+                className="hover:text-red focus:text-red duration-300 md:text-[14px]  text-[10px]"
               >
                 Contact us
               </a>
@@ -102,6 +104,7 @@ export default function Footer() {
             <li className="rounded-full p-2 shadow-xl">
               <a
                 href="https://www.facebook.com/TrendsoftTechnologies "
+                aria-label="Trendsoft Technologies Facebook"
                 target="_blank"
               >
                 <FaFacebook className="md:text-2xl text-xl text-dark  hover:text-opacity-90 hover:scale-105" />
@@ -110,6 +113,7 @@ export default function Footer() {
             <li className="rounded-full p-2 shadow-xl">
               <a
                 href="https://www.instagram.com/trendsoft_technologies/"
+                aria-label="Trendsoft Technologies Instagram"
                 target="_blank"
                 className="hover:bg-opacity-60"
               >
@@ -119,6 +123,7 @@ export default function Footer() {
             <li className="rounded-full p-2 shadow-xl">
               <a
                 href="https://in.linkedin.com/company/trendsoft-technologies-private-limited"
+                aria-label="Trendsoft Technologies Linkedin"
                 target="_blank"
               >
                 <FaLinkedin className="md:text-2xl text-xl text-dark  hover:text-opacity-90 hover:scale-105" />
@@ -127,7 +132,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <p className="text-center border-t py-2">
+      <p className="text-center border-t border-black py-2">
         © Copyright {new Date().getFullYear()}{" "}
         <a
           href="/"

@@ -1,12 +1,12 @@
 // src/Carousel.js
 
-import React, { useState } from "react";
-import item from "../../Content/Home/Clients.json"; // Make sure the path is correct
+import { useState } from "react";
+import item from "../../Content/Home/Clients.json";
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const slidesToShow = 4;
 
-  const images = item.list; // Assuming item.list is an array of image URLs
+  const images = item.list;
 
   if (!images || images.length === 0) {
     return <div>No images available</div>;

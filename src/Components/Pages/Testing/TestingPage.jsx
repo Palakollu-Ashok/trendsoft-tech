@@ -3,6 +3,7 @@ import BredCrumb from "../../Common/BredCrumb";
 import Testing from "../../OurSolutions/Testing/Testing";
 import SolutionsBanner from "../../Common/SolutionsBanner";
 import images from "../../../assets/DigitalAccessibility/BreadCrumb.png";
+import { MetaTags } from "react-meta-tags";
 export default function TestingPage() {
   const data = [
     {
@@ -22,6 +23,16 @@ export default function TestingPage() {
   ];
   return (
     <>
+      <MetaTags>
+        <title>Trendsoft | Testing Services Page</title>
+        {/* <meta name="description" content="This is my page description." />
+        <meta property="og:title" content="My Page Title" />
+        <meta property="og:image" content="path/to/image.jpg" />
+        <meta
+          property="og:description"
+          content="This is the Open Graph description."
+        /> */}
+      </MetaTags>
       <SolutionsBanner
         BgImg={images}
         title="Testing"

@@ -14,11 +14,11 @@ export default function Banner(props) {
         }}
       >
         <div className="space-y-4 md:py-10 py-7">
-          <h1 className="sm:w-[470px] font-serif w-full  md:leading-[55px]">
+          <h1 className="sm:w-[470px] font-serif w-full text-white md:leading-[55px]">
             {desc}
           </h1>
 
-          <p className="md:w-1/2 font-medium">{desc1}</p>
+          <p className="md:w-1/2 font-medium text-white ">{desc1}</p>
           <Buttons button={bname} link={link} />
         </div>
       </div>

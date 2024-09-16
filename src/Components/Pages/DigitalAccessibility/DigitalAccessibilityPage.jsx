@@ -2,6 +2,7 @@ import DigitalAccessibility from "../../OurSolutions/DigitalAccessibility/Digita
 import BredCrumb from "../../Common/BredCrumb";
 import SolutionsBanner from "../../Common/SolutionsBanner";
 import images from "../../../assets/DigitalAccessibility/BreadCrumb.png";
+import { MetaTags } from "react-meta-tags";
 export default function OurSolutionsPage() {
   const data = [
     {
@@ -21,6 +22,16 @@ export default function OurSolutionsPage() {
   ];
   return (
     <>
+      <MetaTags>
+        <title>Trendsoft | Digital Accessibility Page</title>
+        {/* <meta name="description" content="This is my page description." />
+        <meta property="og:title" content="My Page Title" />
+        <meta property="og:image" content="path/to/image.jpg" />
+        <meta
+          property="og:description"
+          content="This is the Open Graph description."
+        /> */}
+      </MetaTags>
       <SolutionsBanner
         BgImg={images}
         title="Digital Accessibility"

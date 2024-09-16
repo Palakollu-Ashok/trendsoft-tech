@@ -1,6 +1,7 @@
 {
   "img": "/Assets/Home/About.png",
   "Title": "About Trendsoft Technologies",
+
   "list": [
     {
       "description": "We take our captaincy role seriously – Our Audits, Our Remediations, Our software tools, Our Security, and our commitment to helping advance a digital safe world."
@@ -15,12 +16,14 @@
   "list2": [
     {
       "learn": "Learn",
-
+      "arialabel": "About Trendsoft Technologies learn",
       "link": "/TrendSoft/about-Us"
     },
     {
       "learn": "View Brochure",
-      "link": "/Assets/Files/booklet.pdf"
+      "arialabel": "About Trendsoft Technologies View Brochure",
+      "link": "/Assets/Files/booklet.pdf",
+      "target": "_blank"
     }
   ]
 }

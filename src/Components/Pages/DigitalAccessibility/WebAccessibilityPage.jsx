@@ -1,9 +1,10 @@
 import Img from "../../../assets/DigitalAccessibility/WebAccess.png";
-import BgImg from "../../../assets/Home/Home1.jpg";
+import BgImg from "../../../assets/DigitalAccessibility/BreadCrumb.png";
 import Empower from "../../Common/Empower";
 import Banner from "../../Common/Banner";
 import BredCrumb from "../../Common/BredCrumb";
 import WebAccessServices from "../../OurSolutions/DigitalAccessibility/WebAccessServices";
+import { MetaTags } from "react-meta-tags";
 export default function WebAccessibilityPage() {
   const data = [
     {
@@ -20,6 +21,16 @@ export default function WebAccessibilityPage() {
 
   return (
     <>
+      <MetaTags>
+        <title>Trendsoft | Web Accessibility Page</title>
+        {/* <meta name="description" content="This is my page description." />
+        <meta property="og:title" content="My Page Title" />
+        <meta property="og:image" content="path/to/image.jpg" />
+        <meta
+          property="og:description"
+          content="This is the Open Graph description."
+        /> */}
+      </MetaTags>
       <Banner
         BgImg={BgImg}
         desc=" Website Accessibility Auditing Solutions"
@@ -31,7 +42,7 @@ export default function WebAccessibilityPage() {
       />
 
       <div className="flex  md:px-6  xl:px-10 3xl:px-16 px-3">
-        {data?.map((d, i) => (
+        {data?.map((d) => (
           <>
             <BredCrumb text={d?.text} link={d.link} divide={d.divide} />
           </>

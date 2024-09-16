@@ -20,9 +20,9 @@ export default function AccessibilityJourney() {
           <p className="text-center text-light">{data.desc}</p>
         </div>
         <div className="justify-between md:gap-24 sm:gap-10 gap-5 ">
-          <div className="grid sm:grid-cols-3 grid-cols-1  justify-between xl:gap-20 gap-5 ">
+          <ul className="grid sm:grid-cols-3 grid-cols-1  justify-between xl:gap-20 gap-5 ">
             {data?.list.map((d, i) => (
-              <div
+              <li
                 key={i}
                 className="grid justify-center place-items-center rounded-2xl p-3 space-y-2 bg-light"
               >
@@ -33,9 +33,9 @@ export default function AccessibilityJourney() {
                 />
 
                 <p className="text-center">{d?.headline}</p>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </div>
     </div>

@@ -5,14 +5,17 @@ import { RxCross2 } from "react-icons/rx";
 import logo from "../../assets/logoB.svg";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { Disclosure, Popover } from "@headlessui/react";
-import image from "../../assets/DigitalAccessibility/MobAccess.png";
+import image from "../../assets/Home/accessibility.svg";
+import image2 from "../../assets/Home/Testing.svg";
+import image3 from "../../assets/Home/security.svg";
+
+import { FaArrowRight } from "react-icons/fa";
 import { HiOutlineArrowSmallRight } from "react-icons/hi2";
-import { IoArrowForwardCircleOutline } from "react-icons/io5";
 const Navbar = () => {
   const [opened, setOpened] = useState(false);
   const menuRef = useRef(null);
   const lastFocusableRef = useRef(null);
-
+  const firstFocusableRef = useRef(null);
   const [activeTab, setActiveTab] = useState("DigtalAccessibilityServices");
 
   const content = {
@@ -42,17 +45,17 @@ const Navbar = () => {
         {
           id: 1,
           title: "Functional Testing",
-          path: "/TrendSoft/oursolutions/WebAccess-DigitalAccessibility",
+          path: "/TrendSoft/oursolutions/Testing/FunctionalTesting",
         },
         {
           id: 2,
           title: "Performance Testing",
-          path: "/TrendSoft/oursolutions/Mobile-Acessibility",
+          path: "/TrendSoft/oursolutions/Testing/PerformanceTesting",
         },
         {
           id: 3,
-          title: "Usability Accessibility",
-          path: "/TrendSoft/oursolutions/IndesignAccessibilitypage",
+          title: "Usability Testing",
+          path: "/TrendSoft/oursolutions/Testing/UsabilityTesting",
         },
       ],
     },
@@ -63,36 +66,57 @@ const Navbar = () => {
         {
           id: 1,
           title: "Web App Security",
-          path: "/TrendSoft/oursolutions/WebAccess-DigitalAccessibility",
+          path: "/TrendSoft/oursolutions/CyberSecurity/WebApiSecurity",
         },
         {
           id: 2,
           title: "Mobile App Security",
-          path: "/TrendSoft/oursolutions/Mobile-Acessibility",
+          path: "/TrendSoft/oursolutions/CyberSecurity/MobApiSecurity",
         },
         {
           id: 3,
           title: "Api Security",
-          path: "/TrendSoft/oursolutions/IndesignAccessibilitypage",
+          path: "/TrendSoft/oursolutions/CyberSecurity/ApiKey",
         },
         {
           id: 1,
           title: "Thick Client Security",
-          path: "/TrendSoft/oursolutions/WebAccess-DigitalAccessibility",
+          path: "/TrendSoft/oursolutions/CyberSecurity/ThickClientPage",
         },
         {
           id: 2,
           title: "Secure Code Review",
-          path: "/TrendSoft/oursolutions/Mobile-Acessibility",
+          path: "/TrendSoft/oursolutions/CyberSecurity/SecureCodePage",
         },
         {
           id: 3,
           title: "Database Security",
-          path: "/TrendSoft/oursolutions/IndesignAccessibilitypage",
+          path: "/TrendSoft/oursolutions/CyberSecurity/DataBaseSecurityPage",
         },
       ],
     },
   };
+
+  // const content = {
+  //   DigtalAccessibilityServices: {
+  //     mainpath: "/DigitalAccessibility",
+  //     title: "Digital Accessibility",
+  //     content:
+  //       "Digital accessibility ensures that websites, apps, and digital tools are usable by all, including people with disabilities. It follows standards like WCAG to improve access through features like keyboard navigation and screen reader compatibility. This fosters inclusivity and equal access for everyone.",
+  //   },
+  //   TestingServices: {
+  //     mainpath: "/TrendSoft/oursolutions/Testing",
+  //     title: "Testing Services",
+  //     content:
+  //       "Testing services involve the systematic evaluation of software applications, ensuring they function correctly and meet specified requirements. This includes functional testing, performance testing, and user experience testing to identify bugs, improve quality, and ensure reliability.",
+  //   },
+  //   CyberSecurity: {
+  //     mainpath: "/TrendSoft/oursolutions/CyberSecurity",
+  //     title: "Cyber Security",
+  //     content:
+  //       "Cybersecurity services focus on protecting digital assets from cyber threats. These services include risk assessments, threat monitoring, penetration testing, and implementing security protocols to safeguard data, networks, and systems from unauthorized access and cyberattacks.",
+  //   },
+  // };
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
@@ -109,8 +133,8 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
-    if (opened && lastFocusableRef.current) {
-      lastFocusableRef.current.focus();
+    if (opened && firstFocusableRef.current) {
+      firstFocusableRef.current.focus();
     }
   }, [opened]);
 
@@ -118,6 +142,11 @@ const Navbar = () => {
     setOpened(!opened);
   };
 
+  // const handleKeyDown = (e) => {
+  //   if (e.key === "Escape") {
+  //     setOpened(false);
+  //   }
+  // };
   const handleLastItemKeyDown = (e, close, nextSelector) => {
     if (e.key === "Tab" && !e.shiftKey) {
       e.preventDefault();
@@ -129,15 +158,60 @@ const Navbar = () => {
       }
     }
   };
+  const handleKeyDown = (e) => {
+    const focusableElements = Array.from(
+      document.querySelectorAll(
+        'a[href], button, textarea, input, select, [tabindex]:not([tabindex="-1"])'
+      )
+    );
+    console.log("Focusable elements:", focusableElements);
 
+    const firstElement = focusableElements[0];
+    const lastElement = focusableElements[focusableElements.length - 1];
+
+    if (e.key === "ArrowDown") {
+      e.preventDefault();
+      const currentIndex = focusableElements.indexOf(document.activeElement);
+      console.log("Current index (ArrowDown):", currentIndex);
+      const nextIndex = (currentIndex + 1) % focusableElements.length;
+      focusableElements[nextIndex].focus();
+    }
+
+    if (e.key === "ArrowUp") {
+      e.preventDefault();
+      const currentIndex = focusableElements.indexOf(document.activeElement);
+      console.log("Current index (ArrowUp):", currentIndex);
+      const prevIndex =
+        (currentIndex - 1 + focusableElements.length) %
+        focusableElements.length;
+      focusableElements[prevIndex].focus();
+    }
+
+    if (e.key === "Tab") {
+      if (e.shiftKey) {
+        if (document.activeElement === firstElement) {
+          e.preventDefault();
+          lastElement.focus();
+        }
+      } else {
+        if (document.activeElement === lastElement) {
+          e.preventDefault();
+          firstElement.focus();
+        }
+      }
+    }
+  };
   return (
     <div className="sticky top-0 z-40 bg-light bg-yellow-50 w-full duration-500">
-      <div className="flex gap-5 justify-between items-center md:py-10 md:p-2 h-[12vh] md:px-6 xl:px-10 3xl:px-16 px-3">
+      <div
+        role="banner"
+        className="flex gap-5 justify-between items-center md:py-10 md:p-2 h-[12vh] md:px-6 xl:px-10 3xl:px-16 px-3"
+      >
         <div>
           <a href="/" className="flex gap-0.5 justify-center items-center">
             <img
               src={logo}
-              alt="Template logo"
+              alt="Trendsoft technologies Logo"
               className="md:h-14 h-10 w-full"
             />
           </a>
@@ -148,11 +222,12 @@ const Navbar = () => {
             <ul className="flex justify-end gap-4">
               <li className="flex items-center">
                 <Popover className="relative">
-                  {({ open, close }) => (
+                  {({ open }) => (
                     <>
                       <Popover.Button
                         className="inline-flex items-center focus:border-2 focus:rounded-md focus:border-dark text-sm/6 text-dark shadow-inner shadow-white/10 focus:outline-none"
                         aria-expanded={open}
+                        aria-hashpopup="true"
                       >
                         <span className="sr-only">menu</span>
                         <p className="flex items-center md:text-[12px] text-[14px] lg:text-[16px] py-1">
@@ -162,66 +237,95 @@ const Navbar = () => {
                           />
                         </p>
                       </Popover.Button>
-
                       <Popover.Panel
                         transition
                         anchor="bottom end"
-                        className="absolute flex gap-5 top-full mt-6 left-0 w-full bg-gray-200 origin-top-right rounded-xl border border-white/5 p-5 text-sm/6 transition duration-100 ease-out z-50"
+                        onKeyDown={handleKeyDown}
+                        className="absolute flex gap-5 top-full mt-6 left-0 w-full bg-[#21469D] origin-top-right  border border-white/5  p-10 text-sm/6 transition duration-100 ease-out z-50"
                       >
-                        <div className="w-1/2">
-                          <h2 className="mb-5">Our Services</h2>
-                          <hr className="border-black" />
-                          <ul className="list-none w-full grid grid-cols-2 gap-10">
-                            <li>
+                        <div className="w-1/2 px-5">
+                          <h2 className="mb-5 text-white">Our Services</h2>
+                          <hr className="border-white" />
+                          <ul
+                            role="tablist"
+                            className="list-none w-full grid grid-cols-2 gap-5 mt-5"
+                          >
+                            <li role="presentation" className="w-fit">
                               <a
+                                href="#content-1"
+                                role="tab"
+                                id="tab-1"
+                                aria-controls="content-1"
+                                aria-selected="true"
                                 tabIndex={0}
-                                className="group relative flex items-center gap-2 rounded-lg py-1.5 cursor-pointer"
+                                ref={firstFocusableRef}
+                                className="grid place-content-center place-items-center gap-2 rounded-lg cursor-pointer group"
                                 onClick={() =>
                                   setActiveTab("DigtalAccessibilityServices")
                                 }
+                                onKeyDown={(e) => {
+                                  if (e.key === "Enter" || e.key === " ") {
+                                    setActiveTab("DigtalAccessibilityServices");
+                                  }
+                                }}
                               >
                                 <img
                                   src={image}
-                                  alt="Images"
-                                  className="w-[250px] h-[150px] object-cover rounded-xl"
+                                  alt=""
+                                  className="w-[120px]  object-cover rounded-xl transform transition-transform duration-300 ease-in-out group-hover:scale-110"
                                 />
-                                <p className="absolute bottom-5 flex items-center  text-white font-semibold">
+                                <p className=" bottom-0 gap-3 left-0 px-2 w-[300px] flex justify-center items-center z-50 text-white font-semibold ">
                                   Digital Accessibility Services
-                                  <IoArrowForwardCircleOutline />
+                                  <FaArrowRight />
                                 </p>
                               </a>
                             </li>
-                            <li>
+                            <li role="presentation" className="w-fit">
                               <a
                                 tabIndex={0}
-                                className="group relative flex items-center gap-2 rounded-lg py-1.5 cursor-pointer"
+                                ref={firstFocusableRef}
+                                className=" grid place-content-center place-items-center gap-2 rounded-lg cursor-pointer  group"
                                 onClick={() => setActiveTab("TestingServices")}
+                                onKeyDown={(e) => {
+                                  if (e.key === "Enter" || e.key === " ") {
+                                    setActiveTab("TestingServices");
+                                  }
+                                }}
                               >
+                                {/* <div className="absolute inset-0 bg-black/30 rounded-lg z-10"></div> */}
                                 <img
-                                  src={image}
-                                  alt="Images"
-                                  className="w-[250px] h-[150px] object-cover rounded-xl"
+                                  src={image2}
+                                  alt=""
+                                  className="w-[120px]  object-cover rounded-xl transform transition-transform duration-300 ease-in-out group-hover:scale-110"
                                 />
-                                <p className="absolute bottom-5 flex items-center  text-white font-semibold">
+                                <p className=" bottom-0 gap-3 left-0 px-2 w-[300px] flex justify-center items-center z-50 text-white font-semibold ">
                                   Testing Services
-                                  <IoArrowForwardCircleOutline />
+                                  <FaArrowRight />
                                 </p>
                               </a>
                             </li>
-                            <li>
+
+                            <li role="presentation" className="w-fit">
                               <a
                                 tabIndex={0}
-                                className="group relative flex items-center gap-2 rounded-lg py-1.5 cursor-pointer"
+                                ref={firstFocusableRef}
+                                className="  grid place-content-center place-items-center gap-2 rounded-lg cursor-pointer  group"
                                 onClick={() => setActiveTab("CyberSecurity")}
+                                onKeyDown={(e) => {
+                                  if (e.key === "Enter" || e.key === " ") {
+                                    setActiveTab("CyberSecurity");
+                                  }
+                                }}
                               >
+                                {/* <div className="absolute inset-0 bg-black/30 rounded-lg z-10"></div> */}
                                 <img
-                                  src={image}
-                                  alt="Images"
-                                  className="w-[250px] h-[150px] object-cover rounded-xl"
+                                  src={image3}
+                                  alt=""
+                                  className="w-[120px] object-cover rounded-xl transform transition-transform duration-300 ease-in-out group-hover:scale-110"
                                 />
-                                <p className="absolute bottom-5 flex items-center text-white font-semibold">
+                                <p className=" gap-3 bottom-0 left-0 px-2 flex justify-center items-center z-50 text-white font-semibold w-[300px]">
                                   Cyber Security
-                                  <IoArrowForwardCircleOutline />
+                                  <FaArrowRight />
                                 </p>
                               </a>
                             </li>
@@ -230,31 +334,62 @@ const Navbar = () => {
 
                         <div className="w-1/2 ">
                           <div className="flex justify-between items-center mb-5">
-                            <h2>We Offer</h2>
+                            <h2 className="text-white">We Offer</h2>
                             <a
                               href={content[activeTab]?.mainpath}
-                              className="text-dark font-semibold flex items-center"
+                              className="text-white font-semibold flex items-center"
                             >
-                              All Services{" "}
+                              All Services
                               <span className="text-lg">
                                 <HiOutlineArrowSmallRight />
                               </span>
                             </a>
                           </div>
-                          <hr className="border-black" />
-                          <ul className="grid grid-cols-3 mt-5 ">
+                          <hr className="border-white" />
+                          <ul className="grid space-y-5">
                             {activeTab &&
                               content[activeTab].services.map(
                                 ({ id, title, path }) => (
                                   <li key={id} className="py-1 mt-5">
-                                    <a href={path} className="text-dark">
-                                      {title}
+                                    <a
+                                      href={path}
+                                      className="text-white flex justify-between gap-5 mb-3"
+                                    >
+                                      {title} <HiOutlineArrowSmallRight />
                                     </a>
+                                    <hr className="border-white" />
                                   </li>
                                 )
                               )}
                           </ul>
                         </div>
+                        {/* <div className="w-1/2">
+                          <div className="flex justify-between items-center mb-5">
+                            <h2 className="text-white">We Offer</h2>
+                          </div>
+                          <hr className="border-white" />
+
+                          <div className="flex items-center mt-10">
+                            {activeTab && (
+                              <div key={activeTab} className="space-y-5">
+                                <h3 className="text-white">
+                                  {content[activeTab]?.title}
+                                </h3>
+                                <p className="text-white">
+                                  {content[activeTab]?.content}
+                                </p>
+                                <div>
+                                  <a
+                                    href={content[activeTab]?.mainpath}
+                                    className="bg-white rounded-xl px-4 py-2"
+                                  >
+                                    View More
+                                  </a>
+                                </div>
+                              </div>
+                            )}
+                          </div>
+                        </div> */}
                       </Popover.Panel>
                     </>
                   )}

@@ -92,6 +92,9 @@ export default function ContactUs() {
         <div className="lg:w-1/2 flex lg:grid w-full gap-3 p-0.5">
           <div className="lg:h-full h-[200px] w-full">
             <iframe
+              aria-labelledby="Our-Location"
+              role="application"
+              aria-label="Trendsoft Technologies map1"
               src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3827.0413003580547!2d80.57439567466332!3d16.422728729878514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sTrendsoft%20Technologies%20Pvt%20Ltd%2C%20%23301-302%2C%20NRT%20Tech%20Park%2C%20Mangalagiri%20Bypass%2C%20Amaravathi%2C%20Andhra%20Pradesh%20522503!5e0!3m2!1sen!2sin!4v1722507946520!5m2!1sen!2sin"
               width="100%"
               height="100%"
@@ -103,6 +106,9 @@ export default function ContactUs() {
           </div>
           <div className="lg:h-full h-[200px] w-full">
             <iframe
+              aria-labelledby="Our-Location"
+              role="application"
+              aria-label="Trendsoft Technologies map2"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237.8340835142151!2d78.40170932789304!3d17.491020900849563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91949a0322e3%3A0x42ea9c96fc8be8b8!2sMIG-37%2C%20K%20P%20H%20B%20Phase%201%2C%20Kukatpally%2C%20Hyderabad%2C%20Telangana%20500072!5e0!3m2!1sen!2sin!4v1722572636071!5m2!1sen!2sin"
               width="100%"
               height="100%"
@@ -115,6 +121,10 @@ export default function ContactUs() {
         </div>
 
         <div className="w-full lg:w-1/2  lg:px-5 bg-gray-100 rounded-2xl xl:py-10 sm:py-5 py-7 ">
+          <p className="flex justify-end gap-2">
+            <span className="text-red">*</span>
+            fields are required
+          </p>
           <form action="" className="px-2" onSubmit={handleSubmit(onSubmit)}>
             <div className="sm:grid grid-cols-2 md:gap-8 gap-3 sm:space-y-0 space-y-4 lg:py-0 py-3">
               <div>
@@ -259,7 +269,7 @@ export default function ContactUs() {
 
               <div className="grid space-y-2 col-span-2">
                 <label htmlFor="Company_Name" className="px-1">
-                  Company Name
+                  Company Name <span className="text-red">*</span>
                 </label>
                 <input
                   type="text"

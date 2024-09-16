@@ -1,11 +1,10 @@
-import Img from "../../../assets/1.webp";
-import BgImg from "../../../assets/Home/Home1.jpg";
-
+import Img from "../../../assets/Home/MobileAppSecurity.jpg";
+import BgImg from "../../../assets/DigitalAccessibility/BreadCrumb.png";
 import Empower from "../../Common/Empower";
 import Banner from "../../Common/Banner";
 import BredCrumb from "../../Common/BredCrumb";
 import MobileAppSecurity from "../../OurSolutions/CyberSecurity/MobileAppSecurity";
-export default function MobileAccessPage() {
+export default function MobileApiPage() {
   const data = [
     {
       text: "Home",
@@ -31,7 +30,7 @@ export default function MobileAccessPage() {
         bname="Speak with an Expert"
       />
       <div className="flex  md:px-6  xl:px-10 3xl:px-16 px-3">
-        {data.map((d, i) => (
+        {data.map((d) => (
           <>
             <BredCrumb text={d.text} link={d.link} divide={d.divide} />
           </>

@@ -2,18 +2,21 @@
   "list": [
     {
       "button": "Certificate Of Quality Management System",
-      "img": "/Assets/Home/Download.svg",
-      "link": "/Assets/Files/qmsmanagement.pdf"
+      "img": "/Assets/Home/download.svg",
+      "link": "/Assets/Files/qmsmanagement.pdf",
+      "target": "_blank"
     },
     {
       "button": "Certificate Of Udyam Registration",
-      "img": "/Assets/Home/Download.svg",
-      "link": "/Assets/Files/udyamregistration.pdf"
+      "img": "/Assets/Home/download.svg",
+      "link": "/Assets/Files/udyamregistration.pdf",
+      "target": "_blank"
     },
     {
       "button": "Certificate Of Startup India",
-      "img": "/Assets/Home/Download.svg",
-      "link": "/Assets/Files/startup.pdf"
+      "img": "/Assets/Home/download.svg",
+      "link": "/Assets/Files/startup.pdf",
+      "target": "_blank"
     }
   ]
 }

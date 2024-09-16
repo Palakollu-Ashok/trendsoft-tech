@@ -1,11 +1,12 @@
 import data1 from "../../../Content/OurSolutions/DigitalAccessibility/MobileAccessibility/Card.json";
 import CommonCard from "../../Common/CommonCard";
 import Img from "../../../assets/DigitalAccessibility/MobAccess.png";
-import BgImg from "../../../assets/Home/Home1.jpg";
+import BgImg from "../../../assets/DigitalAccessibility/BreadCrumb.png";
 
 import Empower from "../../Common/Empower";
 import Banner from "../../Common/Banner";
 import BredCrumb from "../../Common/BredCrumb";
+import { MetaTags } from "react-meta-tags";
 export default function MobileAccessPage() {
   const data = [
     {
@@ -22,6 +23,16 @@ export default function MobileAccessPage() {
 
   return (
     <>
+      <MetaTags>
+        <title>Trendsoft | Web Accessibility Page</title>
+        {/* <meta name="description" content="This is my page description." />
+        <meta property="og:title" content="My Page Title" />
+        <meta property="og:image" content="path/to/image.jpg" />
+        <meta
+          property="og:description"
+          content="This is the Open Graph description."
+        /> */}
+      </MetaTags>
       <Banner
         BgImg={BgImg}
         desc=" Website & Mobile Accessibility Auditing Solutions"

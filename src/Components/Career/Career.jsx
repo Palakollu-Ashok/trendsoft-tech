@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
-import Img from "../../assets/Career.webp";
+import Img from "../../assets/Home/Career.jpg";
 export default function Career() {
   const [fileUploaded, setFileUploaded] = useState(false);
 
@@ -68,14 +68,17 @@ export default function Career() {
 
         <div className="lg:flex lg:gap-10 w-full h-full md:space-y-0 space-y-3 pb-5">
           <div className="lg:w-1/2 flex lg:grid w-full gap-3 p-0.5">
-            <div className="h-full w-full">
-              <img src={Img} alt="Image Not Found" />
+            <div className="flex justify-center">
+              <img src={Img} alt="Image Not Found" className="h-[500px]" />
             </div>
           </div>
 
           <div className="w-full lg:w-1/2  lg:px-5">
-            <form onSubmit={handleSubmit(onSubmit)} className="px-2">
-              <div className="sm:grid grid-cols-2 md:gap-8 gap-3 sm:space-y-0 space-y-4 lg:py-0 py-3">
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              className="px-6 py-6 bg-gray-100"
+            >
+              <div className=" md:gap-8 gap-3  space-y-4 lg:py-0 py-3 md:px-4">
                 <div className="grid space-y-2">
                   <label htmlFor="Name" className="px-1">
                     Name <span className="text-red">*</span>

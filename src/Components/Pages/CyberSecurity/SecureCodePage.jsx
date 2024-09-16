@@ -1,6 +1,5 @@
-import React from "react";
-import Img from "../../../assets/1.webp";
-import BgImg from "../../../assets/Home/Home1.jpg";
+import Img from "../../../assets/Home/SecureCodeReview.jpg";
+import BgImg from "../../../assets/DigitalAccessibility/BreadCrumb.png";
 
 import Empower from "../../Common/Empower";
 import Banner from "../../Common/Banner";
@@ -33,7 +32,7 @@ export default function SecureCodePage() {
       />
 
       <div className="flex  md:px-6  xl:px-10 3xl:px-16 px-3">
-        {data.map((d, i) => (
+        {data.map((d) => (
           <>
             <BredCrumb text={d.text} link={d.link} divide={d.divide} />
           </>

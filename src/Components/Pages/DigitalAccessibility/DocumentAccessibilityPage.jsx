@@ -1,11 +1,10 @@
-import React from "react";
-import CommonCard from "../../Common/CommonCard";
-import BgImg from "../../../assets/Home/Home1.jpg";
+import BgImg from "../../../assets/DigitalAccessibility/BreadCrumb.png";
 import Img from "../../../assets/1.webp";
 import Banner from "../../Common/Banner";
 import Empower from "../../Common/Empower";
 import BredCrumb from "../../Common/BredCrumb";
 import DocumentServices from "../../OurSolutions/DigitalAccessibility/DocumentServices";
+import { MetaTags } from "react-meta-tags";
 export default function DocumentAccessibilityPage() {
   const data = [
     {
@@ -22,6 +21,16 @@ export default function DocumentAccessibilityPage() {
 
   return (
     <>
+      <MetaTags>
+        <title>Trendsoft | Document Accessibility Page</title>
+        {/* <meta name="description" content="This is my page description." />
+        <meta property="og:title" content="My Page Title" />
+        <meta property="og:image" content="path/to/image.jpg" />
+        <meta
+          property="og:description"
+          content="This is the Open Graph description."
+        /> */}
+      </MetaTags>
       <Banner
         BgImg={BgImg}
         desc=" Website & Document Accessibility Auditing Solutions"

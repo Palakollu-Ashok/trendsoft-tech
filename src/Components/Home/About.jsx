@@ -1,4 +1,3 @@
-import React from "react";
 import data from "../../Content/Home/About.json";
 import Button from "../Common/Buttons";
 function About() {
@@ -15,9 +14,14 @@ function About() {
             </p>
           ))}
           <div className="flex w-fit gap-4 text-center">
-            {data.list2.map((d, i) => (
+            {data.list2.map((d) => (
               <>
-                <Button button={d.learn} link={d.link} />
+                <Button
+                  arialabel={d.arialabel}
+                  button={d.learn}
+                  link={d.link}
+                  target={d.target ? d.target : "_self"}
+                />
               </>
             ))}
           </div>

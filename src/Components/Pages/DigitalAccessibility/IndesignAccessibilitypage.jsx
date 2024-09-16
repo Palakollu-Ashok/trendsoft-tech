@@ -1,12 +1,10 @@
-import React from "react";
-import CommonCard from "../../Common/CommonCard";
-import Img from "../../../assets/1.webp";
-import BgImg from "../../../assets/Home/Home1.jpg";
-
+import Img from "../../../assets/DigitalAccessibility/Indesign.jpg";
+import BgImg from "../../../assets/DigitalAccessibility/BreadCrumb.png";
 import Empower from "../../Common/Empower";
 import Banner from "../../Common/Banner";
 import BredCrumb from "../../Common/BredCrumb";
 import IndesignAccessServices from "../../OurSolutions/DigitalAccessibility/IndesignAccessServices";
+import { MetaTags } from "react-meta-tags";
 export default function IndesignAccessibilitypage() {
   const data = [
     {
@@ -23,6 +21,16 @@ export default function IndesignAccessibilitypage() {
 
   return (
     <>
+      <MetaTags>
+        <title>Trendsoft | Indesign Accessibility Page</title>
+        {/* <meta name="description" content="This is my page description." />
+        <meta property="og:title" content="My Page Title" />
+        <meta property="og:image" content="path/to/image.jpg" />
+        <meta
+          property="og:description"
+          content="This is the Open Graph description."
+        /> */}
+      </MetaTags>
       <Banner
         BgImg={BgImg}
         desc=" Website & In Design Accessibility Auditing Solutions"
@@ -46,7 +54,6 @@ export default function IndesignAccessibilitypage() {
         desc="Allyant is your trusted partner in achieving Web Content Accessibility Guidelines (WCAG) compliance, mandated by the Americans with Disabilities Act (ADA) and Section 508, to ensure your online presence and digital properties are inclusive to all users."
         desc1="Discover our comprehensive range of services tailored to meet the specific needs of organizations aiming to foster a more accessible and inclusive digital environment. Explore our offerings below and unlock the potential to attain compliance and accessibility excellence."
       />
-
       {/* <div className=" bg-gray-100 sm:py-4 py-2 md:px-6 xl:px-10 3xl:px-16  px-3 h-full">
         <div className="">
           <h2 className=" py-3 md:px-5 px-2">{data.title}</h2>

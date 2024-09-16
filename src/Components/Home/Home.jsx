@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import BgImg from "../../assets/Home/banner1.png";
 import BgImg1 from "../../assets/Home/banner2.png";
@@ -33,7 +31,7 @@ function Home() {
             Technologies - We take off on our shoulders to Reduce compliance and
             security risk
           </p>
-          <Buttons button="Request For a Demo" link="#" />
+          <Buttons button="Request For a Demo" link="/TrendSoft/ContactUs" />
         </div>
       </div>
     </div>

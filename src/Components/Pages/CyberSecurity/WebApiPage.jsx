@@ -1,11 +1,10 @@
-import Img from "../../../assets/1.webp";
-import BgImg from "../../../assets/Home/Home1.jpg";
-
+import Img from "../../../assets/Home/WebAppSecurity.jpg";
+import BgImg from "../../../assets/DigitalAccessibility/BreadCrumb.png";
 import Empower from "../../Common/Empower";
 import Banner from "../../Common/Banner";
 import BredCrumb from "../../Common/BredCrumb";
 import WebAppSecurity from "../../OurSolutions/CyberSecurity/WebAppSecurity";
-export default function WebAccessibilityPage() {
+export default function WebApiPage() {
   const data = [
     {
       text: "Home",
@@ -31,7 +30,7 @@ export default function WebAccessibilityPage() {
       />
 
       <div className="flex  md:px-6  xl:px-10 3xl:px-16 px-3">
-        {data.map((d, i) => (
+        {data.map((d) => (
           <>
             <BredCrumb text={d.text} link={d.link} divide={d.divide} />
           </>
