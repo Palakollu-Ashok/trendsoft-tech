@@ -8,9 +8,9 @@ export default function Footer() {
   return (
     <div
       role="content info"
-      className="bg-gray-50 font-Nunito md:px-6 xl:px-10 3xl:px-16 px-3"
+      className="bg-gray-50 font-Nunito md:px-6 xl:px-10 3xl:px-16 px-3 md:py-10 py-4"
     >
-      <div className="md:flex gap-10  md:space-y-0 space-y-3 justify-between  md:pt-6 p-3">
+      <div className="md:flex gap-10  md:space-y-0 space-y-3 justify-between  md:pt-10 p-6">
         <div className="w-full space-y-4">
           <a href="/">
             <img

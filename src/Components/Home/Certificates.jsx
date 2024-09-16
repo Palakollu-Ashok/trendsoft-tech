@@ -12,7 +12,7 @@ export default function Certificates() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="md:px-6 xl:px-10 3xl:px-16  md:space-y-4 space-y-2  md:py-8 py-3    h-full ">
+      <div className="md:px-6 xl:px-10 3xl:px-16  md:space-y-4 space-y-2  md:py-32 py-3    h-full ">
         <h2 className="text-center text-light">Certifications</h2>
 
         <ul className="md:flex gap-3 md:justify-center md:py-10 sm:py-5 py-3 xl:gap-28 md:gap-14 space-y-8 md:space-y-0">

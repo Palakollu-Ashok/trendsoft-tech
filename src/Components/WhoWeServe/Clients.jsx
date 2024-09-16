@@ -3,7 +3,7 @@ import data1 from "../../Content/Home/Clients.json";
 
 export default function Clients() {
   return (
-    <div className="py-10  md:px-6 xl:px-10 3xl:px-16 px-3">
+    <div className="py-10  md:px-6 xl:px-10 3xl:px-16 px-3 bg-white">
       <h2 className="text-center md:pb-10 md:py-3 pb-3">{data1.heading}</h2>
       <ul className="grid lg:grid-cols-7 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 place-items-center  mx-auto md:gap-10 gap-5">
         {data1?.list.map((d, i) => (

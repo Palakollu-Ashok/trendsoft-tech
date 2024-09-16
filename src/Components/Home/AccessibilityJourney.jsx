@@ -4,7 +4,7 @@ import Bgimg from "../../assets/Home/banner2.png";
 export default function AccessibilityJourney() {
   return (
     <div
-      className="md:px-6 xl:px-10 3xl:px-16 px-3 space-y-8  md:py-24 py-12   "
+      className="md:px-6 xl:px-10 3xl:px-16 px-3 space-y-8  md:py-36 py-12   "
       style={{
         backgroundImage: `url(${Bgimg})`,
         backgroundSize: "cover",

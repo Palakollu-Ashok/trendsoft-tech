@@ -5,7 +5,7 @@ import Clients from "../WhoWeServe/Clients";
 import { MetaTags } from "react-meta-tags";
 export default function WhoWeServePage() {
   return (
-    <>
+    <div className="bg-[#193392]">
       <MetaTags>
         <title>Trendsoft | Who we Serve Page</title>
         {/* <meta name="description" content="This is my page description." />
@@ -23,6 +23,6 @@ export default function WhoWeServePage() {
       {/* <LetsTalk /> */}
 
       <Clients />
-    </>
+    </div>
   );
 }

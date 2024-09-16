@@ -12,7 +12,7 @@ export default function Card() {
         height: "",
       }}
     >
-      <div className="my-10  grid px-3 sm:py-4 py-2 md:px-6 xl:px-10 3xl:px-16 ">
+      <div className="my-10  grid px-3 sm:py-10 py-4 md:px-6 xl:px-10 3xl:px-16 ">
         <div className=" lg:py-0 py-5 ">
           <div className="md:py- py-5  space-y-2 lg:pb-20 sm:pb-10 pb-5">
             <h2 className="py-3 text-light md:px-5 px-2 text-center tracking-wide ">
