@@ -27,6 +27,8 @@ import ApiKeyPage from "./Components/Pages/CyberSecurity/ApiKeyPage";
 import MobileApiPage from "./Components/Pages/CyberSecurity/MobileAccessibilitypage";
 import WebApiPage from "./Components/Pages/CyberSecurity/WebApiPage";
 import AboutPage from "./Components/Pages/AboutPage";
+import EpubAccessibility from "./Components/Career/EpubAccessibility";
+import Fresher from "./Components/Career/Fresher";
 function App() {
   return (
     <>
@@ -120,6 +122,11 @@ function App() {
         <Route path="/TrendSoft/about-Us" element={<AboutPage />} />
         {/* Career */}
         <Route path="/TrendSoft/Career" element={<CareerPage />} />
+        <Route
+          path="/TrendSoft/Career/epubaccessibility"
+          element={<EpubAccessibility />}
+        />
+        <Route path="/TrendSoft/Career/fresher" element={<Fresher />} />
 
         {/* WhoWeServe */}
 

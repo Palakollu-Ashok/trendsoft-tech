@@ -546,8 +546,11 @@ const Navbar = () => {
               <div className="md:hidden md:ml-4">
                 <button
                   onClick={handleNav}
+                  onKeyDown={(e) =>
+                    handleLastItemKeyDown(e, close, '[href="/"]')
+                  }
                   aria-label={opened ? "Close menu" : "Open menu"}
-                  className="text-light flex border-2 border-light focus:border focus:border-red bg-[rgb(12,28,56)]"
+                  className="text-light flex  focus:border focus:border-red bg-[rgb(12,28,56)]"
                 >
                   {opened ? (
                     <RxCross2 className="md:h-14 h-10 w-8 p-1" />

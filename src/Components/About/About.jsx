@@ -60,7 +60,7 @@ function About() {
           className="h-[60vh] object-cover w-full object-bottom"
         />
         <div className="h-full  xl:px-[100px] lg:px-[40px] sm:px-[18px]  px-5 xl:-translate-y-30 md:-translate-y-24 -translate-y-14">
-          <div className="w-full   rounded-2xl  bg-[rgb(25,20,65)] text-light  xl:px-40 lg:px-5  xl:p-10 md:p-8 p-3 shadow-xl">
+          <div className="w-full   rounded-2xl  bg-[#22439A] text-light  xl:px-40 lg:px-5  xl:p-10 md:p-8 p-3 shadow-xl">
             <div className="space-y-2 py-5 ">
               <h2 className="text-center text-light">About TrendSoft</h2>
               <p className="text-center text-light">
@@ -81,7 +81,7 @@ function About() {
             key={i}
             className="md:flex lg:gap-10 md:gap-3 justify-center items-center h-full space-y-4"
           >
-            <img src={d.Img} alt="" className="md:w-1/3 h-full " />
+            <img src={d.Img} alt="" className="md:w-1/3 h-full rounded-lg " />
 
             <div className="h-full lg:space-y-5 space-y-2">
               <h2>{d.title}</h2>

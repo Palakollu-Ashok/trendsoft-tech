@@ -1,0 +1,31 @@
+{
+  "epub": {
+    "title": "Epub Accessibility Developer ",
+    "subheading": "Eligibility Criteria",
+    "list": [
+      "More than 3 years of working experience in ePub2, ePub3 and accessible ePub3 (both reflowable and fixed layout).",
+      "Exposure in device process like iPad, Kindle, Readium, Nook, Kobo, BookShelf.",
+      "Hands-on experience in CSS3, SCSS, HTML5.",
+      "Knowledge of validation tools like ePub, W3C and AChecker.",
+      "Knowledge WCAG and IDPF standards.",
+      "Basic XML & MathML Knowledge.",
+      "Experience and Knowledge in Accessibilty Feature in ePub.",
+      "Must have worked in Books. Must have end to end knowledge in Epub Accessibility",
+      "Must have end to end knowledge in Epub Accessibility"
+    ]
+  },
+  "fresher": {
+    "title": "Fresher ",
+    "subheading": "Eligibility Criteria",
+    "list": [
+      "Qualifications: Bachelor's degree in ITES (Information Technology Enabled Services), CSE (Computer Science Engineering), ECE (Electronics and Communication Engineering), or IT (Information Technology).",
+      "Knowledge of HTML: The candidate should be proficient in creating and designing web pages using HTML (HyperText Markup Language).",
+      "Knowledge of CSS: Proficiency in CSS (Cascading Style Sheets) is required, as it is used for styling the layout and appearance of web pages.",
+      "Proficiency in MS Office: The candidate should have a good understanding of Microsoft Office tools, including Word, Excel, and PowerPoint, for documentation, data analysis, and presentations.",
+      "Strong attention to detail and ability to work accurately.",
+      "Good communication skills, both written and verbal.",
+      "Ability to work well in a team and collaborate effectively with others.",
+      "Problem-solving skills and ability to learn new technologies quickly."
+    ]
+  }
+}

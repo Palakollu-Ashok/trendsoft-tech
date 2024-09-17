@@ -92,7 +92,7 @@ export default function GetStart() {
       <img
         src={s1}
         alt=""
-        className="md:h-[80vh] h-[40vh] object-cover  w-full"
+        className="md:h-[60vh] h-[30vh] object-cover  w-full"
       />
       <div className="h-full  xl:px-[330px] lg:px-[150px] sm:px-[28px] md:px-[50px] px-5 xl:-translate-y-30 md:-translate-y-24 -translate-y-14">
         <div className="w-full   rounded-2xl  bg-white md:p-10 sm:p-5 p-3 shadow-xl">
@@ -303,6 +303,36 @@ export default function GetStart() {
               {isSubmitting || fileUploaded ? "Please wait..." : "Submit"}
             </button>
           </form>
+        </div>
+      </div>
+      <div className="md:flex w-full px-3 sm:py-4 py-2 md:px-6 xl:px-10 3xl:px-16 md:gap-10 md:space-y-0 space-y-5">
+        <div className="md:w-1/2 w-full md:h-[250px]">
+          <iframe
+            aria-labelledby="Our-Location"
+            role="application"
+            aria-label="Trendsoft Technologies map1"
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3827.0413003580547!2d80.57439567466332!3d16.422728729878514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sTrendsoft%20Technologies%20Pvt%20Ltd%2C%20%23301-302%2C%20NRT%20Tech%20Park%2C%20Mangalagiri%20Bypass%2C%20Amaravathi%2C%20Andhra%20Pradesh%20522503!5e0!3m2!1sen!2sin!4v1722507946520!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style={{ border: "0" }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div className="md:w-1/2 w-full md:h-[250px]">
+          <iframe
+            aria-labelledby="Our-Location"
+            role="application"
+            aria-label="Trendsoft Technologies map2"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237.8340835142151!2d78.40170932789304!3d17.491020900849563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91949a0322e3%3A0x42ea9c96fc8be8b8!2sMIG-37%2C%20K%20P%20H%20B%20Phase%201%2C%20Kukatpally%2C%20Hyderabad%2C%20Telangana%20500072!5e0!3m2!1sen!2sin!4v1722572636071!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style={{ border: "0" }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </div>

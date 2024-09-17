@@ -76,7 +76,7 @@ export default function Career() {
           <div className="w-full lg:w-1/2  lg:px-5">
             <form
               onSubmit={handleSubmit(onSubmit)}
-              className="px-6 py-6 bg-gray-100"
+              className="px-6 py-6 bg-gray-200 "
             >
               <div className=" md:gap-8 gap-3  space-y-4 lg:py-0 py-3 md:px-4">
                 <div className="grid space-y-2">
@@ -190,7 +190,7 @@ export default function Career() {
                     name="Select_position"
                     id="Select_position"
                     aria-describedby="Select_position_error"
-                    className="border border-gray-400  py-2  px-1 focus:outline-none focus:ring-1 focus:ring-red"
+                    className=" text-[14px] h-10  pl-2 border border-gray-500"
                     {...register("position", {
                       required: "Position is required",
                     })}
@@ -199,7 +199,7 @@ export default function Career() {
                     }}
                   >
                     <option value="">Select position</option>
-                    {position.map((c, idx) => (
+                    {position.map((c) => (
                       <option value={c.position} key={c.id}>
                         {c.position}
                       </option>
@@ -215,7 +215,7 @@ export default function Career() {
                   )}
                 </div>
 
-                <div className="grid w-full col-span-2 space-y-2">
+                {/* <div className="grid">
                   <label htmlFor="file-upload" className="px-1">
                     Upload Resume
                   </label>
@@ -225,7 +225,7 @@ export default function Career() {
                     id="file"
                     accept=".xlsx,.xls,image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf"
                     aria-describedby="file-upload_error"
-                    className="border border-gray-400  py-2  px-1 focus:outline-none focus:ring-1 focus:ring-red"
+                    className="border border-gray-400  md:py-2 py-1  px-1 focus:outline-none focus:ring-1 focus:ring-red"
                     {...register("file", {
                       required: "File Upload is required",
                     })}
@@ -238,6 +238,35 @@ export default function Career() {
                       {errors.file.message}
                     </small>
                   )}
+                </div> */}
+                <div className="grid">
+                  <label className="text-sm font-medium text-gray-700">
+                    Upload CV/Resume <span className="text-red text-lg">*</span>
+                  </label>
+                  <div className="relative">
+                    <input
+                      type="file"
+                      name="file"
+                      id="file"
+                      accept=".xlsx,.xls,image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf"
+                      aria-describedby="file-upload_error"
+                      className="bg-white h-10 opacity-0 absolute z-10 w-full cursor-pointer"
+                      {...register("file", {
+                        required: "File Upload is required",
+                      })}
+                      onKeyUp={() => {
+                        trigger("file");
+                      }}
+                    />
+                    <div className="bg-white h-10 border border-gray-400 pl-2 flex items-center cursor-pointer">
+                      <span className="text-gray-600">Choose File</span>
+                    </div>
+                    {errors.file && (
+                      <small className="text-[#EB1414]" id="file-upload_error">
+                        {errors.file.message}
+                      </small>
+                    )}
+                  </div>
                 </div>
               </div>
               <button

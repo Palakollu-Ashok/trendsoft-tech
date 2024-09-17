@@ -69,6 +69,60 @@ export default function Footer() {
             </li>
           </ul>
         </div>
+        <div className="space-y-2 w-full">
+          <h2
+            className="md:text-[20px] text-[14px] font-normal"
+            id="OurSolutions"
+          >
+            Our Solutions
+          </h2>
+          <ul className="space-y-1" aria-labelledby="OurSolutions">
+            <li className="">
+              <a
+                href="/DigitalAccessibility"
+                className="hover:text-red focus:text-red duration-300 md:text-[14px]  text-[10px]"
+              >
+                Digital Accessibility Services
+              </a>
+            </li>
+
+            <li className="">
+              <a
+                href="/TrendSoft/oursolutions/Testing"
+                className="hover:text-red focus:text-red  duration-300 md:text-[14px]  text-[10px]"
+              >
+                Testing Services
+              </a>
+            </li>
+
+            <li className="">
+              <a
+                href="/TrendSoft/oursolutions/CyberSecurity"
+                className="hover:text-red focus:text-red duration-300 md:text-[14px]  text-[10px]"
+              >
+                Cyber Security
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="space-y-2 w-full">
+          <h2
+            className="md:text-[20px] text-[14px] font-normal"
+            id="TermsOfService"
+          >
+            Terms of Service
+          </h2>
+          <ul className="space-y-1" aria-labelledby="Terms Of Service">
+            <li className="">
+              <a
+                href="/TrendSoft/Privacy-Policy"
+                className="hover:text-red focus:text-red duration-300 md:text-[14px]  text-[10px]"
+              >
+                Privacy Policy
+              </a>
+            </li>
+          </ul>
+        </div>
 
         <div className="space-y-2 w-full">
           <h2
