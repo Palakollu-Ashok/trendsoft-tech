@@ -76,7 +76,7 @@ export default function Career() {
           <div className="w-full lg:w-1/2  lg:px-5">
             <form
               onSubmit={handleSubmit(onSubmit)}
-              className="px-6 py-6 bg-gray-200 "
+              className="px-6 py-6 bg-gray-200 rounded-md"
             >
               <div className=" md:gap-8 gap-3  space-y-4 lg:py-0 py-3 md:px-4">
                 <div className="grid space-y-2">
@@ -89,7 +89,7 @@ export default function Career() {
                     name="Name"
                     type="text"
                     aria-describedby="Name_error"
-                    className={`border py-2  border-gray-400  px-1 focus:outline-none focus:ring-1 focus:ring-red ${
+                    className={`border py-2 rounded-md border-gray-400  px-1 focus:outline-none focus:ring-1 focus:ring-red ${
                       errors.name ? "border-[#EB1414]" : ""
                     }`}
                     {...register("name", {
@@ -121,7 +121,7 @@ export default function Career() {
                     placeholder="Phone Number"
                     aria-describedby="Phone_Number_error"
                     minLength={10}
-                    className={`border py-2  px-1 border-gray-400  focus:outline-none focus:ring-1 focus:ring-red ${
+                    className={`border py-2  px-1  rounded-md border-gray-400  focus:outline-none focus:ring-1 focus:ring-red ${
                       errors.phoneNumber ? "border-[#EB1414]" : ""
                     }`}
                     {...register("phoneNumber", {
@@ -160,7 +160,7 @@ export default function Career() {
                     name="Email"
                     placeholder="Email"
                     aria-describedby="Email_career_error"
-                    className={`border py-2  px-1 border-gray-400 focus:outline-none focus:ring-1 focus:ring-red ${
+                    className={`border py-2  px-1  rounded-md border-gray-400 focus:outline-none focus:ring-1 focus:ring-red ${
                       errors.email ? "border-[#EB1414]" : ""
                     }`}
                     {...register("email", {
@@ -190,7 +190,7 @@ export default function Career() {
                     name="Select_position"
                     id="Select_position"
                     aria-describedby="Select_position_error"
-                    className=" text-[14px] h-10  pl-2 border border-gray-500"
+                    className=" text-[14px] h-10  rounded-md pl-2 border border-gray-500"
                     {...register("position", {
                       required: "Position is required",
                     })}
@@ -258,7 +258,7 @@ export default function Career() {
                         trigger("file");
                       }}
                     />
-                    <div className="bg-white h-10 border border-gray-400 pl-2 flex items-center cursor-pointer">
+                    <div className="bg-white  rounded-md h-10 border border-gray-400 pl-2 flex items-center cursor-pointer">
                       <span className="text-gray-600">Choose File</span>
                     </div>
                     {errors.file && (

@@ -7,6 +7,7 @@ import Empower from "../../Common/Empower";
 import Banner from "../../Common/Banner";
 import BredCrumb from "../../Common/BredCrumb";
 import { MetaTags } from "react-meta-tags";
+import JoinTeam from "../../Common/JoinTeam";
 export default function MobileAccessPage() {
   const data = [
     {
@@ -24,7 +25,7 @@ export default function MobileAccessPage() {
   return (
     <>
       <MetaTags>
-        <title>Trendsoft | Web Accessibility Page</title>
+        <title>Trendsoft | Mobile Accessibility Page</title>
         {/* <meta name="description" content="This is my page description." />
         <meta property="og:title" content="My Page Title" />
         <meta property="og:image" content="path/to/image.jpg" />
@@ -59,7 +60,7 @@ export default function MobileAccessPage() {
 
       <div className=" bg-gray-100 sm:py-4 py-2 md:px-6 xl:px-10 3xl:px-16  px-3 h-full">
         <div className="">
-          <h2 className=" py-3 md:px-5 px-2">{data.title}</h2>
+          <h2 className=" py-3 md:px-5 px-2 text-center">{data1.title}</h2>
           <div className="grid lg:grid-cols-3 sm:pb-5 pb-2 md:px-5 px-2   sm:grid-cols-2  grid-cols-1 w-full gap-8 h-full ">
             {data1.list.map((d, i) => (
               <CommonCard
@@ -73,7 +74,7 @@ export default function MobileAccessPage() {
           </div>
         </div>
       </div>
-
+      <JoinTeam name="Want to Know More?" />
       {/* <div className="md:px-6  xl:px-10 3xl:px-16 px-3">
         <div className="space-y-5 py-10">
           <h1 className="md:text-4xl text-center sm:text-2xl text-lg text-[rgb(12,35,70)]">

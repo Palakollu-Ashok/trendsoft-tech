@@ -65,7 +65,7 @@ export default function ContactUs() {
   }, [fileUploaded]);
 
   const onSubmit = (data) => {
-    data.phoneNumber = selectedCountryCode + " " + data.phoneNumber;
+    data.phoneNumber = selectedCountryCode + "" + data.phoneNumber;
 
     googleSheetContactForm(data, setFileUploaded(true))
       .then((res) => {

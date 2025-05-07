@@ -1,8 +1,29 @@
 import Button from "../Common/Button";
-import button from "../../Content/Home/Buttons.json";
+// import button from "../../Content/Home/Buttons.json";
 import Bgimg from "../../assets/Home/background.png";
+import { TfiArrowTopRight } from "react-icons/tfi";
 
 export default function Certificates() {
+  const data = [
+    {
+      button: "Certificate Of Quality Management System",
+      img: <TfiArrowTopRight />,
+      link: "/Assets/Files/qmsmanagement.pdf",
+      target: "_blank",
+    },
+    {
+      button: "Certificate Of Udyam Registration",
+      img: <TfiArrowTopRight />,
+      link: "/Assets/Files/udyamregistration.pdf",
+      target: "_blank",
+    },
+    {
+      button: "Certificate Of Startup India",
+      img: <TfiArrowTopRight />,
+      link: "/Assets/Files/startup.pdf",
+      target: "_blank",
+    },
+  ];
   return (
     <div
       style={{
@@ -16,13 +37,13 @@ export default function Certificates() {
         <h2 className="text-center text-light">Certifications</h2>
 
         <ul className="md:flex gap-3 md:justify-center md:py-10 sm:py-5 py-3 xl:gap-28 md:gap-14 space-y-8 md:space-y-0">
-          {button.list.map((d, i) => (
+          {data.map((d, i) => (
             <li key={i}>
               <Button
                 key={i}
                 button={d.button}
                 link={d.link}
-                Img={d.img}
+                icon={d.img}
                 target={d.target ? d.target : "_self"}
               />
             </li>

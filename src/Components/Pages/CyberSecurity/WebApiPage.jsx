@@ -4,6 +4,7 @@ import Empower from "../../Common/Empower";
 import Banner from "../../Common/Banner";
 import BredCrumb from "../../Common/BredCrumb";
 import WebAppSecurity from "../../OurSolutions/CyberSecurity/WebAppSecurity";
+import { MetaTags } from "react-meta-tags";
 export default function WebApiPage() {
   const data = [
     {
@@ -19,6 +20,16 @@ export default function WebApiPage() {
   ];
   return (
     <>
+      <MetaTags>
+        <title>Trendsoft | Web App Security Page</title>
+        {/* <meta name="description" content="This is my page description." />
+        <meta property="og:title" content="My Page Title" />
+        <meta property="og:image" content="path/to/image.jpg" />
+        <meta
+          property="og:description"
+          content="This is the Open Graph description."
+        /> */}
+      </MetaTags>
       <Banner
         BgImg={BgImg}
         desc=" Web App Security Auditing Solutions"

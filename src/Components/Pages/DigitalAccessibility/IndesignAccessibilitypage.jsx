@@ -5,6 +5,7 @@ import Banner from "../../Common/Banner";
 import BredCrumb from "../../Common/BredCrumb";
 import IndesignAccessServices from "../../OurSolutions/DigitalAccessibility/IndesignAccessServices";
 import { MetaTags } from "react-meta-tags";
+import JoinTeam from "../../Common/JoinTeam";
 export default function IndesignAccessibilitypage() {
   const data = [
     {
@@ -42,7 +43,7 @@ export default function IndesignAccessibilitypage() {
       />
 
       <div className="flex  md:px-6  xl:px-10 3xl:px-16 px-3">
-        {data.map((d, i) => (
+        {data.map((d) => (
           <>
             <BredCrumb text={d.text} link={d.link} divide={d.divide} />
           </>
@@ -73,6 +74,7 @@ export default function IndesignAccessibilitypage() {
             </div> */}
 
       <IndesignAccessServices />
+      <JoinTeam name="Want to Know More?" />
     </>
   );
 }

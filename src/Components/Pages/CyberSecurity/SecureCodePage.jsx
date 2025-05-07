@@ -5,6 +5,7 @@ import Empower from "../../Common/Empower";
 import Banner from "../../Common/Banner";
 import BredCrumb from "../../Common/BredCrumb";
 import Securecodereview from "../../OurSolutions/CyberSecurity/Securecodereview";
+import { MetaTags } from "react-meta-tags";
 export default function SecureCodePage() {
   const data = [
     {
@@ -21,6 +22,16 @@ export default function SecureCodePage() {
 
   return (
     <>
+      <MetaTags>
+        <title>Trendsoft | Secure Code Review Page</title>
+        {/* <meta name="description" content="This is my page description." />
+        <meta property="og:title" content="My Page Title" />
+        <meta property="og:image" content="path/to/image.jpg" />
+        <meta
+          property="og:description"
+          content="This is the Open Graph description."
+        /> */}
+      </MetaTags>
       <Banner
         BgImg={BgImg}
         desc="Secure Code Review Auditing Solutions"

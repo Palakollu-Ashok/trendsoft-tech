@@ -1,4 +1,3 @@
-import React from "react";
 import data1 from "../../../Content/OurSolutions/Testing/PerfomanceTesting/Card.json";
 
 export default function PerformanceTestingServices() {
@@ -10,15 +9,18 @@ export default function PerformanceTestingServices() {
         </h1>
         <p>{data1.desc}</p>
       </div>
-      <div className="">
+      <div className="grid grid-cols-2 gap-10 place-content-center place-items-center">
         {data1.list.map((d, i) => (
-          <div className="pb-3 space-y-3" key={i}>
+          <div
+            className="pb-3 space-y-3 bg-gray-100 p-4 rounded-lg shadow-lg "
+            key={i}
+          >
             <h2 className="text-[rgb(12,35,70)] md:text-[18px] sm:text-[16px] text-[12px]  font-semibold font-Nunito">
               {d.title}
             </h2>
             {d?.list1?.map((d2, i1) => (
-              <div>
-                <p key={i1}>{d2.desc}</p>
+              <div key={i1}>
+                <p>{d2.desc}</p>
               </div>
             ))}
 

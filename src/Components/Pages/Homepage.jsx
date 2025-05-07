@@ -9,6 +9,7 @@ import ContactUs from "../Home/ContactUs";
 import Certificates from "../Home/Certificates";
 import Card from "../Home/Card";
 import AccessibilityJourney from "../Home/AccessibilityJourney";
+// import Slider from "../Home/Slider";
 function Homepage() {
   return (
     <>
@@ -18,7 +19,7 @@ function Homepage() {
       <Card />
       <OurStrengths />
       {/* <Carousel /> */}
-
+      {/* <Slider /> */}
       <AccessibilityJourney />
       <Clients />
       <Certificates />

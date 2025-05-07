@@ -1,10 +1,12 @@
-import Img from "../../../assets/DigitalAccessibility/WebAccess.png";
+import Img from "../../../assets/DigitalAccessibility/webAcess.webp";
 import BgImg from "../../../assets/DigitalAccessibility/BreadCrumb.png";
 import Empower from "../../Common/Empower";
 import Banner from "../../Common/Banner";
 import BredCrumb from "../../Common/BredCrumb";
 import WebAccessServices from "../../OurSolutions/DigitalAccessibility/WebAccessServices";
 import { MetaTags } from "react-meta-tags";
+import FAQ from "../../OurSolutions/DigitalAccessibility/FAQ";
+import JoinTeam from "../../Common/JoinTeam";
 export default function WebAccessibilityPage() {
   const data = [
     {
@@ -58,6 +60,8 @@ export default function WebAccessibilityPage() {
         />
       </div>
       <WebAccessServices />
+      <FAQ />
+      <JoinTeam name="Want to Know More?" />
     </>
   );
 }

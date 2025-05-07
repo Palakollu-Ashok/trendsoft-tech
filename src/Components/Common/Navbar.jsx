@@ -158,49 +158,49 @@ const Navbar = () => {
       }
     }
   };
-  const handleKeyDown = (e) => {
-    const focusableElements = Array.from(
-      document.querySelectorAll(
-        'a[href], button, textarea, input, select, [tabindex]:not([tabindex="-1"])'
-      )
-    );
-    console.log("Focusable elements:", focusableElements);
+  // const handleKeyDown = (e) => {
+  //   const focusableElements = Array.from(
+  //     document.querySelectorAll(
+  //       'a[href], button, textarea, input, select, [tabindex]:not([tabindex="-1"])'
+  //     )
+  //   );
+  //   console.log("Focusable elements:", focusableElements);
 
-    const firstElement = focusableElements[0];
-    const lastElement = focusableElements[focusableElements.length - 1];
+  //   const firstElement = focusableElements[0];
+  //   const lastElement = focusableElements[focusableElements.length - 1];
 
-    if (e.key === "ArrowDown") {
-      e.preventDefault();
-      const currentIndex = focusableElements.indexOf(document.activeElement);
-      console.log("Current index (ArrowDown):", currentIndex);
-      const nextIndex = (currentIndex + 1) % focusableElements.length;
-      focusableElements[nextIndex].focus();
-    }
+  //   if (e.key === "ArrowDown") {
+  //     e.preventDefault();
+  //     const currentIndex = focusableElements.indexOf(document.activeElement);
+  //     console.log("Current index (ArrowDown):", currentIndex);
+  //     const nextIndex = (currentIndex + 1) % focusableElements.length;
+  //     focusableElements[nextIndex].focus();
+  //   }
 
-    if (e.key === "ArrowUp") {
-      e.preventDefault();
-      const currentIndex = focusableElements.indexOf(document.activeElement);
-      console.log("Current index (ArrowUp):", currentIndex);
-      const prevIndex =
-        (currentIndex - 1 + focusableElements.length) %
-        focusableElements.length;
-      focusableElements[prevIndex].focus();
-    }
+  //   if (e.key === "ArrowUp") {
+  //     e.preventDefault();
+  //     const currentIndex = focusableElements.indexOf(document.activeElement);
+  //     console.log("Current index (ArrowUp):", currentIndex);
+  //     const prevIndex =
+  //       (currentIndex - 1 + focusableElements.length) %
+  //       focusableElements.length;
+  //     focusableElements[prevIndex].focus();
+  //   }
 
-    if (e.key === "Tab") {
-      if (e.shiftKey) {
-        if (document.activeElement === firstElement) {
-          e.preventDefault();
-          lastElement.focus();
-        }
-      } else {
-        if (document.activeElement === lastElement) {
-          e.preventDefault();
-          firstElement.focus();
-        }
-      }
-    }
-  };
+  //   if (e.key === "Tab") {
+  //     if (e.shiftKey) {
+  //       if (document.activeElement === firstElement) {
+  //         e.preventDefault();
+  //         lastElement.focus();
+  //       }
+  //     } else {
+  //       if (document.activeElement === lastElement) {
+  //         e.preventDefault();
+  //         firstElement.focus();
+  //       }
+  //     }
+  //   }
+  // };
   return (
     <div className="sticky top-0 z-40 bg-light bg-yellow-50 w-full duration-500">
       <div
@@ -222,184 +222,182 @@ const Navbar = () => {
             <ul className="flex justify-end gap-4">
               <li className="flex items-center">
                 <Popover className="relative">
-                  {({ open }) => (
-                    <>
-                      <Popover.Button
-                        className="inline-flex items-center focus:border-2 focus:rounded-md focus:border-dark text-sm/6 text-dark shadow-inner shadow-white/10 focus:outline-none"
-                        aria-expanded={open}
-                        aria-hashpopup="true"
-                      >
-                        <span className="sr-only">menu</span>
-                        <p className="flex items-center md:text-[12px] text-[14px] lg:text-[16px] py-1">
-                          Our Solutions
-                          <MdKeyboardArrowDown
-                            className={`text-2xl ${open ? "rotate-180" : ""}`}
-                          />
-                        </p>
-                      </Popover.Button>
-                      <Popover.Panel
-                        transition
-                        anchor="bottom end"
-                        onKeyDown={handleKeyDown}
-                        className="absolute flex gap-5 top-full mt-6 left-0 w-full bg-[#21469D] origin-top-right  border border-white/5  p-10 text-sm/6 transition duration-100 ease-out z-50"
-                      >
-                        <div className="w-1/2 px-5">
-                          <h2 className="mb-5 text-white">Our Services</h2>
-                          <hr className="border-white" />
-                          <ul
-                            role="tablist"
-                            className="list-none w-full grid grid-cols-2 gap-5 mt-5"
+                  <Popover.Button className=" block sm:text-2xl text-md  hover:text-blue-400 ">
+                    <div
+                      // aria-labelledby="navbarDropdown"
+                      className="cursor-pointer text-[#0084FF] "
+                    >
+                      <span className="sr-only">menu</span>
+                      <p className="flex items-center md:text-[12px] text-[14px] lg:text-[16px] py-1 font-semibold">
+                        Our Solutions
+                        <MdKeyboardArrowDown
+                          className={`text-2xl ${open ? "rotate-180" : ""}`}
+                        />
+                      </p>
+                    </div>
+                  </Popover.Button>
+                  <Popover.Panel className="absolute z-20 bg-blue-600 ">
+                    <div
+                      role="navigation"
+                      className="fixed flex gap-5 overflow-y-scroll p-10 z-20 right-0 sm:top-[85px]  540Screen:top-[112px] 240Screen:top-[95px] top-[110px] bg-[#22439A] w-full  "
+                    >
+                      <div className="w-1/2 px-5">
+                        <h2 className="mb-5 text-white ">Our Services</h2>
+                        <hr className="border-white" aria-hidden="true" />
+                        <ul
+                          role="tablist"
+                          className="list-none w-full grid grid-cols-2 gap-5 mt-5"
+                        >
+                          <li
+                            role="presentation"
+                            className="w-fit hover:border-white hover:rounded-lg p-3"
+                            style={{ boxSizing: "border-box" }}
                           >
-                            <li role="presentation" className="w-fit">
-                              <a
-                                href="#content-1"
-                                role="tab"
-                                id="tab-1"
-                                aria-controls="content-1"
-                                aria-selected="true"
-                                tabIndex={0}
-                                ref={firstFocusableRef}
-                                className="grid place-content-center place-items-center gap-2 rounded-lg cursor-pointer group"
-                                onClick={() =>
-                                  setActiveTab("DigtalAccessibilityServices")
-                                }
-                                onKeyDown={(e) => {
-                                  if (e.key === "Enter" || e.key === " ") {
-                                    setActiveTab("DigtalAccessibilityServices");
-                                  }
-                                }}
-                              >
-                                <img
-                                  src={image}
-                                  alt=""
-                                  className="w-[120px]  object-cover rounded-xl transform transition-transform duration-300 ease-in-out group-hover:scale-110"
-                                />
-                                <p className=" bottom-0 gap-3 left-0 px-2 w-[300px] flex justify-center items-center z-50 text-white font-semibold ">
-                                  Digital Accessibility Services
-                                  <FaArrowRight />
-                                </p>
-                              </a>
-                            </li>
-                            <li role="presentation" className="w-fit">
-                              <a
-                                tabIndex={0}
-                                ref={firstFocusableRef}
-                                className=" grid place-content-center place-items-center gap-2 rounded-lg cursor-pointer  group"
-                                onClick={() => setActiveTab("TestingServices")}
-                                onKeyDown={(e) => {
-                                  if (e.key === "Enter" || e.key === " ") {
-                                    setActiveTab("TestingServices");
-                                  }
-                                }}
-                              >
-                                {/* <div className="absolute inset-0 bg-black/30 rounded-lg z-10"></div> */}
-                                <img
-                                  src={image2}
-                                  alt=""
-                                  className="w-[120px]  object-cover rounded-xl transform transition-transform duration-300 ease-in-out group-hover:scale-110"
-                                />
-                                <p className=" bottom-0 gap-3 left-0 px-2 w-[300px] flex justify-center items-center z-50 text-white font-semibold ">
-                                  Testing Services
-                                  <FaArrowRight />
-                                </p>
-                              </a>
-                            </li>
-
-                            <li role="presentation" className="w-fit">
-                              <a
-                                tabIndex={0}
-                                ref={firstFocusableRef}
-                                className="  grid place-content-center place-items-center gap-2 rounded-lg cursor-pointer  group"
-                                onClick={() => setActiveTab("CyberSecurity")}
-                                onKeyDown={(e) => {
-                                  if (e.key === "Enter" || e.key === " ") {
-                                    setActiveTab("CyberSecurity");
-                                  }
-                                }}
-                              >
-                                {/* <div className="absolute inset-0 bg-black/30 rounded-lg z-10"></div> */}
-                                <img
-                                  src={image3}
-                                  alt=""
-                                  className="w-[120px] object-cover rounded-xl transform transition-transform duration-300 ease-in-out group-hover:scale-110"
-                                />
-                                <p className=" gap-3 bottom-0 left-0 px-2 flex justify-center items-center z-50 text-white font-semibold w-[300px]">
-                                  Cyber Security
-                                  <FaArrowRight />
-                                </p>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-
-                        <div className="w-1/2 ">
-                          <div className="flex justify-between items-center mb-5">
-                            <h2 className="text-white">We Offer</h2>
                             <a
-                              href={content[activeTab]?.mainpath}
-                              className="text-white font-semibold flex items-center"
+                              href="#content-1"
+                              role="tab"
+                              id="tab-1"
+                              aria-controls="content-1"
+                              tabIndex={0}
+                              ref={firstFocusableRef}
+                              className="grid place-content-center place-items-center gap-2 rounded-lg cursor-pointer group"
+                              onClick={() =>
+                                setActiveTab("DigtalAccessibilityServices")
+                              }
+                              onKeyDown={(e) => {
+                                if (e.key === "Enter" || e.key === " ") {
+                                  setActiveTab("DigtalAccessibilityServices");
+                                }
+                              }}
                             >
-                              All Services
-                              <span className="text-lg">
-                                <HiOutlineArrowSmallRight />
-                              </span>
+                              <img
+                                src={image}
+                                alt="Digital Accessibility"
+                                className="w-[120px] object-cover rounded-xl transform transition-transform duration-300 ease-in-out group-hover:scale-105"
+                                // Use transform scale to avoid size shifts
+                              />
+                              <p className="bottom-0 gap-3 left-0 px-2 w-[300px] flex justify-center items-center z-50 text-white font-semibold">
+                                Digital Accessibility Services
+                                <FaArrowRight />
+                              </p>
                             </a>
-                          </div>
-                          <hr className="border-white" />
-                          <ul className="grid space-y-5">
-                            {activeTab &&
-                              content[activeTab].services.map(
-                                ({ id, title, path }) => (
-                                  <li key={id} className="py-1 mt-5">
-                                    <a
-                                      href={path}
-                                      className="text-white flex justify-between gap-5 mb-3"
-                                    >
-                                      {title} <HiOutlineArrowSmallRight />
-                                    </a>
-                                    <hr className="border-white" />
-                                  </li>
-                                )
-                              )}
-                          </ul>
-                        </div>
-                        {/* <div className="w-1/2">
-                          <div className="flex justify-between items-center mb-5">
-                            <h2 className="text-white">We Offer</h2>
-                          </div>
-                          <hr className="border-white" />
+                          </li>
+                          <li
+                            role="presentation"
+                            className="w-fit hover:border-white hover:rounded-lg p-3"
+                            style={{ boxSizing: "border-box" }}
+                          >
+                            <a
+                              href="#content-2"
+                              role="tab"
+                              id="tab-2"
+                              aria-controls="content-2"
+                              tabIndex={0}
+                              ref={firstFocusableRef}
+                              className="grid place-content-center place-items-center gap-2 rounded-lg cursor-pointer group"
+                              onClick={() => setActiveTab("TestingServices")}
+                              onKeyDown={(e) => {
+                                if (e.key === "Enter" || e.key === " ") {
+                                  setActiveTab("TestingServices");
+                                }
+                              }}
+                            >
+                              <img
+                                src={image2}
+                                alt="Testing Services"
+                                className="w-[120px] object-cover rounded-xl transform transition-transform duration-300 ease-in-out group-hover:scale-105"
+                              />
+                              <p className="bottom-0 gap-3 left-0 px-2 w-[300px] flex justify-center items-center z-50 text-white font-semibold">
+                                Testing Services
+                                <FaArrowRight />
+                              </p>
+                            </a>
+                          </li>
+                          <li
+                            role="presentation"
+                            className="w-fit hover:border-white hover:rounded-lg p-3"
+                            style={{ boxSizing: "border-box" }}
+                          >
+                            <a
+                              href="#content-3"
+                              role="tab"
+                              id="tab-3"
+                              aria-controls="content-3"
+                              tabIndex={0}
+                              ref={firstFocusableRef}
+                              className="grid place-content-center place-items-center gap-2 rounded-lg cursor-pointer group"
+                              onClick={() => setActiveTab("CyberSecurity")}
+                              onKeyDown={(e) => {
+                                if (e.key === "Enter" || e.key === " ") {
+                                  setActiveTab("CyberSecurity");
+                                }
+                              }}
+                            >
+                              <img
+                                src={image3}
+                                alt="Cyber Security"
+                                className="w-[120px] object-cover rounded-xl transform transition-transform duration-300 ease-in-out group-hover:scale-105"
+                              />
+                              <p className="bottom-0 gap-3 left-0 px-2 w-[300px] flex justify-center items-center z-50 text-white font-semibold">
+                                Cyber Security
+                                <FaArrowRight />
+                              </p>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
 
-                          <div className="flex items-center mt-10">
-                            {activeTab && (
-                              <div key={activeTab} className="space-y-5">
-                                <h3 className="text-white">
-                                  {content[activeTab]?.title}
-                                </h3>
-                                <p className="text-white">
-                                  {content[activeTab]?.content}
-                                </p>
-                                <div>
+                      <div className="w-1/2 ">
+                        <div className="flex justify-between items-center mb-5">
+                          <h2 className="text-white">We Offer</h2>
+                          <a
+                            href={content[activeTab]?.mainpath}
+                            className="text-white font-semibold flex items-center"
+                          >
+                            All Services
+                            <span className="text-lg">
+                              <HiOutlineArrowSmallRight />
+                            </span>
+                          </a>
+                        </div>
+                        <hr className="border-white" aria-hidden="true" />
+                        <ul className="grid space-y-5">
+                          {activeTab &&
+                            content[activeTab].services.map(
+                              ({ id, title, path }) => (
+                                <li key={id} className="py-1 mt-5">
                                   <a
-                                    href={content[activeTab]?.mainpath}
-                                    className="bg-white rounded-xl px-4 py-2"
+                                    href={path}
+                                    className="text-white flex justify-between gap-5 mb-3"
                                   >
-                                    View More
+                                    {title} <HiOutlineArrowSmallRight />
                                   </a>
-                                </div>
-                              </div>
+                                  <hr
+                                    className="border-white"
+                                    aria-hidden="true"
+                                  />
+                                </li>
+                              )
                             )}
-                          </div>
-                        </div> */}
-                      </Popover.Panel>
-                    </>
-                  )}
+                        </ul>
+                      </div>
+                    </div>
+                  </Popover.Panel>
                 </Popover>
+              </li>
+              <li className="flex items-center">
+                <a
+                  href="/TrendSoft/about-Us"
+                  className="text-[12px] lg:text-[16px] flex items-center font-semibold"
+                >
+                  About Us
+                </a>
               </li>
 
               <li className="flex items-center">
                 <a
                   href="/TrendSoft/WhoWeServe"
-                  className="flex items-center text-[12px] lg:text-[16px]"
+                  className="flex items-center text-[12px] lg:text-[16px] font-semibold"
                   ref={lastFocusableRef}
                 >
                   Who we Serve
@@ -408,21 +406,13 @@ const Navbar = () => {
               <li className="flex items-center">
                 <a
                   href="/TrendSoft/Career"
-                  className="text-[12px] lg:text-[16px]"
+                  className="text-[12px] lg:text-[16px] font-semibold"
                 >
                   Careers
                 </a>
               </li>
 
-              <li className="flex items-center">
-                <a
-                  href="/TrendSoft/about-Us"
-                  className="text-[12px] lg:text-[16px] flex items-center"
-                >
-                  About
-                </a>
-              </li>
-              <li className="flex items-center border-2 p-1 border-red">
+              <li className="flex items-center border-2 p-1 border-red font-semibold">
                 <a
                   href="/TrendSoft/ContactUs"
                   className="text-[12px] lg:text-[16px]"

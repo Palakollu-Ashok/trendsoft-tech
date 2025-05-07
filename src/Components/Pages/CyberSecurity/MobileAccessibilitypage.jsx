@@ -4,6 +4,7 @@ import Empower from "../../Common/Empower";
 import Banner from "../../Common/Banner";
 import BredCrumb from "../../Common/BredCrumb";
 import MobileAppSecurity from "../../OurSolutions/CyberSecurity/MobileAppSecurity";
+import { MetaTags } from "react-meta-tags";
 export default function MobileApiPage() {
   const data = [
     {
@@ -20,6 +21,16 @@ export default function MobileApiPage() {
 
   return (
     <>
+      <MetaTags>
+        <title>Trendsoft | Mobile App Security Page</title>
+        {/* <meta name="description" content="This is my page description." />
+        <meta property="og:title" content="My Page Title" />
+        <meta property="og:image" content="path/to/image.jpg" />
+        <meta
+          property="og:description"
+          content="This is the Open Graph description."
+        /> */}
+      </MetaTags>
       <Banner
         BgImg={BgImg}
         desc="Mobile App Security  Auditing Solutions"

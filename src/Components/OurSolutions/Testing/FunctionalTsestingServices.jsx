@@ -3,7 +3,7 @@ import data1 from "../../../Content/OurSolutions/Testing/FonctionalTesting/Card.
 
 export default function FunctionalTsestingServices() {
   return (
-    <div className="md:px-6 xl:px-10 3xl:px-16 px-3">
+    <div className="md:px-6 xl:px-10 3xl:px-16 px-3 ">
       <div className="space-y-5 py-10">
         <h1 className="md:text-4xl  text-center sm:text-2xl text-lg text-[rgb(12,35,70)]">
           {data1.title}
@@ -14,16 +14,19 @@ export default function FunctionalTsestingServices() {
           </>
         ))}
       </div>
-      <div className="">
+      <div className="grid grid-cols-3 gap-10">
         {data1.list.map((d, i) => (
-          <div className="pb-3 space-y-3" key={i}>
+          <div
+            className="pb-3 space-y-3 shadow-lg rounded-lg bg-gray-200 p-4"
+            key={i}
+          >
             <h2 className="text-[rgb(12,35,70)] md:text-[18px] sm:text-[16px] text-[12px]  font-semibold font-Nunito">
               {d.title}
             </h2>
 
             {d?.list1?.map((d2, i1) => (
-              <div>
-                <p key={i1}>{d2.desc}</p>
+              <div key={i1}>
+                <p>{d2.desc}</p>
               </div>
             ))}
 

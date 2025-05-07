@@ -14,7 +14,6 @@ function About() {
   const data1 = [
     {
       title: "Most answered Questions by Trendsoft",
-
       list1: [
         {
           desc: "Where should I Start?",

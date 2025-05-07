@@ -13,32 +13,6 @@
   ],
   "list": [
     {
-      "title": "FUNCTIONAL TESTING ",
-      "list2": [
-        {
-          "desc": "A Requirements assessment framework (RAF) lucidity defects in the software life cycle requirement phase."
-        },
-        {
-          "desc": "A Test Requirements Traceability Matrix (TRTM) to ensure bi-directional traceability."
-        },
-        {
-          "desc": "Comprehensive Test Metrics that ensure transparency & visibility with unit testing, defect trends, testing productivity, process quality, and testing progress."
-        },
-        {
-          "desc": "Every day, weekly, and monthly status reports with in-depth analysis of test execution rank and deficiency, leveraging a variety of models and techniques to publish actionable dashboards and reports."
-        },
-        {
-          "desc": "All testing services are customized to fit the client’s lifecycle model and environment to offer seamless integration and conduct optimized testing while ensuring functional coverage."
-        }
-      ],
-
-      "list1": [
-        {
-          "desc": "Trendsoft Tech functional testing methodology includes inputs connected to the probability or chance of business risk, technical risk, and project risk to ensure the most optimal testing that saves cost and time."
-        }
-      ]
-    },
-    {
       "title": "Unit Testing :",
       "list1": [
         {

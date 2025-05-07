@@ -3,29 +3,6 @@
   "desc": "Trendsoft with performance testing ensures that your software can handle real-world usage, no matter the number of users accessing it or how complex the task is performing. We are experts in providing cutting-edge solutions to global clients.",
   "list": [
     {
-      "title": "Our key website/mobile app testing differentiators include:",
-      "list2": [
-        {
-          "desc": "Comprehensive analysis and guidance for performance improvements."
-        },
-        {
-          "desc": "Cost optimization model evaluation maximum ROI"
-        },
-        {
-          "desc": "Partnerships and leagues that enable advice for the right tools, tailored solutions, and R&D resourcefulness."
-        },
-        {
-          "desc": "We focus on in-depth analysis at the element level, dynamic profiling, and sustainability evaluation to help isolate bottlenecks and reach client heights."
-        },
-        {
-          "desc": "We provide performance analyzer tools to assemble initial interfaces on both the client and server side."
-        },
-        {
-          "desc": "We offer flexible team availability to meet the performance and load testing needs on the client side."
-        }
-      ]
-    },
-    {
       "title": "Mobile performance testing",
       "list1": [
         {
@@ -54,6 +31,32 @@
       "list1": [
         {
           "desc": "We measure the web server’s response time and availability using different key performance indicators (KPIs)"
+        }
+      ]
+    }
+  ],
+  "list2": [
+    {
+      "image": "",
+      "title": "Our key website/mobile app testing differentiators include:",
+      "list2": [
+        {
+          "desc": "Comprehensive analysis and guidance for performance improvements."
+        },
+        {
+          "desc": "Cost optimization model evaluation maximum ROI"
+        },
+        {
+          "desc": "Partnerships and leagues that enable advice for the right tools, tailored solutions, and R&D resourcefulness."
+        },
+        {
+          "desc": "We focus on in-depth analysis at the element level, dynamic profiling, and sustainability evaluation to help isolate bottlenecks and reach client heights."
+        },
+        {
+          "desc": "We provide performance analyzer tools to assemble initial interfaces on both the client and server side."
+        },
+        {
+          "desc": "We offer flexible team availability to meet the performance and load testing needs on the client side."
         }
       ]
     },

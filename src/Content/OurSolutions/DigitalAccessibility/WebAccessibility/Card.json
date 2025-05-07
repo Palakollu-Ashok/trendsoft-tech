@@ -26,77 +26,6 @@
         }
       ]
     },
-    {
-      "title": "W3C",
-
-      "list2": [
-        {
-          "desc": "The World Wide Web Consortium (W3C) develops international standards for the Web: HTML, CSS, and many more."
-        }
-      ]
-    },
-    {
-      "title": "WAI",
-
-      "list2": [
-        {
-          "desc": "You can use W3C WAI resources to make your websites, applications, and other digital creations more accessible and usable to everyone."
-        }
-      ]
-    },
-    {
-      "title": "ASSESSMENT",
-
-      "list2": [
-        {
-          "desc": "The Section 508 testing team includes accessibility experts and people with disabilities who evaluate the existing state to refine your accessibility requirements. We provide you comprehensive report addressing the accessibility issues and the changes to be implemented which help you make your website or product meet Section 508 compliance."
-        }
-      ]
-    },
-    {
-      "title": "REMEDIATION",
-
-      "list2": [
-        {
-          "desc": "We extend technical assistance to your internal teams by guiding them in implementing accessibility in your websites or products. It provides the solution or assists your team in making sure of how to integrate accessibility to make your website or product Section 508 compliant."
-        }
-      ]
-    },
-    {
-      "title": "MONITORING",
-
-      "list2": [
-        {
-          "desc": "Our testing model helps you set up a team that will regularly monitor Section 508 compliance of websites or products that are subject to change. We can also set up a periodic monitoring dedicated team and provide you a detailed accessibility status report as the progress is made."
-        }
-      ]
-    },
-    {
-      "title": "ASSISTIVE TECHNOLOGIES USED FOR WEB BROWSING",
-      "list1": [
-        {
-          "desc": "Individuals living with a disability use assistive technologies such as the following to enable and assist web browsing:"
-        },
-        {
-          "desc": "Screen reader software, which can read out, using synthesized speech, either selected elements of what is being displayed on the monitor (helpful for users with reading or learning difficulties), or can read out everything that is happening on the computer (used by blind and vision impaired users)."
-        },
-        {
-          "desc": "Braille terminals, consisting of a refreshable braille display which renders text as braille characters (usually by means of raising pegs through holes in a flat surface) and either a mainstream keyboard or a braille keyboard."
-        },
-        {
-          "desc": "Screen magnification software enlarges what is displayed on the computer monitor, making it easier to read for vision-impaired users."
-        },
-        {
-          "desc": "Speech recognition software that can accept spoken commands to the computer, or turn dictation into grammatically correct text – useful for those who have difficulty using a mouse or a keyboard."
-        },
-        {
-          "desc": "Keyboard overlays can make typing easier or more accurate for those who have motor control difficulties."
-        },
-        {
-          "desc": "Access to subtitled or sign language videos for deaf people."
-        }
-      ]
-    },
 
     {
       "title": "OVERLAP WITH OLDER USERS, MOBILE USERS, AND OTHER USER GROUPS",
@@ -167,27 +96,101 @@
       ]
     },
     {
-      "title": "Most answered to clients under WCAG Compliance",
+      "title": "ASSISTIVE TECHNOLOGIES USED FOR WEB BROWSING",
       "list1": [
         {
-          "desc": "Why it is important to your business, institution, or organization"
+          "desc": "Individuals living with a disability use assistive technologies such as the following to enable and assist web browsing:"
         },
         {
-          "desc": "At what point is your website in its lifecycle?"
+          "desc": "Screen reader software, which can read out, using synthesized speech, either selected elements of what is being displayed on the monitor (helpful for users with reading or learning difficulties), or can read out everything that is happening on the computer (used by blind and vision impaired users)."
         },
         {
-          "desc": "Whether build fresh or fix the current one?"
+          "desc": "Braille terminals, consisting of a refreshable braille display which renders text as braille characters (usually by means of raising pegs through holes in a flat surface) and either a mainstream keyboard or a braille keyboard."
         },
         {
-          "desc": "Who understands WCAG?"
+          "desc": "Screen magnification software enlarges what is displayed on the computer monitor, making it easier to read for vision-impaired users."
         },
         {
-          "desc": "What is a web accessibility statement guide?"
+          "desc": "Speech recognition software that can accept spoken commands to the computer, or turn dictation into grammatically correct text – useful for those who have difficulty using a mouse or a keyboard."
         },
         {
-          "desc": "How frequently the website should be updated?"
+          "desc": "Keyboard overlays can make typing easier or more accurate for those who have motor control difficulties."
+        },
+        {
+          "desc": "Access to subtitled or sign language videos for deaf people."
         }
       ]
     }
-  ]
+  ],
+  "list1": [
+    {
+      "title": "W3C",
+
+      "list2": [
+        {
+          "desc": "The World Wide Web Consortium (W3C) develops international standards for the Web: HTML, CSS, and many more."
+        }
+      ]
+    },
+    {
+      "title": "WAI",
+
+      "list2": [
+        {
+          "desc": "You can use W3C WAI resources to make your websites, applications, and other digital creations more accessible and usable to everyone."
+        }
+      ]
+    },
+    {
+      "title": "ASSESSMENT",
+
+      "list2": [
+        {
+          "desc": "Our Section 508 team, including experts and individuals with disabilities, evaluates your accessibility and provides a report with issues and solutions to ensure compliance."
+        }
+      ]
+    },
+    {
+      "title": "REMEDIATION",
+
+      "list2": [
+        {
+          "desc": "We guide your internal teams in implementing accessibility, providing solutions or support to ensure your website or product meets Section 508 compliance."
+        }
+      ]
+    },
+    {
+      "title": "MONITORING",
+
+      "list2": [
+        {
+          "desc": "Our model helps you establish a team to regularly monitor Section 508 compliance. We can also provide periodic monitoring and detailed accessibility status reports."
+        }
+      ]
+    }
+  ],
+  "faq": {
+    "title": "Most answered to clients under WCAG Compliance",
+    "image": "/Assets/DigitalAccessibility/WebAccessibility/FAQ.webp",
+    "list1": [
+      {
+        "desc": "Why it is important to your business, institution, or organization"
+      },
+      {
+        "desc": "At what point is your website in its lifecycle?"
+      },
+      {
+        "desc": "Whether build fresh or fix the current one?"
+      },
+      {
+        "desc": "Who understands WCAG?"
+      },
+      {
+        "desc": "What is a web accessibility statement guide?"
+      },
+      {
+        "desc": "How frequently the website should be updated?"
+      }
+    ]
+  }
 }

@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 
 function Button(props) {
-  const { button, link, Img, target } = props;
+  const { button, link, Img, target, icon } = props;
   return (
-    <div className="grid h-full  md:px-0 md:pt-3   xl:px-0 px-3 mx-auto max-w-8xl">
+    <div className="grid h-full  md:px-0 md:pt-3 group   xl:px-0 px-3 mx-auto max-w-8xl">
       <a
         href={link}
         target={target}
@@ -11,6 +11,7 @@ function Button(props) {
         // style={{ backgroundColor: color }}
       >
         {button}
+        {icon ? <p className="group-hover:text-white">{icon}</p> : null}
 
         {Img ? <img src={Img} alt="" className="w-6 mb-1 " /> : null}
       </a>
@@ -24,6 +25,7 @@ Button.propTypes = {
   color: PropTypes.string.isRequired,
   Img: PropTypes.string.isRequired,
   target: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
 };
 
 export default Button;
